@@ -1,22 +1,86 @@
-[
-  {
-    "id": 1,
-    "title": "Our Story",
-    "description": "At Design Walls, creativity meets craftsmanship to redefine the way we perceive interior décor. Our journey began with a simple vision: to transform spaces into personalized sanctuaries through bespoke wallpaper designs."
-  },
-  {
-    "id": 2,
-    "title": "Our Approach",
-    "description": "At the heart of our approach lies a dedication to collaboration and creativity. From initial consultations to final installation, we work closely with our clients to ensure perfection."
-  },
-  {
-    "id": 3,
-    "title": "Our Mission",
-    "description": "Our mission is to exceed expectations by delivering unparalleled quality and service, transforming spaces into captivating works of art."
-  },
-  {
-    "id": 4,
-    "title": "Our Promise",
-    "description": "We promise to continue pushing boundaries of creativity and craftsmanship, creating spaces that inspire and leave lasting impressions."
-  }
-]
+{
+  "content": [
+    {
+      "id": 1,
+      "title": "Our Story",
+      "description": "At Design Walls, creativity meets craftsmanship to redefine the way we perceive interior décor. Our journey began with a simple vision: to transform spaces into personalized sanctuaries through bespoke wallpaper designs. With a team fueled by a shared passion, we embarked on a mission to bring imagination to life. "
+    },
+    {
+      "id": 2,
+      "title": "Our Approach",
+      "description": "Our mission at Design Walls is to exceed the expectations of our clients by delivering unparalleled quality and service. We believe that every space has a story to tell, and it's our privilege to turn those stories into captivating works of art that reflect the unique personality and style of each individual.  "
+    },
+    {
+      "id": 3,
+      "title": "Our Mission",
+      "description": "At the heart of our approach lies a dedication to collaboration and creativity. We understand that the key to creating truly exceptional spaces lies in understanding the visions and aspirations of our clients. From initial consultations to final installation, we work closely with our clients every step of the way to ensure that their vision is brought to life with precision and care. "
+    },
+    {
+      "id": 4,
+      "title": "Our Promise",
+      "description": "As we continue to grow and evolve, our commitment to our clients remains steadfast. At Design Walls, we promise to continue pushing the boundaries of creativity and craftsmanship to create spaces that inspire, uplift, and delight. With each project we undertake, we strive to exceed expectations and leave a lasting impression that speaks volumes about our dedication to our craft."
+    }
+  ],
+  "teamImages": [
+    {
+      "id": 1,
+      "image": "",
+      "name": "Design Team"
+    },
+    {
+      "id": 2,
+      "image": "/images/team/team2.jpg",
+      "name": "Installation Team"
+    },
+    {
+      "id": 3,
+      "image": "/images/team/team3.jpg",
+      "name": "Creative Team"
+    },
+    {
+      "id": 4,
+      "image": "/images/team/team4.jpg",
+      "name": "Support Team"
+    },
+    {
+      "id": 1,
+      "image": "/images/team/team1.jpg",
+      "name": "Design Team"
+    },
+    {
+      "id": 2,
+      "image": "/images/team/team2.jpg",
+      "name": "Installation Team"
+    },
+    {
+      "id": 3,
+      "image": "/images/team/team3.jpg",
+      "name": "Creative Team"
+    },
+    {
+      "id": 4,
+      "image": "/images/team/team4.jpg",
+      "name": "Support Team"
+    },
+    {
+      "id": 1,
+      "image": "/images/team/team1.jpg",
+      "name": "Design Team"
+    },
+    {
+      "id": 2,
+      "image": "/images/team/team2.jpg",
+      "name": "Installation Team"
+    },
+    {
+      "id": 3,
+      "image": "/images/team/team3.jpg",
+      "name": "Creative Team"
+    },
+    {
+      "id": 4,
+      "image": "/images/team/team4.jpg",
+      "name": "Support Team"
+    }
+  ]
+}
