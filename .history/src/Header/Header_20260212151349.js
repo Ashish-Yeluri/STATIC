@@ -41,7 +41,8 @@ export default function Header() {
       </div>
      </header>
       <div className="shipping-banner">
-      <h2>FREE SHIPPING & INSTALLATION  <FaTruck className="shipping-icon" /></h2>
+      <span className="shipping-icon">🚚</span>
+      <h2>FREE SHIPPING & INSTALLATION</h2>
       </div>
     </>
   );

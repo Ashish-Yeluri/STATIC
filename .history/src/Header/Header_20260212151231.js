@@ -1,13 +1,11 @@
 import { Link } from 'react-router-dom'
 import './Header.css';
 import logo from '../Header/dw.avif'
-import { FaTruck } from "react-icons/fa";
-
 
 export default function Header() {
   return (
     <>
-     <header className='header'>
+    <header className='header'>
       {/* Left - Logo */}
       <div className='header-left'>
         <img src={logo} alt='Design Walls Logo' className='logo' />
@@ -39,10 +37,11 @@ export default function Header() {
       <div className='header-right'>
         <span>📞 +91 98765 43210</span>
       </div>
-     </header>
-      <div className="shipping-banner">
-      <h2>FREE SHIPPING & INSTALLATION  <FaTruck className="shipping-icon" /></h2>
-      </div>
+    </header>
+   <div className="shipping-banner">
+  <span className="shipping-icon">🚚</span>
+  <h2>FREE SHIPPING & INSTALLATION</h2>
+</div>
     </>
   );
 }

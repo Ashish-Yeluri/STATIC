@@ -1,8 +1,6 @@
 import { Link } from 'react-router-dom'
 import './Header.css';
 import logo from '../Header/dw.avif'
-import { FaTruck } from "react-icons/fa";
-
 
 export default function Header() {
   return (
@@ -41,7 +39,8 @@ export default function Header() {
       </div>
      </header>
       <div className="shipping-banner">
-      <h2>FREE SHIPPING & INSTALLATION  <FaTruck className="shipping-icon" /></h2>
+      <span className="shipping-icon">🚚</span>
+      <h2>FREE SHIPPING & INSTALLATION</h2>
       </div>
     </>
   );

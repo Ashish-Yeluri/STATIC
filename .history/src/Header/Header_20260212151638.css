@@ -56,15 +56,17 @@
   gap: 10px;
 }
 
+/* Thin font */
 .shipping-banner h2 {
   margin: 0;
   font-size: 18px;
   letter-spacing: 1px;
-  font-weight: 300;  
+  font-weight: 300;   /* Thin */
 }
 
+/* Move icon slightly down */
 .shipping-icon {
   font-size: 20px;
   position: relative;
-  top: 2px;  
+  top: 2px;   /* Adjust value (2px–4px) if needed */
 }

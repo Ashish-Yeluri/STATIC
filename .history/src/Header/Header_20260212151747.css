@@ -66,5 +66,5 @@
 .shipping-icon {
   font-size: 20px;
   position: relative;
-  top: 2px;  
+  top: 2px;   /* Adjust value (2px–4px) if needed */
 }

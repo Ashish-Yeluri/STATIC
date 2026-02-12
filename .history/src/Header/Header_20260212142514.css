@@ -43,28 +43,3 @@
   padding: 10px;
   border-radius: 10px;
 }
-
-/* Shipping Banner */
-.shipping-banner {
-  background-color: #d32f2f;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.shipping-banner h2 {
-  margin: 0;
-  font-size: 18px;
-  letter-spacing: 1px;
-  font-weight: 300;  
-}
-
-.shipping-icon {
-  font-size: 20px;
-  position: relative;
-  top: 2px;  
-}
