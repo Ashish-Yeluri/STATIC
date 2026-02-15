@@ -2,17 +2,21 @@ import { useState, useRef, useEffect } from 'react';
 import {
   FaInstagram,
   FaFacebookF,
+  FaTimes,
   FaTwitter,
   FaLinkedinIn,
   FaYoutube,
   FaPinterestP,
 } from 'react-icons/fa';
 
+
 import hero from '../About/Main.avif';
+import logo from '../About/Main.avif'; // Footer logo
 import AboutBox from '../../Data/AboutBox.json';
 
 export default function About() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [hoveredId, setHoveredId] = useState(null);
 
   const sliderRef = useRef(null);
   const wheelLock = useRef(false);
@@ -36,7 +40,6 @@ export default function About() {
     if (!slider) return;
 
     const handleWheel = (e) => {
-      // Only horizontal trackpad movement
       if (Math.abs(e.deltaX) <= Math.abs(e.deltaY)) return;
 
       e.preventDefault();
@@ -45,18 +48,16 @@ export default function About() {
       wheelLock.current = true;
 
       if (e.deltaX > 0) {
-        // swipe left → move right
         setCurrentIndex((prev) =>
           Math.min(prev + 1, AboutBox.teamImages.length - visibleCount),
         );
       } else {
-        // swipe right → move left
         setCurrentIndex((prev) => Math.max(prev - 1, 0));
       }
 
       setTimeout(() => {
         wheelLock.current = false;
-      }, 400); // throttle
+      }, 400);
     };
 
     slider.addEventListener('wheel', handleWheel, { passive: false });
@@ -66,14 +67,15 @@ export default function About() {
     };
   }, []);
 
-
   return (
     <div style={styles.page}>
       {/* Hero Section */}
       <div style={{ ...styles.hero, backgroundImage: `url(${hero})` }}>
         <div style={styles.overlay}>
-          <h1>About Us | Design Walls | Hyderabad</h1>
-          <p>about design walls</p>
+          <h1 style={{ fontSize: '60px' }}>
+            About <br />
+            Design Walls
+          </h1>
 
           <div style={styles.socials}>
             <FaInstagram />
@@ -98,7 +100,9 @@ export default function About() {
 
       {/* TEAM SLIDER */}
       <div style={styles.teamSection}>
-        <h2>Team Design Walls</h2>
+        <h2 style={{ textAlign: 'center', color: 'red', fontSize: '30px' }}>
+          Team Design Walls
+        </h2>
 
         <div style={styles.slider}>
           {currentIndex > 0 && (
@@ -119,8 +123,13 @@ export default function About() {
                   <img
                     src={member.image}
                     alt={member.name}
-                    style={styles.teamImage}
                     draggable={false}
+                    style={{
+                      ...styles.teamImage,
+                      ...(hoveredId === member.id ? styles.teamImageHover : {}),
+                    }}
+                    onMouseEnter={() => setHoveredId(member.id)}
+                    onMouseLeave={() => setHoveredId(null)}
                   />
                   <h4 style={styles.teamName}>{member.name}</h4>
                 </div>
@@ -133,20 +142,92 @@ export default function About() {
           </button>
         </div>
       </div>
+
+      {/* AWARDS */}
+      <div style={styles.awardsSection}>
+        <h2 style={{ textAlign: 'center', color: 'red', fontSize: '30px' }}>
+          AWARDS & RECOGNITIONS
+        </h2>
+
+        <div style={styles.awardsGrid}>
+          {AboutBox.awardImages.map((item, index) => (
+            <div key={index} style={styles.awardCard}>
+              <img
+                src={item.image}
+                alt='Award'
+                style={styles.awardImage}
+                onMouseEnter={(e) =>
+                  (e.currentTarget.style.transform = 'scale(1.08)')
+                }
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.transform = 'scale(1)')
+                }
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* FOOTER */}
+      <div style={footerStyles.footerWrapper}>
+        {/* Top Section */}
+        <div style={footerStyles.topSection}>
+          {/* Logo */}
+          <div style={footerStyles.logo}>
+            <img
+              src={logo}
+              alt='Design Walls'
+              style={{ width: '60px', height: '60px' }}
+            />
+          </div>
+
+          {/* Navigation Links */}
+          <div style={footerStyles.navLinks}>
+            <div>
+              <p style={footerStyles.navTitle}>About Us</p>
+              <p style={footerStyles.navItem}>Products</p>
+              <p style={footerStyles.navItem}>Blog</p>
+            </div>
+            <div>
+              <p style={footerStyles.navTitle}>Catalogue</p>
+              <p style={footerStyles.navItem}>Our Projects</p>
+              <p style={footerStyles.navItem}>Contact Us</p>
+            </div>
+          </div>
+
+          {/* Social Icons */}
+          <div style={footerStyles.socials}>
+            <FaInstagram />
+            <FaFacebookF />
+            <FaTimes />
+            <FaLinkedinIn />
+            <FaYoutube />
+            <FaPinterestP />
+          </div>
+        </div>
+
+        {/* Bottom Copyright Bar */}
+        <div style={footerStyles.bottomBar}>
+          © 2024, Designwalls. All Rights Reserved.{' '}
+          <span style={{ textDecoration: 'underline', cursor: 'pointer' }}>
+            Privacy Policy
+          </span>
+        </div>
+      </div>
     </div>
   );
 }
 
 const styles = {
-  page: {},
-
+  page: {
+    overflowX: 'hidden',
+  },
   hero: {
     height: '450px',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     position: 'relative',
   },
-
   overlay: {
     backgroundColor: 'rgba(206, 66, 66, 0.6)',
     color: '#fff',
@@ -156,7 +237,6 @@ const styles = {
     flexDirection: 'column',
     justifyContent: 'center',
   },
-
   socials: {
     display: 'flex',
     gap: '16px',
@@ -164,7 +244,6 @@ const styles = {
     marginTop: '20px',
     cursor: 'pointer',
   },
-
   boxWrapper: {
     width: '100%',
     display: 'flex',
@@ -172,60 +251,57 @@ const styles = {
     padding: '30px',
     flexWrap: 'wrap',
   },
-
   box: {
     width: '17%',
     backgroundColor: '#f7f7f7',
     padding: '30px',
     borderRadius: '8px',
   },
-
   boxText: {
     color: 'red',
-    fontSize: '30px'
+    fontSize: '30px',
   },
-
   teamSection: {
     padding: '60px',
   },
-
   slider: {
     position: 'relative',
     marginTop: '30px',
   },
-
   sliderWindow: {
     overflow: 'hidden',
     width: '100%',
-    touchAction: 'none', // ❌ disables touch swipe
-    overscrollBehavior: 'none', // ❌ stops momentum scroll
+    touchAction: 'pan-y',
+    overscrollBehaviorX: 'none',
   },
-
   sliderTrack: {
     display: 'flex',
+    gap: '30px',
     transition: 'transform 0.5s ease',
   },
-
   teamCard: {
-    minWidth: '25%',
-    backgroundColor: '#f7f7f7',
+    flex: '0 0 25%',
+    height: '400px',
     borderRadius: '8px',
-    marginRight: '30px',
     textAlign: 'center',
     overflow: 'hidden',
   },
-
   teamImage: {
     width: '100%',
-    height: '260px',
+    height: '400px',
     objectFit: 'cover',
+    cursor: 'pointer',
+    transition: 'transform 1.2s cubic-bezier(0.25, 0.8, 0.25, 1)',
+    willChange: 'transform',
+    backfaceVisibility: 'hidden',
   },
-
+  teamImageHover: {
+    transform: 'scale(1.08)',
+  },
   teamName: {
     padding: '12px',
     fontWeight: '600',
   },
-
   arrowLeft: {
     position: 'absolute',
     left: '-40px',
@@ -239,7 +315,6 @@ const styles = {
     padding: '4px 12px',
     pointerEvents: 'auto',
   },
-
   arrowRight: {
     position: 'absolute',
     right: '-40px',
@@ -252,5 +327,81 @@ const styles = {
     cursor: 'pointer',
     padding: '4px 12px',
     pointerEvents: 'auto',
+  },
+  awardsSection: {
+    padding: '60px',
+    textAlign: 'center',
+  },
+  awardsGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(3, 1fr)',
+    gap: '30px',
+    maxWidth: '1000px',
+    margin: '0 auto',
+  },
+  awardCard: {
+    width: '100%',
+    height: '200px',
+    backgroundColor: '#f7f7f7',
+    borderRadius: '10px',
+    overflow: 'hidden',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  awardImage: {
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+    transition: 'transform 0.4s ease',
+    cursor: 'pointer',
+  },
+};
+
+// Footer Styles
+const footerStyles = {
+  footerWrapper: {
+    backgroundColor: '#f7f7f7',
+    marginTop: '60px',
+    fontFamily: 'sans-serif',
+  },
+  topSection: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+    padding: '40px 80px',
+    flexWrap: 'wrap',
+  },
+  logo: {
+    flex: '0 0 60px',
+    marginRight: '40px',
+  },
+  navLinks: {
+    display: 'flex',
+    gap: '80px',
+    flexWrap: 'wrap',
+    flex: '1',
+  },
+  navTitle: {
+    color: 'red',
+    fontWeight: '600',
+    marginBottom: '10px',
+  },
+  navItem: {
+    marginBottom: '6px',
+    cursor: 'pointer',
+  },
+  socials: {
+    display: 'flex',
+    gap: '16px',
+    fontSize: '20px',
+    cursor: 'pointer',
+  },
+  bottomBar: {
+    backgroundColor: 'red',
+    color: 'white',
+    textAlign: 'center',
+    padding: '12px 0',
+    fontSize: '14px',
   },
 };
