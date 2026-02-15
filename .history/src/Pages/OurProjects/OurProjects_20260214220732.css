@@ -1,0 +1,54 @@
+.projects-container {
+  padding-top: 140px; /* prevent hiding under fixed header */
+}
+
+.top-category-menu {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  /* padding: 20px 0; */
+}
+
+.top-category-menu button {
+  background: red;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  color:white;
+  transition: 0.3s ease;
+  padding:10px 42px
+}
+
+.top-category-menu button:hover {
+  background-color: #000;
+}
+
+.wallpaper-section {
+  margin: 100px 0;
+}
+
+.hero-row img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.horizontal-row {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.horizontal-row img {
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+}

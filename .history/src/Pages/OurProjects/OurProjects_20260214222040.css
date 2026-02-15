@@ -1,0 +1,61 @@
+.projects-container {
+  padding-top: 70px; /* prevent hiding under fixed header */
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.top-category-menu {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  /* padding: 20px 0; */
+  /* text-align: center; */
+
+}
+
+.top-category-menu button {
+  background: red;
+  border: none;
+  border-radius: 25px;
+  font-weight: 300;
+  font-size: 15px;
+  cursor: pointer;
+  color:white;
+  transition: 0.3s ease;
+  padding:10px 20px;
+}
+
+.top-category-menu button:hover {
+  background-color: #000;
+}
+
+.wallpaper-section {
+  margin: 80px 0;
+}
+
+.hero-row img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.horizontal-row {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+
+.horizontal-row img {
+  width: 155px;
+  height: 150px;
+  object-fit: cover;
+}

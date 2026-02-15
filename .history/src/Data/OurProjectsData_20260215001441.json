@@ -1,0 +1,109 @@
+{
+  "wallpapers": [
+    {
+      "title": "Living Room",
+      "hero": "/imagesgeetha/wallpapers/master1.avif",
+      "images": [
+        "/imagesgeetha/wallpapers/master2.avif",
+        "/imagesgeetha/wallpapers/master3.avif",
+        "/imagesgeetha/wallpapers/master4.avif",
+        "/imagesgeetha/wallpapers/master5.avif",
+        "/imagesgeetha/wallpapers/master6.avif",
+        "/imagesgeetha/wallpapers/master7.avif",
+        "/imagesgeetha/wallpapers/master8.avif",
+        "/imagesgeetha/wallpapers/master9.avif",
+        "/imagesgeetha/wallpapers/master10.avif"
+      ]
+    },
+    {
+      "title": "Master Bedroom",
+      "hero": "/imagesgeetha/wallpapers/master1.avif",
+      "images": [
+        "/imagesgeetha/wallpapers/master2.avif",
+        "/imagesgeetha/wallpapers/master3.avif",
+        "/imagesgeetha/wallpapers/master4.avif",
+        "/imagesgeetha/wallpapers/master5.avif",
+        "/imagesgeetha/wallpapers/master6.avif",
+        "/imagesgeetha/wallpapers/master7.avif",
+        "/imagesgeetha/wallpapers/master8.avif",
+        "/imagesgeetha/wallpapers/master9.avif",
+        "/imagesgeetha/wallpapers/master10.avif"
+      ]
+    },
+    {
+      "title": "Kids Bedroom",
+      "hero": "/imagesgeetha/wallpapers/master1.avif",
+      "images": [
+        "/imagesgeetha/wallpapers/master2.avif",
+        "/imagesgeetha/wallpapers/master3.avif",
+        "/imagesgeetha/wallpapers/master4.avif",
+        "/imagesgeetha/wallpapers/master5.avif",
+        "/imagesgeetha/wallpapers/master6.avif",
+        "/imagesgeetha/wallpapers/master7.avif",
+        "/imagesgeetha/wallpapers/master8.avif",
+        "/imagesgeetha/wallpapers/master9.avif",
+        "/imagesgeetha/wallpapers/master10.avif"
+      ]
+    },
+    {
+      "title": "Ceiling Wallpapers",
+     "hero": "/imagesgeetha/wallpapers/master1.avif",
+      "images": [
+        "/imagesgeetha/wallpapers/master2.avif",
+        "/imagesgeetha/wallpapers/master3.avif",
+        "/imagesgeetha/wallpapers/master4.avif",
+        "/imagesgeetha/wallpapers/master5.avif",
+        "/imagesgeetha/wallpapers/master6.avif",
+        "/imagesgeetha/wallpapers/master7.avif",
+        "/imagesgeetha/wallpapers/master8.avif",
+        "/imagesgeetha/wallpapers/master9.avif",
+        "/imagesgeetha/wallpapers/master10.avif"
+      ]
+    },{
+      "title": "Commercial Wallpapers",
+       "hero": "/imagesgeetha/wallpapers/master1.avif",
+      "images": [
+        "/imagesgeetha/wallpapers/master2.avif",
+        "/imagesgeetha/wallpapers/master3.avif",
+        "/imagesgeetha/wallpapers/master4.avif",
+        "/imagesgeetha/wallpapers/master5.avif",
+        "/imagesgeetha/wallpapers/master6.avif",
+        "/imagesgeetha/wallpapers/master7.avif",
+        "/imagesgeetha/wallpapers/master8.avif",
+        "/imagesgeetha/wallpapers/master9.avif",
+        "/imagesgeetha/wallpapers/master10.avif"
+      ]
+    },
+    {
+      "title": "Personalized Wallpapers",
+      "hero": "/imagesgeetha/wallpapers/master1.avif",
+      "images": [
+        "/imagesgeetha/wallpapers/master2.avif",
+        "/imagesgeetha/wallpapers/master3.avif",
+        "/imagesgeetha/wallpapers/master4.avif",
+        "/imagesgeetha/wallpapers/master5.avif",
+        "/imagesgeetha/wallpapers/master6.avif",
+        "/imagesgeetha/wallpapers/master7.avif",
+        "/imagesgeetha/wallpapers/master8.avif",
+        "/imagesgeetha/wallpapers/master9.avif",
+        "/imagesgeetha/wallpapers/master10.avif"
+      ]
+    },
+    {
+      "title": "TV Unit",
+       "hero": "/imagesgeetha/wallpapers/master1.avif",
+      "images": [
+        "/imagesgeetha/wallpapers/master2.avif",
+        "/imagesgeetha/wallpapers/master3.avif",
+        "/imagesgeetha/wallpapers/master4.avif",
+        "/imagesgeetha/wallpapers/master5.avif",
+        "/imagesgeetha/wallpapers/master6.avif",
+        "/imagesgeetha/wallpapers/master7.avif",
+        "/imagesgeetha/wallpapers/master8.avif",
+        "/imagesgeetha/wallpapers/master9.avif",
+        "/imagesgeetha/wallpapers/master10.avif"
+      ]
+    }
+  ],
+  
+}

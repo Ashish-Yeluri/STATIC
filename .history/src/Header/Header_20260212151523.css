@@ -1,0 +1,67 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Left */
+.header-left .logo {
+  height: 45px;
+  cursor: pointer;
+}
+
+/* Center */
+.header-center {
+  display: flex;
+  gap: 28px;
+}
+
+.header-center a.headings {
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.header-center a:hover {
+  color: black;
+}
+
+/* Right */
+.header-right {
+  width: 140px;
+  height: 25xpx;
+  font-weight: 600;
+  color: #000;
+  background-color: rgb(255, 121, 121);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.shipping-banner {
+  background-color: #d32f2f;   /* Nice red */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;   /* space between icon and text */
+  font-weight: 400;
+}
+
+.shipping-banner h2 {
+  margin: 0;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.shipping-icon {
+  font-size: 20px;
+}
