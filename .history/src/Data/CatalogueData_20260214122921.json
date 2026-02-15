@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Sabyasachi I",
+    "image": "/images/catalogue/sabyasachi1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Sabyasachi II",
+    "image": "/images/catalogue/sabyasachi2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Sabyasachi III",
+    "image": "/images/catalogue/sabyasachi3.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Carmen",
+    "image": "/images/catalogue/carmen.jpg"
+  }
+]

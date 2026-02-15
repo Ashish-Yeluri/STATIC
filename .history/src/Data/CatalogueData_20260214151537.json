@@ -1,0 +1,27 @@
+{
+  "hero": {
+    "title": "Elevate Your Space with Our Elegant Wallpaper Collection"
+  },
+  "items": [
+    {
+      "id": 1,
+      "title": "Image 1",
+      "image": "/imagesgeetha/catalogue/image1.webp"
+    },
+    {
+      "id": 2,
+      "title": "Image 2",
+      "image": "/imagesgeetha/catalogue/image2.webp"
+    },
+    {
+      "id": 3,
+      "title": "Image 3",
+      "image":"/imagesgeetha/catalogue/imag31.webp"
+    },
+    {
+      "id": 4,
+      "title": "Image 4",
+      "image":"/imagesgeetha/catalogue/image1.webp"
+    }
+  ]
+}

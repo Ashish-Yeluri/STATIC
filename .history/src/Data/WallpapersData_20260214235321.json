@@ -1,0 +1,108 @@
+{
+  "wallpapers": [
+    {
+      "title": "Living Room",
+      "hero": "/images/wallpapers/living1.jpg",
+      "images": [
+        "/images/wallpapers/living2.jpg",
+        "/images/wallpapers/living3.jpg",
+        "/images/wallpapers/living4.jpg",
+        "/images/wallpapers/living5.jpg",
+        "/images/wallpapers/living6.jpg",
+        "/images/wallpapers/living7.jpg",
+        "/images/wallpapers/living8.jpg",
+        "/images/wallpapers/living9.jpg",
+        "/images/wallpapers/living10.jpg"
+      ]
+    },
+    {
+      "title": "Master Bedroom",
+      "hero": "/imagesgeetha/wallpapers/master1.jpg",
+      "images": [
+        "/imagesgeetha/wallpapers/master2.jpg",
+        "/imagesgeetha/wallpapers/master3.jpg",
+        "/imagesgeetha/wallpapers/master4.jpg",
+        "/imagesgeetha/wallpapers/master5.jpg",
+        "/imagesgeetha/wallpapers/master6.jpg",
+        "/imagesgeetha/wallpapers/master7.jpg",
+        "/imagesgeetha/wallpapers/master8.jpg",
+        "/imagesgeetha/wallpapers/master9.jpg",
+        "/imagesgeetha/wallpapers/master10.jpg"
+      ]
+    },
+    {
+      "title": "Kids Bedroom",
+      "hero": "/images/wallpapers/master1.jpg",
+      "images": [
+        "/images/wallpapers/master2.jpg",
+        "/images/wallpapers/master3.jpg",
+        "/images/wallpapers/master4.jpg",
+        "/images/wallpapers/master5.jpg",
+        "/images/wallpapers/master6.jpg",
+        "/images/wallpapers/master7.jpg",
+        "/images/wallpapers/master8.jpg",
+        "/images/wallpapers/master9.jpg",
+        "/images/wallpapers/master10.jpg"
+      ]
+    },
+    {
+      "title": "Ceiling Wallpapers",
+      "hero": "/images/wallpapers/master1.jpg",
+      "images": [
+        "/images/wallpapers/master2.jpg",
+        "/images/wallpapers/master3.jpg",
+        "/images/wallpapers/master4.jpg",
+        "/images/wallpapers/master5.jpg",
+        "/images/wallpapers/master6.jpg",
+        "/images/wallpapers/master7.jpg",
+        "/images/wallpapers/master8.jpg",
+        "/images/wallpapers/master9.jpg",
+        "/images/wallpapers/master10.jpg"
+      ]
+    },{
+      "title": "Commercial Wallpapers",
+      "hero": "/images/wallpapers/master1.jpg",
+      "images": [
+        "/images/wallpapers/master2.jpg",
+        "/images/wallpapers/master3.jpg",
+        "/images/wallpapers/master4.jpg",
+        "/images/wallpapers/master5.jpg",
+        "/images/wallpapers/master6.jpg",
+        "/images/wallpapers/master7.jpg",
+        "/images/wallpapers/master8.jpg",
+        "/images/wallpapers/master9.jpg",
+        "/images/wallpapers/master10.jpg"
+      ]
+    },
+    {
+      "title": "Personalized Wallpapers",
+      "hero": "/images/wallpapers/master1.jpg",
+      "images": [
+        "/images/wallpapers/master2.jpg",
+        "/images/wallpapers/master3.jpg",
+        "/images/wallpapers/master4.jpg",
+        "/images/wallpapers/master5.jpg",
+        "/images/wallpapers/master6.jpg",
+        "/images/wallpapers/master7.jpg",
+        "/images/wallpapers/master8.jpg",
+        "/images/wallpapers/master9.jpg",
+        "/images/wallpapers/master10.jpg"
+      ]
+    },
+    {
+      "title": "TV Unit",
+      "hero": "/images/wallpapers/master1.jpg",
+      "images": [
+        "/images/wallpapers/master2.jpg",
+        "/images/wallpapers/master3.jpg",
+        "/images/wallpapers/master4.jpg",
+        "/images/wallpapers/master5.jpg",
+        "/images/wallpapers/master6.jpg",
+        "/images/wallpapers/master7.jpg",
+        "/images/wallpapers/master8.jpg",
+        "/images/wallpapers/master9.jpg",
+        "/images/wallpapers/master10.jpg"
+      ]
+    }
+  ]
+}

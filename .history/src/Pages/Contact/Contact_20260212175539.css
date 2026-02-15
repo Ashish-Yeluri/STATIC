@@ -1,0 +1,59 @@
+/* ================= LOCATION SECTION ================= */
+
+.location-section {
+  padding: 60px 80px;
+  background: #f4f4f4;
+}
+
+/* Tabs */
+.location-tabs {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.location-tabs button {
+  padding: 12px 25px;
+  border: none;
+  background-color: #d32f2f;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.location-tabs button.active {
+  background-color: black;
+}
+
+.location-tabs button:hover {
+  opacity: 0.85;
+}
+
+/* Map */
+.map-container {
+  margin-bottom: 25px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Address + Phones */
+.location-details {
+  text-align: center;
+}
+
+.location-details p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.phone-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 18px;
+  color: #d32f2f;
+  font-weight: 500;
+}
