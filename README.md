@@ -33,3 +33,10 @@ at first Home page ,then About us page ,then products page ,
 google reviews,just for u (darpan) u have to do ,(promise done)
 
 ask karipetti about where to place these three (google reviews,just for u ,promise)
+
+
+
+
+
+
+ === === === === === DONE === === === === ===
