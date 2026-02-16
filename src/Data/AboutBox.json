@@ -163,5 +163,40 @@
       "image":"/images/About/1.jpg"
     }
 
+  ],
+
+  "bigBash": [
+    {
+      "id": 1,
+      "image":"/images/About/1.jpg"
+    },
+    {
+      "id": 2,
+      "image":"/images/About/1.jpg"
+    },
+    {
+      "id": 3,
+      "image":"/images/About/1.jpg"
+    },
+    {
+      "id": 4,
+      "image":"/images/About/1.jpg"
+    },
+    {
+      "id": 5,
+      "image":"/images/About/1.jpg"
+    },
+    {
+      "id": 6,
+      "image":"/images/About/1.jpg"
+    },
+    {
+      "id": 7,
+      "image":"/images/About/1.jpg"
+    },
+    {
+      "id": 8,
+      "image":"/images/About/1.jpg"
+    }
   ]
 }

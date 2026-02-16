@@ -10,6 +10,10 @@ body {
   z-index: 1000;
   background: white;
 }
+
+.active-link {
+  color: black !important;
+}
 .header {
   display: flex;
   align-items: center;

@@ -2,7 +2,6 @@ import { useState, useRef, useEffect } from 'react';
 import {
   FaInstagram,
   FaFacebookF,
-  FaTimes,
   FaTwitter,
   FaLinkedinIn,
   FaYoutube,
@@ -11,12 +10,14 @@ import {
 
 
 import hero from '../About/Main.avif';
-import logo from '../About/Main.avif'; // Footer logo
 import AboutBox from '../../Data/AboutBox.json';
 
 export default function About() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [hoveredId, setHoveredId] = useState(null);
+  const [previewIndex, setPreviewIndex] = useState(null);
+
+
 
   const sliderRef = useRef(null);
   const wheelLock = useRef(false);
@@ -118,7 +119,7 @@ export default function About() {
                 transform: `translateX(-${currentIndex * 25}%)`,
               }}
             >
-              {AboutBox.teamImages.map((member) => (
+              {AboutBox.teamImages.map((member, index) => (
                 <div key={member.id} style={styles.teamCard}>
                   <img
                     src={member.image}
@@ -130,11 +131,56 @@ export default function About() {
                     }}
                     onMouseEnter={() => setHoveredId(member.id)}
                     onMouseLeave={() => setHoveredId(null)}
+                    onClick={() => setPreviewIndex(index)}
                   />
                   <h4 style={styles.teamName}>{member.name}</h4>
                 </div>
               ))}
             </div>
+
+            {previewIndex !== null && (
+              <div
+                style={styles.imageModal}
+                onClick={() => setPreviewIndex(null)}
+              >
+                {/* Close */}
+                <span style={styles.closeBtn}>×</span>
+
+                {/* Left Arrow */}
+                {previewIndex > 0 && (
+                  <button
+                    style={styles.modalArrowLeft}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setPreviewIndex((prev) => prev - 1);
+                    }}
+                  >
+                    ‹
+                  </button>
+                )}
+
+                {/* Image */}
+                <img
+                  src={AboutBox.teamImages[previewIndex].image}
+                  alt='Full View'
+                  style={styles.fullImage}
+                  onClick={(e) => e.stopPropagation()}
+                />
+
+                {/* Right Arrow */}
+                {previewIndex < AboutBox.teamImages.length - 1 && (
+                  <button
+                    style={styles.modalArrowRight}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setPreviewIndex((prev) => prev + 1);
+                    }}
+                  >
+                    ›
+                  </button>
+                )}
+              </div>
+            )}
           </div>
 
           <button onClick={nextSlide} style={styles.arrowRight}>
@@ -168,50 +214,37 @@ export default function About() {
         </div>
       </div>
 
-      {/* FOOTER */}
-      <div style={footerStyles.footerWrapper}>
-        {/* Top Section */}
-        <div style={footerStyles.topSection}>
-          {/* Logo */}
-          <div style={footerStyles.logo}>
-            <img
-              src={logo}
-              alt='Design Walls'
-              style={{ width: '60px', height: '60px' }}
-            />
-          </div>
+      {/* BIG BASH */}
+      {/* BIG BASH */}
+      <div style={styles.bigBashSection}>
+        <h2 style={{ textAlign: 'center', color: 'red', fontSize: '30px' }}>
+          Big Bash
+        </h2>
 
-          {/* Navigation Links */}
-          <div style={footerStyles.navLinks}>
-            <div>
-              <p style={footerStyles.navTitle}>About Us</p>
-              <p style={footerStyles.navItem}>Products</p>
-              <p style={footerStyles.navItem}>Blog</p>
+        <p style={styles.bigBashText}>
+          The jersey launch was a Big BASH! The event was absolutely incredible
+          in every way, and each year the vibe and enthusiasm for the event
+          increases. We delightfully sponsored the Man of Match and Man of the
+          Series for the BIG BASH 2022
+        </p>
+
+        <div style={styles.bigBashGrid}>
+          {AboutBox.bigBash.map((bash, index) => (
+            <div key={index} style={styles.bigBashCard}>
+              <img
+                src={bash.image}
+                alt={bash.name}
+                style={styles.bigBashImage}
+                onMouseEnter={(e) =>
+                  (e.currentTarget.style.transform =
+                    'scale(0.92) translateZ(-40px)')
+                }
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.transform = 'scale(1) translateZ(0)')
+                }
+              />
             </div>
-            <div>
-              <p style={footerStyles.navTitle}>Catalogue</p>
-              <p style={footerStyles.navItem}>Our Projects</p>
-              <p style={footerStyles.navItem}>Contact Us</p>
-            </div>
-          </div>
-
-          {/* Social Icons */}
-          <div style={footerStyles.socials}>
-            <FaInstagram />
-            <FaFacebookF />
-            <FaTimes />
-            <FaLinkedinIn />
-            <FaYoutube />
-            <FaPinterestP />
-          </div>
-        </div>
-
-        {/* Bottom Copyright Bar */}
-        <div style={footerStyles.bottomBar}>
-          © 2024, Designwalls. All Rights Reserved.{' '}
-          <span style={{ textDecoration: 'underline', cursor: 'pointer' }}>
-            Privacy Policy
-          </span>
+          ))}
         </div>
       </div>
     </div>
@@ -302,6 +335,52 @@ const styles = {
     padding: '12px',
     fontWeight: '600',
   },
+  imageModal: {
+    position: 'fixed',
+    inset: 0,
+    backgroundColor: 'rgba(0,0,0,0.9)',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    zIndex: 9999,
+  },
+
+  fullImage: {
+    maxWidth: '90%',
+    maxHeight: '90%',
+    objectFit: 'contain',
+  },
+
+  closeBtn: {
+    position: 'absolute',
+    top: '25px',
+    right: '40px',
+    fontSize: '50px',
+    color: '#fff',
+    cursor: 'pointer',
+    userSelect: 'none',
+  },
+
+  modalArrowLeft: {
+    position: 'absolute',
+    left: '30px',
+    fontSize: '60px',
+    background: 'transparent',
+    color: '#fff',
+    border: 'none',
+    cursor: 'pointer',
+  },
+
+  modalArrowRight: {
+    position: 'absolute',
+    right: '30px',
+    fontSize: '60px',
+    background: 'transparent',
+    color: '#fff',
+    border: 'none',
+    cursor: 'pointer',
+  },
+
   arrowLeft: {
     position: 'absolute',
     left: '-40px',
@@ -356,52 +435,44 @@ const styles = {
     transition: 'transform 0.4s ease',
     cursor: 'pointer',
   },
-};
-
-// Footer Styles
-const footerStyles = {
-  footerWrapper: {
-    backgroundColor: '#f7f7f7',
-    marginTop: '60px',
-    fontFamily: 'sans-serif',
-  },
-  topSection: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'flex-start',
-    padding: '40px 80px',
-    flexWrap: 'wrap',
-  },
-  logo: {
-    flex: '0 0 60px',
-    marginRight: '40px',
-  },
-  navLinks: {
-    display: 'flex',
-    gap: '80px',
-    flexWrap: 'wrap',
-    flex: '1',
-  },
-  navTitle: {
-    color: 'red',
-    fontWeight: '600',
-    marginBottom: '10px',
-  },
-  navItem: {
-    marginBottom: '6px',
-    cursor: 'pointer',
-  },
-  socials: {
-    display: 'flex',
-    gap: '16px',
-    fontSize: '20px',
-    cursor: 'pointer',
-  },
-  bottomBar: {
-    backgroundColor: 'red',
-    color: 'white',
+  bigBashSection: {
+    padding: '60px',
     textAlign: 'center',
-    padding: '12px 0',
-    fontSize: '14px',
+  },
+
+  bigBashText: {
+    maxWidth: '900px',
+    margin: '20px auto 40px',
+    lineHeight: '1.7',
+    fontSize: '16px',
+    color: '#444',
+  },
+
+  bigBashGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(3, 1fr)',
+    gap: '30px',
+    maxWidth: '1100px',
+    margin: '0 auto',
+    perspective: '1000px',
+  },
+
+  bigBashCard: {
+    height: '260px',
+    borderRadius: '12px',
+    overflow: 'hidden',
+    backgroundColor: '#f7f7f7',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
+  bigBashImage: {
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+    transition: 'transform 0.6s ease',
+    cursor: 'pointer',
+    transformStyle: 'preserve-3d',
   },
 };
