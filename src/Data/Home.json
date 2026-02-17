@@ -63,5 +63,110 @@
     "image": "/images/Home/design2.avif",
     "heading": "Make Every Wall a Masterpiece",
     "description": "Personalize Your Space with Exquisite Wallpapers\nReady to transform your space effortlessly with Design Wall's curated collection of customizable wallpapers?\n\nFrom timeless classics to modern marvels,\n\nExplore endless possibilities and make your dream space a reality today."
+  },
+  "title": "Design Walls - Overview",
+  "items": [
+    {
+      "label": "Since",
+      "image": "/images/Home/ov1.avif"
+    },
+    {
+      "label": "Team Size",
+      "image": "/images/Home/ov2.avif"
+    },
+    {
+      "label": "SFT Installed",
+      "image": "/images/Home/ov3.avif"
+    },
+    {
+      "label": "Stores",
+      "image": "/images/Home/ov4.avif"
+    },
+    {
+      "label": "Designs",
+      "image": "/images/Home/ov5.avif"
+    },
+    {
+      "label": "Projects",
+      "image": "/images/Home/ov6.avif"
+    },
+    {
+      "label": "Collaborations",
+      "image": "/images/Home/ov7.avif"
+    }
+  ],
+    "youtube": {
+      "heading": "YOUTUBE",
+      "viewMoreLink": "https://www.youtube.com/@designwalls",
+      "videos": [
+        {
+          "id": 1,
+          "embedId": "EMMwedILwqU"
+        },
+        {
+          "id": 2,
+          "embedId": "jYHxCuhGdoE?si"
+        },
+        {
+          "id": 3,
+          "embedId": "MDGN9YXrur8?si"
+        }
+      ]
+    },
+      "parallaxSection": {
+      "image": "/images/Home/bigImage.avif",
+      "text": "WRAP YOUR WORLD IN ART"
+    },
+     "parallaxSectionTwo": {
+    "image": "/images/Home/bigImage2.jpg",
+    "text": "LET YOUR WALLS SPEAK​"
+  },
+  "googleReviewsSection": {
+    "background": "/images/Home/big3.jpg",
+    "title": "Google Reviews",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Aditya",
+        "rating": 5,
+        "comment": "Excellent work and premium finish."
+      },
+      {
+        "id": 2,
+        "name": "Ananya",
+        "rating": 5,
+        "comment": "Professional team and timely delivery."
+      },
+      {
+        "id": 3,
+        "name": "Anvesh",
+        "rating": 4,
+        "comment": "Quality materials and great designs."
+      },
+      {
+        "id": 4,
+        "name": "Akshay",
+        "rating": 4,
+        "comment": "Excellent work and premium finish."
+      },
+      {
+        "id": 5,
+        "name": "Anirudh",
+        "rating": 4,
+        "comment": "Professional team and timely delivery."
+      },
+      {
+        "id": 6,
+        "name": "Akanksha",
+        "rating": 4,
+        "comment": "Excellent work and premium finish."
+      },
+      {
+        "id": 7,
+        "name": "Adithi",
+        "rating": 4,
+        "comment": "Professional team and timely delivery."
+      }
+    ]
   }
 }

@@ -5,34 +5,53 @@ import clientsData from '../Data/Home.json';
 import brandsData from '../Data/Home.json';
 import aboutData from '../Data/Home.json';
 import catalogueData from '../Data/Home.json';
+import data from '../Data/Home.json';
 import { useNavigate } from 'react-router-dom';
 
-export default function HomeMain() {
+export default function HomeMain({ image, text }) {
   // ----- Slider -----
   const [current, setCurrent] = useState(0);
+  const imageRef = useRef(null);
+  const textRef = useRef(null);
+  const imageRef2 = useRef(null);
+  const textRef2 = useRef(null);
   const trackRef = useRef(null);
   const intervalRef = useRef(null);
 
-   const [modalLogo, setModalLogo] = useState(null);
+  const [modalLogo, setModalLogo] = useState(null);
 
-   const openModal = (logo) => setModalLogo(logo);
+  const openModal = (logo) => setModalLogo(logo);
   const closeModal = () => setModalLogo(null);
-  
-    const { image, heading, description } = aboutData.about && catalogueData.catalogueSection;
-    const [expanded, setExpanded] = useState(false);
 
-    const toggleExpanded = () => setExpanded(!expanded);
+  const {
+    image: aboutImage,
+    heading: aboutHeading,
+    description: aboutDescription,
+  } = aboutData.about;
 
-    const previewText = description.split('\n').slice(0, 2).join('\n'); 
+  const { image: parallaxImage2, text: parallaxText2 } =
+    data.parallaxSectionTwo;
 
-  const sliderImages = homeData.slider.map((item) => item.src); // use direct paths
+  const {
+    image: catalogueImage,
+    heading: catalogueHeading,
+    description: catalogueDescription,
+  } = catalogueData.catalogueSection;
 
+  const [expanded, setExpanded] = useState(false);
+
+  const toggleExpanded = () => setExpanded(!expanded);
+
+  const sliderImages = homeData.slider.map((item) => item.src);
+
+  // const previewText = description.split('\n').slice(0, 2).join('\n');
+  // const { image, heading, description } = aboutData.about && catalogueData.catalogueSection;
   //  const { image, heading, description } = catalogueData.catalogueSection;
-   const navigate = useNavigate();
+  const navigate = useNavigate();
 
-   const handleExplore = () => {
-     navigate('/catalogue');
-   };
+  const handleExplore = () => {
+    navigate('/catalogue');
+  };
 
   const startAutoSlide = () => {
     intervalRef.current = setInterval(() => {
@@ -75,6 +94,88 @@ export default function HomeMain() {
 
   // ----- Categories -----
   const categoryImages = homeData.categories.map((item) => item);
+
+  // Big Image
+
+  const { image: parallaxImage, text: parallaxText } = data.parallaxSection;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!imageRef.current || !textRef.current) return;
+
+      const wrapper = imageRef.current.parentElement;
+      const rect = wrapper.getBoundingClientRect();
+
+      // how much of section is visible
+      const progress = Math.min(Math.max(-rect.top / rect.height, 0), 1);
+
+      const speed = 1.6; // ⬅️ increase for faster motion
+
+      const imageMove = progress * 300 * speed;
+      const textMove = progress * 0;
+
+      imageRef.current.style.transform = `translate3d(0, ${imageMove}px, 0) scale(1.2)`;
+
+      textRef.current.style.transform = `translate(-50%, -50%) translateY(${textMove}px)`;
+    };
+
+    handleScroll(); // ✅ sync after mount
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // BIG IMAGE2
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!imageRef2.current || !textRef2.current) return;
+
+      const wrapper = imageRef2.current.parentElement;
+      const rect = wrapper.getBoundingClientRect();
+
+      const progress = Math.min(Math.max(-rect.top / rect.height, 0), 1);
+
+      const speed = 1.6;
+
+      const imageMove = progress * 300 * speed;
+
+      imageRef2.current.style.transform = `translate3d(0, ${imageMove}px, 0) scale(1.2)`;
+      textRef2.current.style.transform = `translate(-50%, -50%)`;
+    };
+
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // // //REVIEWS
+  // Reviews setup
+  const reviews = data.googleReviewsSection.reviews;
+  const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
+  const reviewsIntervalRef = useRef(null);
+
+  // Auto-scroll every 3s
+  useEffect(() => {
+    reviewsIntervalRef.current = setInterval(() => {
+      setCurrentReviewIndex((prev) => (prev + 1) % reviews.length);
+    }, 3000);
+
+    return () => clearInterval(reviewsIntervalRef.current);
+  }, [reviews.length]);
+
+  // Manual buttons
+  const handleNextReview = () => {
+    clearInterval(reviewsIntervalRef.current);
+    setCurrentReviewIndex((prev) => (prev + 1) % reviews.length);
+  };
+
+  const handlePrevReview = () => {
+    clearInterval(reviewsIntervalRef.current);
+    setCurrentReviewIndex(
+      (prev) => (prev - 1 + reviews.length) % reviews.length,
+    );
+  };
 
   return (
     <div>
@@ -123,36 +224,107 @@ export default function HomeMain() {
       {/* Catelouge */}
       <div className='catalogue-section'>
         <div className='catalogue-image'>
-          <img src={image} alt='Catalogue Wall' />
+          <img src={catalogueImage} alt='Catalogue Wall' />
         </div>
 
         <div className='catalogue-content'>
-          <h2 className='catalogue-heading'>{heading}</h2>
-          <p className='catalogue-description'>{description}</p>
+          <h2 className='catalogue-heading'>{catalogueHeading}</h2>
+          <p className='catalogue-description'>{catalogueDescription}</p>
           <button className='catalogue-button' onClick={handleExplore}>
             Explore Catalogue
           </button>
         </div>
       </div>
 
+      {/* OVER-VIEW */}
+      <section
+        className='overview-section'
+        style={{
+          '--top-scratch': `url(${process.env.PUBLIC_URL}/Images/Home/scratch1.png)`,
+          '--bottom-scratch': `url(${process.env.PUBLIC_URL}/Images/Home/scratch2.png)`,
+        }}
+      >
+        <h2 className='overview-title'>{data.title}</h2>
 
+        <div className='overview-grid'>
+          {data.items.map((item, index) => (
+            <div className='overview-card' key={index}>
+              <img
+                src={process.env.PUBLIC_URL + item.image}
+                alt={item.label}
+                className='overview-image'
+              />
+              <p className='overview-label'>{item.label}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* PARALLAX SECTION */}
+      <div className='parallax-wrapper'>
+        <div
+          ref={imageRef}
+          className='parallax-image'
+          style={{
+            backgroundImage: `url(${process.env.PUBLIC_URL}${parallaxImage})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        />
+        <div ref={textRef} className='parallax-text'>
+          {parallaxText}
+        </div>
+      </div>
 
       {/* Design Image */}
       <div className='about-section'>
         <div className='about-image'>
-          <img src={image} alt='About Design Walls' />
+          <img src={aboutImage} alt='About Design Walls' />
         </div>
 
         <div className='about-content'>
-          <h2 className='about-heading'>{heading}</h2>
+          <h2 className='about-heading'>{aboutHeading}</h2>
           <p className='about-description'>
-            {expanded ? description : previewText}
+            {expanded
+              ? aboutDescription
+              : aboutDescription.split('\n').slice(0, 2).join('\n')}
           </p>
+
           <button className='about-toggle' onClick={toggleExpanded}>
             {expanded ? 'Show Less' : 'Show More'}
           </button>
         </div>
       </div>
+
+      {/* YOUTUBE */}
+      <section className='youtube-section'>
+        <div className='youtube-header'>
+          <h2 className='youtube-title'>{data.youtube.heading}</h2>
+
+          <a
+            href={data.youtube.viewMoreLink}
+            target='_blank'
+            rel='noreferrer'
+            className='youtube-button'
+          >
+            View More
+          </a>
+        </div>
+
+        <div className='youtube-videos'>
+          {data.youtube.videos.map((video) => (
+            <div className='youtube-video' key={video.id}>
+              <iframe
+                src={`https://www.youtube.com/embed/${video.embedId}`}
+                title='YouTube video'
+                frameBorder='0'
+                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                allowFullScreen
+              />
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* Brands */}
       <div className='brands'>
@@ -185,6 +357,23 @@ export default function HomeMain() {
         </div>
       </div>
 
+      {/* 2nd Big Image */}
+      {/* SECOND PARALLAX SECTION */}
+      <div className='parallax-wrapper'>
+        <div
+          ref={imageRef2}
+          className='parallax-image'
+          style={{
+            backgroundImage: `url(${process.env.PUBLIC_URL}${parallaxImage2})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        />
+        <div ref={textRef2} className='parallax-text'>
+          {parallaxText2}
+        </div>
+      </div>
+
       {/* CLIENTS */}
       <div className='client'>
         <h2 className='clientHead'>Clients</h2>
@@ -211,6 +400,46 @@ export default function HomeMain() {
           )}
         </div>
       </div>
+
+      {/* GOOGLE REVIEWS */}
+      <section
+        className='reviews-section'
+        style={{
+          backgroundImage: `url(${process.env.PUBLIC_URL}${data.googleReviewsSection.background})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <h2 className='reviews-title'>{data.googleReviewsSection.title}</h2>
+
+        <div className='reviews-wrapper'>
+          <button className='scroll-btn left' onClick={handlePrevReview}>
+            &#8249;
+          </button>
+
+          <div className='review-card-wrapper'>
+            <div
+              className='review-inner'
+              style={{ transform: `translateX(-${currentReviewIndex * 100}%)` }}
+            >
+              {reviews.map((review, idx) => (
+                <div key={idx} className='review-inner-item'>
+                  <div className='review-comment'>
+                    <div className='stars'>{'★'.repeat(review.rating)}</div>
+                    <p>{review.comment}</p>
+                  </div>
+                  <div className='reviewer-name'>{review.name}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <button className='scroll-btn right' onClick={handleNextReview}>
+            &#8250;
+          </button>
+        </div>
+
+      </section>
     </div>
   );
 }
