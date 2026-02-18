@@ -68,31 +68,14 @@
 
 .catalogue-view-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
 }
 
 .catalogue-view-grid img {
   width: 100%;
-  height: 600px;
-  object-fit: cover;
-}
-
-.gallery-card {
-  background: white;
-  text-align: center;
-  padding-bottom: 10px;
-}
-
-.gallery-card img {
-  width: 100%;
   height: 350px;
   object-fit: cover;
-}
-
-.gallery-card p {
-  margin-top: 8px;
-  font-weight: 500;
 }
 
 

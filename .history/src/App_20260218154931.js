@@ -14,7 +14,6 @@ import Promise from './Promise/Promise';
 import Products from './Pages/Products/Products';
 import ScrollToTop from './Components/ScrollToTop';
 import FloatingContact from './Components/Floating/FloatingContact';
-import CatalogueView from './Pages/Catalogue/CatalogueView';
 function Home() {
   return (
     <>

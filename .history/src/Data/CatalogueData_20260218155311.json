@@ -4,23 +4,14 @@
     "line2": "Elegant Wallpaper Collection"
   },
   "items": [
-   {
+    {
       "id": 1,
       "title": "Floral Collection",
       "image": "/imagesgeetha/catalogue/image1.webp",
       "gallery": [
-        {
-          "img": "/imagesgeetha/catalogue/floral1.webp",
-          "title": "Rose Garden"
-        },
-        {
-          "img": "/imagesgeetha/catalogue/floral2.webp",
-          "title": "Vintage Bloom"
-        },
-        {
-          "img": "/imagesgeetha/catalogue/floral3.webp",
-          "title": "Spring Flowers"
-        }
+        "/imagesgeetha/catalogue/image1.webp",
+        "/imagesgeetha/catalogue/image1.webp",
+        "/imagesgeetha/catalogue/image1.webp"
       ]
     },
     {
@@ -54,7 +45,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": 1,
       "title": "Floral Collection",
       "image": "/imagesgeetha/catalogue/image1.webp",
       "gallery": [
@@ -64,7 +55,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": 2,
       "title": "Modern Collection",
       "image": "/imagesgeetha/catalogue/image2.webp",
       "gallery": [
@@ -74,7 +65,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": 3,
       "title": "Kids Collection",
       "image": "/imagesgeetha/catalogue/image3.webp",
       "gallery": [
@@ -84,14 +75,10 @@
       ]
     },
     {
-      "id": 8,
+      "id": 4,
       "title": "Texture Collection",
       "image": "/imagesgeetha/catalogue/image4.webp",
       "gallery": [
-        "/imagesgeetha/catalogue/image4.webp",
-        "/imagesgeetha/catalogue/image4.webp",
-        "/imagesgeetha/catalogue/image4.webp",
-        "/imagesgeetha/catalogue/image4.webp",
         "/imagesgeetha/catalogue/image4.webp",
         "/imagesgeetha/catalogue/image4.webp",
         "/imagesgeetha/catalogue/image4.webp"

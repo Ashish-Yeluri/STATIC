@@ -4,23 +4,14 @@
     "line2": "Elegant Wallpaper Collection"
   },
   "items": [
-   {
+    {
       "id": 1,
       "title": "Floral Collection",
       "image": "/imagesgeetha/catalogue/image1.webp",
       "gallery": [
-        {
-          "img": "/imagesgeetha/catalogue/floral1.webp",
-          "title": "Rose Garden"
-        },
-        {
-          "img": "/imagesgeetha/catalogue/floral2.webp",
-          "title": "Vintage Bloom"
-        },
-        {
-          "img": "/imagesgeetha/catalogue/floral3.webp",
-          "title": "Spring Flowers"
-        }
+        "/imagesgeetha/catalogue/image1.webp",
+        "/imagesgeetha/catalogue/image1.webp",
+        "/imagesgeetha/catalogue/image1.webp"
       ]
     },
     {
@@ -88,10 +79,6 @@
       "title": "Texture Collection",
       "image": "/imagesgeetha/catalogue/image4.webp",
       "gallery": [
-        "/imagesgeetha/catalogue/image4.webp",
-        "/imagesgeetha/catalogue/image4.webp",
-        "/imagesgeetha/catalogue/image4.webp",
-        "/imagesgeetha/catalogue/image4.webp",
         "/imagesgeetha/catalogue/image4.webp",
         "/imagesgeetha/catalogue/image4.webp",
         "/imagesgeetha/catalogue/image4.webp"

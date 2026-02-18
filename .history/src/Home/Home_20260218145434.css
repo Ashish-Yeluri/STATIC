@@ -57,7 +57,7 @@
   width: 100%;
 }
 
-.category-item{text-align:center;color:#fff;margin: 0 auto;}
+.category-item{text-align:center;color:#fff;}
 
 .category-circle{
   width:70px;
@@ -68,29 +68,11 @@
   align-items:center;
   justify-content:center;
   margin:0 auto 12px;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-.category-image {
-  width: 36px;
-  height: 36px;
-  object-fit: contain;
-  transition: transform 0.35s ease;
-}
+.category-image{width:36px;height:36px;object-fit:contain}
 
 .category-text{font-size:13px;color:#fff}
-
-
-/* Expand on hover */
-.category-item:hover .category-circle {
-  transform: scale(1.15);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
-
-.category-item:hover .category-image {
-  transform: scale(1.1);
- transform: scale(1.1);
-}
 
 
 /* ================= CLIENTS / BRANDS ================= */
