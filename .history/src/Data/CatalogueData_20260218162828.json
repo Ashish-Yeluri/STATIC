@@ -1,0 +1,32 @@
+{
+ "hero": {
+    "line1": "Elevate Your Space with Our",
+    "line2": "Elegant Wallpaper Collection"
+  },
+  "items": [
+    {
+      "id": 1,
+      "title": "Floral Collection",
+      "image": "/imagesgeetha/catalogue/image1.webp",
+      "pdf": "https://9df7e727-744b-4d12-94cb-4e8c20bc6fb0.filesusr.com/ugd/38084a_4a5cc25646664a1da5d57af2a4dcea27.pdf"
+    },
+    {
+      "id": 2,
+      "title": "Modern Collection",
+      "image": "/imagesgeetha/catalogue/image2.webp",
+      "pdf": "/pdf/modern-catalogue.pdf"
+    },
+    {
+      "id": 3,
+      "title": "Kids Collection",
+      "image": "/imagesgeetha/catalogue/image3.webp",
+      "pdf": "/pdf/kids-catalogue.pdf"
+    },
+    {
+      "id": 4,
+      "title": "Texture Collection",
+      "image": "/imagesgeetha/catalogue/image4.webp",
+      "pdf": "/pdf/texture-catalogue.pdf"
+    }
+  ]
+}
