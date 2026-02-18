@@ -150,32 +150,70 @@ export default function HomeMain({ image, text }) {
   }, []);
 
   // // //REVIEWS
-  // Reviews setup
-  const reviews = data.googleReviewsSection.reviews;
-  const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
-  const reviewsIntervalRef = useRef(null);
+  const rawReviews = data.googleReviewsSection?.reviews || [];
+  const reviews =
+    rawReviews.length > 0
+      ? [...rawReviews, rawReviews[0]] // clone first slide
+      : [];;
+  
+  
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const reviewIntervalRef = useRef(null);
+  // ---- AUTO SLIDE ----
+ useEffect(() => {
+   if (reviews.length === 0) return;
 
-  // Auto-scroll every 3s
-  useEffect(() => {
-    reviewsIntervalRef.current = setInterval(() => {
-      setCurrentReviewIndex((prev) => (prev + 1) % reviews.length);
-    }, 3000);
+   startReviewAutoSlide();
+   return () => stopReviewAutoSlide();
+ });
 
-    return () => clearInterval(reviewsIntervalRef.current);
-  }, [reviews.length]);
+ const startReviewAutoSlide = () => {
+   stopReviewAutoSlide();
+   reviewIntervalRef.current = setInterval(() => {
+     setCurrentIndex((prev) => prev + 1);
+   }, 3000);
+ };
 
-  // Manual buttons
-  const handleNextReview = () => {
-    clearInterval(reviewsIntervalRef.current);
-    setCurrentReviewIndex((prev) => (prev + 1) % reviews.length);
+ const stopReviewAutoSlide = () => {
+   if (reviewIntervalRef.current) {
+     clearInterval(reviewIntervalRef.current);
+   }
+  };
+  
+
+  const handleReviewTransitionEnd = () => {
+    // If we reached the cloned slide
+    if (currentIndex === reviews.length - 1) {
+      const track = document.querySelector('.review-inner');
+      if (!track) return;
+
+      track.style.transition = 'none';
+      setCurrentIndex(0);
+
+      requestAnimationFrame(() => {
+        track.style.transform = 'translateX(0%)';
+        requestAnimationFrame(() => {
+          track.style.transition = 'transform 0.8s ease-in-out';
+        });
+      });
+    }
   };
 
-  const handlePrevReview = () => {
-    clearInterval(reviewsIntervalRef.current);
-    setCurrentReviewIndex(
-      (prev) => (prev - 1 + reviews.length) % reviews.length,
-    );
+
+
+  // ---- BUTTON HANDLERS ----
+  const handleNext = () => {
+    stopReviewAutoSlide();
+    setCurrentIndex((prev) => prev + 1);
+    startReviewAutoSlide();
   };
+
+  const handlePrev = () => {
+    stopReviewAutoSlide();
+    setCurrentIndex((prev) => (prev === 0 ? rawReviews.length - 1 : prev - 1));
+    startReviewAutoSlide();
+  };
+
 
   return (
     <div>
@@ -405,40 +443,43 @@ export default function HomeMain({ image, text }) {
       <section
         className='reviews-section'
         style={{
-          backgroundImage: `url(${process.env.PUBLIC_URL}${data.googleReviewsSection.background})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundImage: `url(${process.env.PUBLIC_URL}${data.googleReviewsSection?.background})`,
         }}
       >
-        <h2 className='reviews-title'>{data.googleReviewsSection.title}</h2>
+        <h2 className='reviews-title'>{data.googleReviewsSection?.title}</h2>
 
-        <div className='reviews-wrapper'>
-          <button className='scroll-btn left' onClick={handlePrevReview}>
-            &#8249;
-          </button>
+        <div className='review-slider-container'>
+          {/* LEFT ARROW – appears only after 1st slide */}
+          {currentIndex > 0 && (
+            <button className='review-arrow left' onClick={handlePrev}>
+              ❮
+            </button>
+          )}
 
+          {/* REVIEW CARD */}
           <div className='review-card-wrapper'>
             <div
               className='review-inner'
-              style={{ transform: `translateX(-${currentReviewIndex * 100}%)` }}
+              onTransitionEnd={handleReviewTransitionEnd}
+              style={{
+                transform: `translateX(-${currentIndex * 100}%)`,
+              }}
             >
               {reviews.map((review, idx) => (
                 <div key={idx} className='review-inner-item'>
-                  <div className='review-comment'>
-                    <div className='stars'>{'★'.repeat(review.rating)}</div>
-                    <p>{review.comment}</p>
-                  </div>
+                  <div className='stars'>{'★'.repeat(review.rating)}</div>
+                  <p>{review.comment}</p>
                   <div className='reviewer-name'>{review.name}</div>
                 </div>
               ))}
             </div>
           </div>
 
-          <button className='scroll-btn right' onClick={handleNextReview}>
-            &#8250;
+          {/* RIGHT ARROW – always visible */}
+          <button className='review-arrow right' onClick={handleNext}>
+            ❯
           </button>
         </div>
-
       </section>
     </div>
   );
