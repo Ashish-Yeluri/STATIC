@@ -1,12 +1,10 @@
 /* HEADING */
 .prodHeading {
   margin-top: 80px;
-  color: red;
+  color: brown;
   padding-left: 60px;
-  font-size: 40px;   /* 🔥 increased */
-  font-weight: 600;
+  font-size: 25px;
 }
-
 
 .wix-font-small {
   font-family: 'Cormorant Garamond', serif;
@@ -35,9 +33,7 @@
   margin-bottom: 12px;
   font-size: 18px;
   font-weight: 600;
-  color: #b71c1c;   /* 🔥 red */
 }
-
 
 .product-card {
   position: relative;
@@ -57,28 +53,15 @@
   position: absolute;
   bottom: 15px;
   width: 100%;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .learn-more {
-  background: #fff;          /* white bg */
-  color: #000;               /* black text */
-  padding: 8px 18px;
-  border-radius: 20px;
+  color: #fff;
+  text-decoration: underline;
   cursor: pointer;
-  font-size: 14px;
-  font-weight: 600;
-  transition: 0.3s ease;
-  border: 1px solid #fff;
+  letter-spacing: 1px;
 }
-
-.learn-more:hover {
-  background: #b71c1c;       /* red bg */
-  color: #fff;               /* white text */
-  border-color: #b71c1c;
-}
-
 
 /* MODAL */
 .product-modal {

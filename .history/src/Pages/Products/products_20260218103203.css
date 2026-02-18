@@ -1,7 +1,7 @@
 /* HEADING */
 .prodHeading {
   margin-top: 80px;
-  color: red;
+  color: brown;
   padding-left: 60px;
   font-size: 40px;   /* 🔥 increased */
   font-weight: 600;
@@ -65,7 +65,7 @@
   background: #fff;          /* white bg */
   color: #000;               /* black text */
   padding: 8px 18px;
-  border-radius: 20px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 14px;
   font-weight: 600;
