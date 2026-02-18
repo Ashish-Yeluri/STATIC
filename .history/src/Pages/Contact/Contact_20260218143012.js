@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./Contact.css";
 import contactData from "../../Data/ContactusData.json";
 
@@ -19,7 +18,7 @@ export default function Contact() {
   // ✅ Error state
   const [errors, setErrors] = useState({});
 
-  // ✅ Handle change
+  // ✅ Handle input change
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -27,7 +26,7 @@ export default function Contact() {
     });
   };
 
-  // ✅ Validation
+  // ✅ Validation function
   const validate = () => {
     let newErrors = {};
 
@@ -54,6 +53,7 @@ export default function Contact() {
     setErrors(validationErrors);
 
     if (Object.keys(validationErrors).length === 0) {
+      // Store in localStorage
       localStorage.setItem(
         "contactFormData",
         JSON.stringify(formData)
@@ -63,6 +63,7 @@ export default function Contact() {
         `Thank you for consulting us Mr./Mrs. ${formData.fullName}. Your Appointment was scheduled`
       );
 
+      // clear form
       setFormData({
         fullName: "",
         phone: "",
@@ -72,6 +73,7 @@ export default function Contact() {
       });
     }
   };
+
 
   return (
     <>
@@ -98,67 +100,25 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* RIGHT SIDE FORM (CONNECTED TO STATE) */}
+          {/* RIGHT SIDE FORM */}
           <div className="contact-form">
             <h2>{formSection.title}</h2>
 
-            <form onSubmit={handleSubmit}>
-              {/* FULL NAME */}
+            <form>
               <label>{formSection.fields[0].label}</label>
-              <input
-                name="fullName"
-                type={formSection.fields[0].type}
-                value={formData.fullName}
-                onChange={handleChange}
-              />
-              {errors.fullName && (
-                <span className="error">{errors.fullName}</span>
-              )}
+              <input type={formSection.fields[0].type} />
 
-              {/* PHONE */}
               <label>{formSection.fields[1].label}</label>
-              <input
-                name="phone"
-                type={formSection.fields[1].type}
-                value={formData.phone}
-                onChange={handleChange}
-              />
-              {errors.phone && (
-                <span className="error">{errors.phone}</span>
-              )}
+              <input type={formSection.fields[1].type} />
 
-              {/* EMAIL */}
               <label>{formSection.fields[2].label}</label>
-              <input
-                name="email"
-                type={formSection.fields[2].type}
-                value={formData.email}
-                onChange={handleChange}
-              />
-              {errors.email && (
-                <span className="error">{errors.email}</span>
-              )}
+              <input type={formSection.fields[2].type} />
 
-              {/* LOCATION */}
               <label>{formSection.fields[3].label}</label>
-              <input
-                name="location"
-                type={formSection.fields[3].type}
-                value={formData.location}
-                onChange={handleChange}
-              />
-              {errors.location && (
-                <span className="error">{errors.location}</span>
-              )}
+              <input type={formSection.fields[3].type} />
 
-              {/* REQUIREMENTS */}
               <label>{formSection.fields[4].label}</label>
-              <textarea
-                name="requirements"
-                rows="4"
-                value={formData.requirements}
-                onChange={handleChange}
-              ></textarea>
+              <textarea rows="4"></textarea>
 
               <button type="submit">
                 {formSection.buttonText}
@@ -170,6 +130,7 @@ export default function Contact() {
       </div>
 
       {/* ================= LOCATION & MAP SECTION ================= */}
+
       <div className="location-section">
 
         <div className="location-tabs">
@@ -202,6 +163,9 @@ export default function Contact() {
             <span>📞 {firstLocation.phones[2]}</span>
           </div>
         </div>
+
+
+        
 
       </div>
     </>

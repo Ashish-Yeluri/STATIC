@@ -1,7 +1,6 @@
 *{box-sizing:border-box}
 
 /* ================= SLIDER ================= */
-/* ================= SLIDER ================= */
 .slider{
   position:relative;
   width:100%;
@@ -9,20 +8,19 @@
   overflow:hidden;
 }
 
-.slider-track {
-  display: flex;
-  height: 100%;
-  transition: transform 0.8s ease-in-out;
-}
- 
-.slide-image {
-  width: 100vw; /* 👈 VERY IMPORTANT */
-  height: 100%;
-  object-fit: cover;
-  flex-shrink: 0;
+.slider-track{
+  display:flex;
+  height:100%;
+  transition:transform .8s ease-in-out;
 }
 
-/* keep your original arrow layout */
+.slide-image{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  flex-shrink:0;
+}
+
 .slider-controls{
   position:absolute;
   top:15px;
@@ -41,9 +39,7 @@
   border-radius:4px;
 }
 
-.slider-controls button:hover{
-  background:rgba(0,0,0,.8);
-}
+.slider-controls button:hover{background:rgba(0,0,0,.8)}
 
 
 /* ================= CATEGORIES ================= */
@@ -83,23 +79,6 @@
   color:#d31a1a;
 }
 
-.brands-wrapper-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 800px;
-  margin: 0 auto;
-}
-.clients-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  padding: 40px 20px;
-  width: 800px;
-  margin: 0 auto;
-}
 .clients-wrapper,
 .brands-wrapper{
   display:flex;
@@ -108,6 +87,11 @@
   gap:30px;
 }
 
+.clients-wrapper{
+  max-width:800px;
+  margin:0 auto;
+  padding:40px 20px;
+}
 
 .brand-logo img,
 .client-logo img{
@@ -352,21 +336,19 @@
   color:#ff1111;
 }
 
-.youtube-button {
-  width: 100px;
-  padding: 8px 10px;
-  border: 1px solid #6b3f3f;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 600;
-  color: #9b3737;
-  transition: all 0.3s ease;
-  margin-left: 200px;
+.youtube-button{
+  padding:10px 22px;
+  border:1px solid #6b3f3f;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:600;
+  color:#9b3737;
+  transition:.3s;
 }
- 
-.youtube-button:hover {
-  background: #000;
-  color: #fff;
+
+.youtube-button:hover{
+  background:#000;
+  color:#fff;
 }
 
 .youtube-videos{

@@ -264,7 +264,7 @@ const styles = {
   overlay: {
     backgroundColor: 'rgba(206, 66, 66, 0.6)',
     color: '#fff',
-    height: '450px',
+    height: '330px',
     padding: '60px',
     display: 'flex',
     flexDirection: 'column',
@@ -285,7 +285,7 @@ const styles = {
     flexWrap: 'wrap',
   },
   box: {
-    width: '23%',
+    width: '17%',
     backgroundColor: '#f7f7f7',
     padding: '30px',
     borderRadius: '8px',

@@ -13,7 +13,7 @@ import OurProjects from './Pages/OurProjects/OurProjects';
 import Promise from './Promise/Promise';
 import Products from './Pages/Products/Products';
 import ScrollToTop from './Components/ScrollToTop';
-import FloatingContact from './Components/Floating/FloatingContact';
+import
 function Home() {
   return (
     <>
@@ -29,7 +29,6 @@ function App() {
     <>
       <Header />
       <ScrollToTop/>
-      <FloatingContact/>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />

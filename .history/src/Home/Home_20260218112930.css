@@ -1,7 +1,6 @@
 *{box-sizing:border-box}
 
 /* ================= SLIDER ================= */
-/* ================= SLIDER ================= */
 .slider{
   position:relative;
   width:100%;
@@ -9,20 +8,19 @@
   overflow:hidden;
 }
 
-.slider-track {
-  display: flex;
-  height: 100%;
-  transition: transform 0.8s ease-in-out;
-}
- 
-.slide-image {
-  width: 100vw; /* 👈 VERY IMPORTANT */
-  height: 100%;
-  object-fit: cover;
-  flex-shrink: 0;
+.slider-track{
+  display:flex;
+  height:100%;
+  transition:transform .8s ease-in-out;
 }
 
-/* keep your original arrow layout */
+.slide-image{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  flex-shrink:0;
+}
+
 .slider-controls{
   position:absolute;
   top:15px;
@@ -41,9 +39,7 @@
   border-radius:4px;
 }
 
-.slider-controls button:hover{
-  background:rgba(0,0,0,.8);
-}
+.slider-controls button:hover{background:rgba(0,0,0,.8)}
 
 
 /* ================= CATEGORIES ================= */
@@ -108,6 +104,11 @@
   gap:30px;
 }
 
+.clients-wrapper{
+  max-width:800px;
+  margin:0 auto;
+  padding:40px 20px;
+}
 
 .brand-logo img,
 .client-logo img{

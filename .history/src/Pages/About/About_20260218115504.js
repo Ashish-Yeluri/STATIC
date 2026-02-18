@@ -285,7 +285,7 @@ const styles = {
     flexWrap: 'wrap',
   },
   box: {
-    width: '23%',
+    width: '25%',
     backgroundColor: '#f7f7f7',
     padding: '30px',
     borderRadius: '8px',

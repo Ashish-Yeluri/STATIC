@@ -3,16 +3,12 @@ import { useRef } from "react";
 import projectsData from "../../Data/OurProjectsData.json";
 import "./OurProjects.css";
 
-import { useState,useEffect} from "react";
+import { useState } from "react";
 
 function ProjectSection({ title, hero, images, sectionRef }) {
 
   // current hero image state
   const [currentHero, setCurrentHero] = useState(hero);
-    useEffect(() => {
-    setCurrentHero(hero);
-  }, [hero]);
-
 
   // handle click on thumbnails
   const handleImageClick = (img) => {
@@ -37,7 +33,6 @@ function ProjectSection({ title, hero, images, sectionRef }) {
             src={img}
             alt=""
             onClick={() => handleImageClick(img)}
-            className={currentHero === img ? "active-thumb" : ""}
             style={{ cursor: "pointer" }}
           />
         ))}
@@ -46,6 +41,7 @@ function ProjectSection({ title, hero, images, sectionRef }) {
     </div>
   );
 }
+
 
 export default function OurProjects() {
 
@@ -94,15 +90,15 @@ export default function OurProjects() {
       )}
 
       {/* 🔴 SECTIONS */}
-        {selectedData.map((section, index) => (
-      <ProjectSection
-        key={currentCategory + "-" + index}   // ⭐ important
-        title={section.title}
-        hero={section.hero}
-        images={section.images}
-        sectionRef={(el) => (sectionRefs.current[index] = el)}
-      />
-    ))}
+      {selectedData.map((section, index) => (
+        <ProjectSection
+          key={index}
+          title={section.title}
+          hero={section.hero}
+          images={section.images}
+          sectionRef={(el) => (sectionRefs.current[index] = el)}
+        />
+      ))}
 
     </div>
   );

@@ -7,7 +7,7 @@ import aboutData from '../Data/Home.json';
 import catalogueData from '../Data/Home.json';
 import data from '../Data/Home.json';
 import { useNavigate } from 'react-router-dom';
- 
+
 export default function HomeMain({ image, text }) {
   // ----- Slider -----
   const [current, setCurrent] = useState(0);
@@ -17,69 +17,67 @@ export default function HomeMain({ image, text }) {
   const textRef2 = useRef(null);
   const trackRef = useRef(null);
   const intervalRef = useRef(null);
- 
+
   const [modalLogo, setModalLogo] = useState(null);
- 
+
   const openModal = (logo) => setModalLogo(logo);
   const closeModal = () => setModalLogo(null);
- 
+
   const {
     image: aboutImage,
     heading: aboutHeading,
     description: aboutDescription,
   } = aboutData.about;
- 
+
   const { image: parallaxImage2, text: parallaxText2 } =
     data.parallaxSectionTwo;
- 
+
   const {
     image: catalogueImage,
     heading: catalogueHeading,
     description: catalogueDescription,
   } = catalogueData.catalogueSection;
- 
+
   const [expanded, setExpanded] = useState(false);
- 
+
   const toggleExpanded = () => setExpanded(!expanded);
- 
+
   const sliderImages = homeData.slider.map((item) => item.src);
- 
+
   // const previewText = description.split('\n').slice(0, 2).join('\n');
   // const { image, heading, description } = aboutData.about && catalogueData.catalogueSection;
   //  const { image, heading, description } = catalogueData.catalogueSection;
   const navigate = useNavigate();
- 
+
   const handleExplore = () => {
     navigate('/catalogue');
   };
- 
+
   const startAutoSlide = () => {
-    clearInterval(intervalRef.current);
     intervalRef.current = setInterval(() => {
       setCurrent((prev) => prev + 1);
-    }, 2000);
+    }, 5000);
   };
- 
+
   useEffect(() => {
     if (sliderImages.length > 0) startAutoSlide();
     return () => clearInterval(intervalRef.current);
   }, [sliderImages]);
+
+ const handleTransitionEnd = () => {
+  if (current === sliderImages.length) {
+    trackRef.current.style.transition = 'none';
+    setCurrent(0);
  
-  const handleTransitionEnd = () => {
-    if (current === sliderImages.length) {
-      trackRef.current.style.transition = 'none';
-      setCurrent(0);
- 
+    requestAnimationFrame(() => {
+      trackRef.current.style.transform = `translateX(0%)`;
       requestAnimationFrame(() => {
-        trackRef.current.style.transform = `translateX(0%)`;
-        requestAnimationFrame(() => {
-          trackRef.current.style.transition = 'transform 0.8s ease-in-out';
-        });
+        trackRef.current.style.transition = 'transform 0.8s ease-in-out';
       });
-    }
-  };
-;
- 
+    });
+  }
+};
+
   useEffect(() => {
     if (current === 0 && trackRef.current) {
       requestAnimationFrame(() => {
@@ -87,117 +85,117 @@ export default function HomeMain({ image, text }) {
       });
     }
   }, [current]);
- 
+
   const nextSlide = () => {
     clearInterval(intervalRef.current);
     setCurrent((prev) => prev + 1);
     startAutoSlide();
   };
- 
+
   const prevSlide = () => {
     clearInterval(intervalRef.current);
     setCurrent((prev) => (prev === 0 ? sliderImages.length - 1 : prev - 1));
     startAutoSlide();
   };
- 
+
   // ----- Categories -----
   const categoryImages = homeData.categories.map((item) => item);
- 
+
   // Big Image
- 
+
   const { image: parallaxImage, text: parallaxText } = data.parallaxSection;
- 
+
   useEffect(() => {
     const handleScroll = () => {
       if (!imageRef.current || !textRef.current) return;
- 
+
       const wrapper = imageRef.current.parentElement;
       const rect = wrapper.getBoundingClientRect();
- 
+
       // how much of section is visible
       const progress = Math.min(Math.max(-rect.top / rect.height, 0), 1);
- 
+
       const speed = 1.6; // ⬅️ increase for faster motion
- 
+
       const imageMove = progress * 300 * speed;
       const textMove = progress * 0;
- 
+
       imageRef.current.style.transform = `translate3d(0, ${imageMove}px, 0) scale(1.2)`;
- 
+
       textRef.current.style.transform = `translate(-50%, -50%) translateY(${textMove}px)`;
     };
- 
+
     handleScroll(); // ✅ sync after mount
     window.addEventListener('scroll', handleScroll, { passive: true });
- 
+
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
- 
+
   // BIG IMAGE2
   useEffect(() => {
     const handleScroll = () => {
       if (!imageRef2.current || !textRef2.current) return;
- 
+
       const wrapper = imageRef2.current.parentElement;
       const rect = wrapper.getBoundingClientRect();
- 
+
       const progress = Math.min(Math.max(-rect.top / rect.height, 0), 1);
- 
+
       const speed = 1.6;
- 
+
       const imageMove = progress * 300 * speed;
- 
+
       imageRef2.current.style.transform = `translate3d(0, ${imageMove}px, 0) scale(1.2)`;
       textRef2.current.style.transform = `translate(-50%, -50%)`;
     };
- 
+
     handleScroll();
     window.addEventListener('scroll', handleScroll, { passive: true });
- 
+
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
- 
+
   // // //REVIEWS
   const rawReviews = data.googleReviewsSection?.reviews || [];
   const reviews =
     rawReviews.length > 0
       ? [...rawReviews, rawReviews[0]] // clone first slide
       : [];;
- 
- 
+  
+  
   const [currentIndex, setCurrentIndex] = useState(0);
   const reviewIntervalRef = useRef(null);
   // ---- AUTO SLIDE ----
  useEffect(() => {
    if (reviews.length === 0) return;
- 
+
    startReviewAutoSlide();
    return () => stopReviewAutoSlide();
  });
- 
+
  const startReviewAutoSlide = () => {
    stopReviewAutoSlide();
    reviewIntervalRef.current = setInterval(() => {
      setCurrentIndex((prev) => prev + 1);
    }, 3000);
  };
- 
+
  const stopReviewAutoSlide = () => {
    if (reviewIntervalRef.current) {
      clearInterval(reviewIntervalRef.current);
    }
   };
- 
- 
+  
+
   const handleReviewTransitionEnd = () => {
     // If we reached the cloned slide
     if (currentIndex === reviews.length - 1) {
       const track = document.querySelector('.review-inner');
       if (!track) return;
- 
+
       track.style.transition = 'none';
       setCurrentIndex(0);
- 
+
       requestAnimationFrame(() => {
         track.style.transform = 'translateX(0%)';
         requestAnimationFrame(() => {
@@ -206,23 +204,23 @@ export default function HomeMain({ image, text }) {
       });
     }
   };
- 
- 
- 
+
+
+
   // ---- BUTTON HANDLERS ----
   const handleNext = () => {
     stopReviewAutoSlide();
     setCurrentIndex((prev) => prev + 1);
     startReviewAutoSlide();
   };
- 
+
   const handlePrev = () => {
     stopReviewAutoSlide();
     setCurrentIndex((prev) => (prev === 0 ? rawReviews.length - 1 : prev - 1));
     startReviewAutoSlide();
   };
- 
- 
+
+
   return (
     <div>
       {/* Slider */}
@@ -230,25 +228,13 @@ export default function HomeMain({ image, text }) {
         <div
           ref={trackRef}
           className='slider-track'
-          style={{
-            width: `${(sliderImages.length + 1) * 100}%`,
-            transform: `translateX(-${current * (100 / (sliderImages.length + 1))}%)`,
-          }}
+          style={{ transform: `translateX(-${current * 100}%)` }}
           onTransitionEnd={handleTransitionEnd}
         >
           {sliderImages.map((src, i) => (
-            <img
-              key={i}
-              src={process.env.PUBLIC_URL + src}
-              className='slide-image'
-              alt={`slide-${i}`}
-            />
+            <img key={i} src={src} className='slide-image' alt='slide' />
           ))}
-          <img
-            src={process.env.PUBLIC_URL + sliderImages[0]}
-            className='slide-image'
-            alt='slide-clone'
-          />
+          <img src={sliderImages[0]} className='slide-image' alt='slide' />
         </div>
         <div className='slider-controls'>
           <button onClick={prevSlide} style={{ marginTop: '70px' }}>
@@ -259,7 +245,7 @@ export default function HomeMain({ image, text }) {
           </button>
         </div>
       </div>
- 
+
       {/* Categories */}
       <div className='categories-wrapper'>
         {categoryImages.map((item) => (
@@ -278,13 +264,13 @@ export default function HomeMain({ image, text }) {
           </div>
         ))}
       </div>
- 
+
       {/* Catelouge */}
       <div className='catalogue-section'>
         <div className='catalogue-image'>
           <img src={catalogueImage} alt='Catalogue Wall' />
         </div>
- 
+
         <div className='catalogue-content'>
           <h2 className='catalogue-heading'>{catalogueHeading}</h2>
           <p className='catalogue-description'>{catalogueDescription}</p>
@@ -293,7 +279,7 @@ export default function HomeMain({ image, text }) {
           </button>
         </div>
       </div>
- 
+
       {/* OVER-VIEW */}
       <section
         className='overview-section'
@@ -303,7 +289,7 @@ export default function HomeMain({ image, text }) {
         }}
       >
         <h2 className='overview-title'>{data.title}</h2>
- 
+
         <div className='overview-grid'>
           {data.items.map((item, index) => (
             <div className='overview-card' key={index}>
@@ -317,7 +303,7 @@ export default function HomeMain({ image, text }) {
           ))}
         </div>
       </section>
- 
+
       {/* PARALLAX SECTION */}
       <div className='parallax-wrapper'>
         <div
@@ -333,13 +319,13 @@ export default function HomeMain({ image, text }) {
           {parallaxText}
         </div>
       </div>
- 
+
       {/* Design Image */}
       <div className='about-section'>
         <div className='about-image'>
           <img src={aboutImage} alt='About Design Walls' />
         </div>
- 
+
         <div className='about-content'>
           <h2 className='about-heading'>{aboutHeading}</h2>
           <p className='about-description'>
@@ -347,18 +333,18 @@ export default function HomeMain({ image, text }) {
               ? aboutDescription
               : aboutDescription.split('\n').slice(0, 2).join('\n')}
           </p>
- 
+
           <button className='about-toggle' onClick={toggleExpanded}>
             {expanded ? 'Show Less' : 'Show More'}
           </button>
         </div>
       </div>
- 
+
       {/* YOUTUBE */}
       <section className='youtube-section'>
         <div className='youtube-header'>
           <h2 className='youtube-title'>{data.youtube.heading}</h2>
- 
+
           <a
             href={data.youtube.viewMoreLink}
             target='_blank'
@@ -368,7 +354,7 @@ export default function HomeMain({ image, text }) {
             View More
           </a>
         </div>
- 
+
         <div className='youtube-videos'>
           {data.youtube.videos.map((video) => (
             <div className='youtube-video' key={video.id}>
@@ -383,7 +369,7 @@ export default function HomeMain({ image, text }) {
           ))}
         </div>
       </section>
- 
+
       {/* Brands */}
       <div className='brands'>
         <h1 className='clientHead'>Brands</h1>
@@ -401,7 +387,7 @@ export default function HomeMain({ image, text }) {
               ))}
             </div>
           </div>
- 
+
           {modalLogo && (
             <div className='modal-overlay' onClick={closeModal}>
               <div
@@ -414,7 +400,7 @@ export default function HomeMain({ image, text }) {
           )}
         </div>
       </div>
- 
+
       {/* 2nd Big Image */}
       {/* SECOND PARALLAX SECTION */}
       <div className='parallax-wrapper'>
@@ -431,7 +417,7 @@ export default function HomeMain({ image, text }) {
           {parallaxText2}
         </div>
       </div>
- 
+
       {/* CLIENTS */}
       <div className='client'>
         <h2 className='clientHead'>Clients</h2>
@@ -445,7 +431,7 @@ export default function HomeMain({ image, text }) {
               <img src={client.logo} alt={client.name} />
             </div>
           ))}
- 
+
           {modalLogo && (
             <div className='modal-overlay' onClick={closeModal}>
               <div
@@ -458,7 +444,7 @@ export default function HomeMain({ image, text }) {
           )}
         </div>
       </div>
- 
+
       {/* GOOGLE REVIEWS */}
       <section
         className='reviews-section'
@@ -467,7 +453,7 @@ export default function HomeMain({ image, text }) {
         }}
       >
         <h2 className='reviews-title'>{data.googleReviewsSection?.title}</h2>
- 
+
         <div className='review-slider-container'>
           {/* LEFT ARROW – appears only after 1st slide */}
           {currentIndex > 0 && (
@@ -475,7 +461,7 @@ export default function HomeMain({ image, text }) {
               ❮
             </button>
           )}
- 
+
           {/* REVIEW CARD */}
           <div className='review-card-wrapper'>
             <div
@@ -494,7 +480,7 @@ export default function HomeMain({ image, text }) {
               ))}
             </div>
           </div>
- 
+
           {/* RIGHT ARROW – always visible */}
           <button className='review-arrow right' onClick={handleNext}>
             ❯
@@ -504,6 +490,3 @@ export default function HomeMain({ image, text }) {
     </div>
   );
 }
- 
-
- 

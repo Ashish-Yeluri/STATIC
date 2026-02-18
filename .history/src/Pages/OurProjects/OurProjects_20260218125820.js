@@ -37,7 +37,6 @@ function ProjectSection({ title, hero, images, sectionRef }) {
             src={img}
             alt=""
             onClick={() => handleImageClick(img)}
-            className={currentHero === img ? "active-thumb" : ""}
             style={{ cursor: "pointer" }}
           />
         ))}
@@ -94,15 +93,15 @@ export default function OurProjects() {
       )}
 
       {/* 🔴 SECTIONS */}
-        {selectedData.map((section, index) => (
-      <ProjectSection
-        key={currentCategory + "-" + index}   // ⭐ important
-        title={section.title}
-        hero={section.hero}
-        images={section.images}
-        sectionRef={(el) => (sectionRefs.current[index] = el)}
-      />
-    ))}
+      {selectedData.map((section, index) => (
+        <ProjectSection
+          key={index}
+          title={section.title}
+          hero={section.hero}
+          images={section.images}
+          sectionRef={(el) => (sectionRefs.current[index] = el)}
+        />
+      ))}
 
     </div>
   );

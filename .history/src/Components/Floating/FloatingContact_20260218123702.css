@@ -1,0 +1,55 @@
+.floating-contact {
+  position: fixed;
+  right: 5%;
+  top: 70%;
+  gap:13px;
+  transform: translateY(-50%);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* CONSULTATION TAB */
+.consultation-tab {
+  background: #d50000;
+  color: #fff;
+  padding: 16px 10px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-weight: 600;
+  border-radius: 8px 0 0 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,.3);
+  margin-bottom: 12px;
+  margin-left: 5px;
+  transition: .3s;
+}
+
+.consultation-tab:hover {
+  background: #b00000;
+}
+
+/* WHATSAPP */
+.whatsapp-btn img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,.25);
+  margin-bottom: 10px;
+}
+
+/* CALL */
+.call-btn {
+  width: 48px;
+  height: 48px;
+  background: #444;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.25);
+  text-decoration: none;
+}

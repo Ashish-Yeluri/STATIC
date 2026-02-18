@@ -75,7 +75,7 @@
 .contact-form button {
   margin-top: 20px;
   align-self: flex-end;
-  padding: 10px 45px;
+  padding: 10px 35px;
   border-radius: 20px;
   background: white;
   color: #b00000;
@@ -131,13 +131,6 @@
   gap: 40px;
   font-size: 18px;
   color: #d32f2f;
-}
-
-.error {
-  color: black;
-  font-size: 12px;
-  display: block;
-  margin-bottom: 10px;
 }
 
 /* ===================================================== */

@@ -41,7 +41,6 @@
 .contact-info { margin-top: 25px; }
 
 /* ================= FORM ================= */
-/* ================= FORM ================= */
 .contact-form {
   flex: 0.8;
   background: rgba(255,255,255,0.05);
@@ -55,13 +54,6 @@
 .contact-form form {
   display: flex;
   flex-direction: column;
-  gap: 12px;              /* ✅ space between label-input groups */
-}
-
-/* label spacing */
-.contact-form label{
-  margin-bottom: 4px;     /* ✅ gap label → input */
-  font-size: 14px;
 }
 
 .contact-form input,
@@ -69,25 +61,18 @@
   padding: 11px;
   border-radius: 6px;
   border: none;
+  margin-bottom: 10px;
 }
 
-/* submit button */
 .contact-form button {
   margin-top: 20px;
   align-self: flex-end;
-  padding: 10px 45px;
+  padding: 10px 25px;
+  border-color: #000;
   border-radius: 20px;
   background: white;
   color: #b00000;
   cursor: pointer;
-  border: none;           /* ✅ remove border */
-  transition: .3s;        /* smooth hover */
-}
-
-/* hover → red */
-.contact-form button:hover {
-  background: #d32f2f;    /* ✅ red */
-  color: white;
 }
 
 /* ================= LOCATION ================= */
@@ -131,13 +116,6 @@
   gap: 40px;
   font-size: 18px;
   color: #d32f2f;
-}
-
-.error {
-  color: black;
-  font-size: 12px;
-  display: block;
-  margin-bottom: 10px;
 }
 
 /* ===================================================== */

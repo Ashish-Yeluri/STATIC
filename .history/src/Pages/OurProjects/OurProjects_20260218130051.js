@@ -94,15 +94,15 @@ export default function OurProjects() {
       )}
 
       {/* 🔴 SECTIONS */}
-        {selectedData.map((section, index) => (
-      <ProjectSection
-        key={currentCategory + "-" + index}   // ⭐ important
-        title={section.title}
-        hero={section.hero}
-        images={section.images}
-        sectionRef={(el) => (sectionRefs.current[index] = el)}
-      />
-    ))}
+    {selectedData.map((section, index) => (
+  <ProjectSection
+    key={currentCategory + "-" + index}   // ⭐ important
+    title={section.title}
+    hero={section.hero}
+    images={section.images}
+    sectionRef={(el) => (sectionRefs.current[index] = el)}
+  />
+))}
 
     </div>
   );
