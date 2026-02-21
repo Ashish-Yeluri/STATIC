@@ -131,32 +131,31 @@ body {
 }
 
 /* ================= TABLET ONLY ================= */
-/* ================= TABLET HEADER FIX ================= */
 @media (min-width: 769px) and (max-width: 1023px) {
 
-  .header {
-    justify-content: space-between;   /* restore normal flow */
-    position: relative;
-  }
+  body { padding-top: 95px; }
 
-  .header-left {
-    flex: 0 0 auto;
-  }
+  .header { padding: 12px 24px; }
 
-  .header-right {
-    flex: 0 0 auto;
-  }
+  .header-left .logo { height: 40px; }
 
   .header-center {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
+    gap: 18px;
     flex-wrap: nowrap;
-
-    /* 👇 prevents overlap with phone */
-    max-width: calc(100% - 260px);
-    overflow: hidden;
   }
 
+  .header-center .headings { font-size: 16px; }
+
+  .header-right {
+    min-width: 120px;
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .shipping-banner {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .shipping-banner h2 { font-size: 16px; }
 }

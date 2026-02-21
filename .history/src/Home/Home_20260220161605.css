@@ -1,6 +1,7 @@
 *{box-sizing:border-box}
 
 /* ================= SLIDER ================= */
+/* ================= SLIDER ================= */
 .slider{
   position:relative;
   width:100%;
@@ -499,140 +500,105 @@
 .review-arrow:hover{background:#151414}
 
 
-/* ================= RESPONSIVE (REDUCED) ================= */
-@media (min-width:600px){
-  .slider{height:420px}
-  .overview-grid{grid-template-columns:repeat(2,1fr)}
-  .youtube-videos{grid-template-columns:repeat(2,1fr)}
-  .review-card-wrapper{max-width:420px}
-}
+/* ================= MOBILE & TABLET RESPONSIVE ================= */
 
-@media (min-width:768px){
-  .category-circle{width:90px;height:90px}
-  .category-image{width:48px;height:48px}
-  .category-text{font-size:15px}
-}
+/* -------- MOBILE ≤599px -------- */
+@media (max-width:599px){
 
-@media (min-width:1024px){
-  .slider{height:550px}
-  .overview-grid{grid-template-columns:repeat(4,1fr)}
-  .youtube-videos{grid-template-columns:repeat(3,1fr)}
-  .parallax-wrapper{height:100vh}
-  .parallax-text{font-size:56px}
-  .review-card-wrapper{max-width:500px}
-}
-
-/* ================= TABLET (≤1023px) ============== */
-@media (max-width: 1023px) {
-
-  /* SECTIONS PADDING */
+  /* Global spacing */
   .about-section,
-  .catalogue-section,
-  .youtube-section,
-  .overview-section,
-  .reviews-section {
-    padding: 50px 20px;
-  }
+  .catalogue-section{padding:40px 15px;gap:25px}
 
-  /* CLIENTS WIDTH */
   .brands-wrapper-container,
-  .clients-wrapper {
-    width: 100%;
-  }
+  .clients-wrapper{width:100%;padding:20px 10px}
 
-  /* ABOUT / CATALOGUE STACK */
-  .about-section,
-  .catalogue-section {
-    gap: 30px;
-  }
+  /* Slider */
+  .slider{height:200px}
 
-  .about-image,
-  .catalogue-image,
-  .about-content,
-  .catalogue-content {
-    flex: 1 1 45%;
-    max-width: 100%;
-  }
-   .catalogue-image::before {
-    left: 20px;   /* was 40px → prevents overlap */
-    top: -20px;
-  }
+  /* Categories */
+  .categories-wrapper{gap:20px;padding:20px 10px}
+  .category-circle{width:60px;height:60px}
+  .category-image{width:30px;height:30px}
+  .category-text{font-size:12px}
 
+  /* Logos */
+  .brand-logo img,
+  .client-logo img{width:80px;height:80px}
 
-  /* CATALOGUE TEXT ALIGN */
+  /* About */
+  .about-heading{font-size:22px}
+  .about-description{font-size:14px}
+
+  /* Catalogue */
   .catalogue-heading,
   .catalogue-description,
-  .catalogue-button {
-    margin-left: 0;
-  }
+  .catalogue-button{margin-left:0}
+  .catalogue-image::before{left:20px;top:-20px}
 
-  /* OVERVIEW */
-  .overview-title {
-    margin-bottom: 50px;
-  }
+  /* Overview */
+  .overview-title{font-size:22px;margin-bottom:40px}
+  .overview-grid{gap:25px}
+  .overview-image{width:60px;height:60px}
 
-  /* REVIEWS */
-  .review-card-wrapper {
-    max-width: 420px;
-  }
+  /* Youtube */
+  .youtube-header{flex-direction:column;gap:10px}
+  .youtube-title{font-size:22px}
+  .youtube-button{margin-left:0}
+
+  /* Parallax */
+  .parallax-wrapper{height:240px}
+  .parallax-text{font-size:20px;padding:0 10px}
+
+  /* Reviews */
+  .reviews-title{font-size:22px;margin-bottom:40px}
+  .review-card-wrapper{max-width:280px;height:180px}
+  .review-inner-item{height:180px}
 }
 
-/* =============== MOBILE OVERFLOW FIX ============= */
-@media (max-width: 600px) {
 
-  /* Prevent horizontal overflow everywhere */
-  html, body {
-    overflow-x: hidden;
-  }
+/* -------- TABLET 600–1023px -------- */
+@media (min-width:600px) and (max-width:1023px){
 
-  /* Sections must never exceed screen */
-  .youtube-section,
-  .overview-section,
-  .reviews-section,
+  /* Layout */
   .about-section,
-  .catalogue-section {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-    .overview-grid {
-    grid-template-columns: repeat(2, 1fr); /* 👈 2 per row */
-    gap: 30px;
-  }
+  .catalogue-section{padding:50px 20px}
 
+  .brands-wrapper-container,
+  .clients-wrapper{width:100%}
 
-  /* YOUTUBE HEADER FIX */
-  .youtube-header {
-    flex-wrap: wrap;
-    gap: 12px;
-    text-align: center;
-  }
+  /* Slider */
+  .slider{height:320px}
 
-  .youtube-button {
-    margin-left: 0;   /* was 200px → pushed off screen */
-  }
+  /* Categories */
+  .categories-wrapper{gap:25px;padding:25px 15px}
+  .category-circle{width:80px;height:80px}
+  .category-image{width:40px;height:40px}
 
-  /* YOUTUBE VIDEOS SAFE WIDTH */
-  .youtube-videos {
-    width: 100%;
-  }
+  /* Logos */
+  .brand-logo img,
+  .client-logo img{width:100px;height:100px}
 
-  /* GOOGLE REVIEWS CARD */
-  .review-slider-container {
-    width: 100%;
-    padding: 0 12px;
-    box-sizing: border-box;
-  }
+  /* About */
+  .about-heading{font-size:24px}
 
-  .review-card-wrapper {
-    max-width: 100%;
-  }
+  /* Catalogue */
+  .catalogue-heading,
+  .catalogue-description,
+  .catalogue-button{margin-left:20px}
 
-  /* FLOATING BUTTONS SAFE */
-  .floating,
-  .floating-buttons,
-  .contact-floating,
-  .whatsapp-floating {
-    right: 12px !important;
-  }
+  /* Overview */
+  .overview-title{font-size:24px;margin-bottom:60px}
+  .overview-grid{grid-template-columns:repeat(2,1fr)}
 
+  /* Youtube */
+  .youtube-title{font-size:24px}
+  .youtube-button{margin-left:0}
+
+  /* Parallax */
+  .parallax-wrapper{height:300px}
+  .parallax-text{font-size:28px}
+
+  /* Reviews */
+  .review-card-wrapper{max-width:380px;height:190px}
+  .review-inner-item{height:190px}
 }

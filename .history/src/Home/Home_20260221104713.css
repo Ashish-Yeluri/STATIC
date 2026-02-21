@@ -522,7 +522,9 @@
   .review-card-wrapper{max-width:500px}
 }
 
+/* ================================================= */
 /* ================= TABLET (≤1023px) ============== */
+/* ================================================= */
 @media (max-width: 1023px) {
 
   /* SECTIONS PADDING */
@@ -553,11 +555,6 @@
     flex: 1 1 45%;
     max-width: 100%;
   }
-   .catalogue-image::before {
-    left: 20px;   /* was 40px → prevents overlap */
-    top: -20px;
-  }
-
 
   /* CATALOGUE TEXT ALIGN */
   .catalogue-heading,
@@ -577,7 +574,9 @@
   }
 }
 
+/* ================================================= */
 /* =============== MOBILE OVERFLOW FIX ============= */
+/* ================================================= */
 @media (max-width: 600px) {
 
   /* Prevent horizontal overflow everywhere */
@@ -594,11 +593,6 @@
     max-width: 100%;
     overflow-x: hidden;
   }
-    .overview-grid {
-    grid-template-columns: repeat(2, 1fr); /* 👈 2 per row */
-    gap: 30px;
-  }
-
 
   /* YOUTUBE HEADER FIX */
   .youtube-header {

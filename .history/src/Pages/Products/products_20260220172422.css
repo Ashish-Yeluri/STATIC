@@ -346,7 +346,7 @@
 }
 
 /* ================================================= */
-/* ============ TABLET + MOBILE BASE (≤1023px) ===== */
+/* ================= TABLET (≤1023px) ============== */
 /* ================================================= */
 @media (max-width: 1023px) {
 
@@ -365,15 +365,27 @@
   }
 
   /* MODAL */
-  .modal-content { width: 90%; }
-  .modal-text { padding: 30px; }
+  .modal-content {
+    width: 90%;
+  }
+
+  .modal-text {
+    padding: 30px;
+  }
 
   /* DETAIL */
-  .detail-content { gap: 30px; }
-  .product-detail { padding: 40px 30px; }
+  .detail-content {
+    gap: 30px;
+  }
+
+  .product-detail {
+    padding: 40px 30px;
+  }
 
   /* SUB GRID */
-  .sub-grid { grid-template-columns: repeat(2, 1fr); }
+  .sub-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   /* TYPES */
   .types-grid {
@@ -388,9 +400,16 @@
   }
 
   /* PARALLAX */
-  .parallax-wrapper { height: 520px; }
-  .parallax-text { font-size: 36px; left: 50%; }
+  .parallax-wrapper {
+    height: 520px;
+  }
+
+  .parallax-text {
+    font-size: 36px;
+    left: 50%;
+  }
 }
+
 
 
 /* ================================================= */
@@ -413,7 +432,9 @@
   }
 
   /* CARD */
-  .product-card { height: 240px; }
+  .product-card {
+    height: 240px;
+  }
 
   /* MODAL */
   .modal-content {
@@ -424,9 +445,13 @@
   }
 
   .modal-image,
-  .modal-text { width: 100%; }
+  .modal-text {
+    width: 100%;
+  }
 
-  .modal-text { padding: 20px; }
+  .modal-text {
+    padding: 20px;
+  }
 
   /* DETAIL */
   .detail-content {
@@ -434,18 +459,33 @@
     gap: 24px;
   }
 
-  .detail-image { width: 100%; }
-  .product-detail { padding: 30px 16px; }
+  .detail-image {
+    width: 100%;
+  }
+
+  .product-detail {
+    padding: 30px 16px;
+  }
 
   /* SUB GRID */
-  .sub-grid { grid-template-columns: 1fr; }
-  .sub-card img { height: 180px; }
+  .sub-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sub-card img {
+    height: 180px;
+  }
 
   /* TYPES */
-  .types-grid { grid-template-columns: 1fr; }
+  .types-grid {
+    grid-template-columns: 1fr;
+  }
 
   /* WHY */
-  .why-wallpaper { gap: 30px; }
+  .why-wallpaper {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 
   /* HISTORY */
   .history-split {
@@ -461,6 +501,7 @@
 
   .parallax-text {
     font-size: 24px;
+    left: 50%;
     width: 90%;
   }
 }

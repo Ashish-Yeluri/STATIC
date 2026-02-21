@@ -553,11 +553,6 @@
     flex: 1 1 45%;
     max-width: 100%;
   }
-   .catalogue-image::before {
-    left: 20px;   /* was 40px → prevents overlap */
-    top: -20px;
-  }
-
 
   /* CATALOGUE TEXT ALIGN */
   .catalogue-heading,

@@ -106,7 +106,7 @@
 /* Mobile only */
 @media (max-width: 600px) {
 
-  .with-menu-gap { padding-top: 110px; }
+  .with-menu-gap { padding-top: 60px; }
   .no-menu-gap { padding-top: 20px; }
 
   .hero-row img { height: 250px; }

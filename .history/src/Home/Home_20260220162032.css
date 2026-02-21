@@ -15,13 +15,12 @@
 }
  
 .slide-image {
-  width: 100vw; /* 👈 VERY IMPORTANT */
+  width: 100vw;
   height: 100%;
   object-fit: cover;
   flex-shrink: 0;
 }
 
-/* keep your original arrow layout */
 .slider-controls{
   position:absolute;
   top:15px;
@@ -79,8 +78,6 @@
 
 .category-text{font-size:13px;color:#fff}
 
-
-/* Expand on hover */
 .category-item:hover .category-circle {
   transform: scale(1.15);
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
@@ -88,7 +85,6 @@
 
 .category-item:hover .category-image {
   transform: scale(1.1);
- transform: scale(1.1);
 }
 
 
@@ -109,6 +105,7 @@
   width: 800px;
   margin: 0 auto;
 }
+
 .clients-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -118,6 +115,7 @@
   width: 800px;
   margin: 0 auto;
 }
+
 .clients-wrapper,
 .brands-wrapper{
   display:flex;
@@ -125,7 +123,6 @@
   justify-content:center;
   gap:30px;
 }
-
 
 .brand-logo img,
 .client-logo img{
@@ -298,26 +295,6 @@
   position:relative;
   padding:80px 20px;
   text-align:center;
-}
-
-.overview-section::before,
-.overview-section::after{
-  content:"";
-  position:absolute;
-  left:0;
-  width:100%;
-  height:80px;
-  background-size:cover;
-}
-
-.overview-section::before{
-  top:0;
-  background:var(--top-scratch) no-repeat center;
-}
-
-.overview-section::after{
-  bottom:0;
-  background:var(--bottom-scratch) no-repeat center;
 }
 
 .overview-title{
@@ -499,20 +476,115 @@
 .review-arrow:hover{background:#151414}
 
 
-/* ================= RESPONSIVE (REDUCED) ================= */
-@media (min-width:600px){
-  .slider{height:420px}
-  .overview-grid{grid-template-columns:repeat(2,1fr)}
-  .youtube-videos{grid-template-columns:repeat(2,1fr)}
-  .review-card-wrapper{max-width:420px}
+/* ===================================================== */
+/* ================= MOBILE (≤599px) =================== */
+/* ===================================================== */
+
+@media (max-width:599px){
+
+  /* FULL IMAGE IN SLIDER */
+  .slider{height:220px}
+  .slide-image{
+    width:100%;
+    object-fit:contain;   /* 👈 show full image */
+    background:#000;
+  }
+
+  .categories-wrapper{
+    gap:18px;
+    padding:25px 10px;
+  }
+
+  .category-circle{
+    width:60px;
+    height:60px;
+  }
+
+  .category-image{
+    width:28px;
+    height:28px;
+  }
+
+  .clientHead{font-size:24px}
+
+  .clients-wrapper,
+  .brands-wrapper-container{
+    width:100%;
+  }
+
+  .brand-logo img,
+  .client-logo img{
+    width:90px;
+    height:90px;
+  }
+
+  .about-section,
+  .catalogue-section{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .catalogue-heading,
+  .catalogue-description,
+  .catalogue-button{
+    margin-left:0;
+  }
+
+  .youtube-header{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .youtube-button{
+    margin-left:0;
+  }
+
+  .parallax-text{font-size:22px}
+
 }
 
-@media (min-width:768px){
-  .category-circle{width:90px;height:90px}
-  .category-image{width:48px;height:48px}
-  .category-text{font-size:15px}
+
+/* ===================================================== */
+/* ================= TABLET (600–1023px) ============== */
+/* ===================================================== */
+
+@media (min-width:600px) and (max-width:1023px){
+
+  /* FULL IMAGE */
+  .slide-image{
+    width:100%;
+    object-fit:contain; /* 👈 full image tablet */
+    background:#000;
+  }
+
+  .slider{height:360px}
+
+  .clients-wrapper,
+  .brands-wrapper-container{
+    width:100%;
+  }
+
+  .brand-logo img,
+  .client-logo img{
+    width:100px;
+    height:100px;
+  }
+
+  .about-section,
+  .catalogue-section{
+    gap:30px;
+  }
+
+  .youtube-button{
+    margin-left:40px;
+  }
+
+  .parallax-text{font-size:36px}
+
 }
 
+
+/* ================= DESKTOP (UNCHANGED) ================= */
 @media (min-width:1024px){
   .slider{height:550px}
   .overview-grid{grid-template-columns:repeat(4,1fr)}
@@ -520,119 +592,4 @@
   .parallax-wrapper{height:100vh}
   .parallax-text{font-size:56px}
   .review-card-wrapper{max-width:500px}
-}
-
-/* ================= TABLET (≤1023px) ============== */
-@media (max-width: 1023px) {
-
-  /* SECTIONS PADDING */
-  .about-section,
-  .catalogue-section,
-  .youtube-section,
-  .overview-section,
-  .reviews-section {
-    padding: 50px 20px;
-  }
-
-  /* CLIENTS WIDTH */
-  .brands-wrapper-container,
-  .clients-wrapper {
-    width: 100%;
-  }
-
-  /* ABOUT / CATALOGUE STACK */
-  .about-section,
-  .catalogue-section {
-    gap: 30px;
-  }
-
-  .about-image,
-  .catalogue-image,
-  .about-content,
-  .catalogue-content {
-    flex: 1 1 45%;
-    max-width: 100%;
-  }
-   .catalogue-image::before {
-    left: 20px;   /* was 40px → prevents overlap */
-    top: -20px;
-  }
-
-
-  /* CATALOGUE TEXT ALIGN */
-  .catalogue-heading,
-  .catalogue-description,
-  .catalogue-button {
-    margin-left: 0;
-  }
-
-  /* OVERVIEW */
-  .overview-title {
-    margin-bottom: 50px;
-  }
-
-  /* REVIEWS */
-  .review-card-wrapper {
-    max-width: 420px;
-  }
-}
-
-/* =============== MOBILE OVERFLOW FIX ============= */
-@media (max-width: 600px) {
-
-  /* Prevent horizontal overflow everywhere */
-  html, body {
-    overflow-x: hidden;
-  }
-
-  /* Sections must never exceed screen */
-  .youtube-section,
-  .overview-section,
-  .reviews-section,
-  .about-section,
-  .catalogue-section {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-    .overview-grid {
-    grid-template-columns: repeat(2, 1fr); /* 👈 2 per row */
-    gap: 30px;
-  }
-
-
-  /* YOUTUBE HEADER FIX */
-  .youtube-header {
-    flex-wrap: wrap;
-    gap: 12px;
-    text-align: center;
-  }
-
-  .youtube-button {
-    margin-left: 0;   /* was 200px → pushed off screen */
-  }
-
-  /* YOUTUBE VIDEOS SAFE WIDTH */
-  .youtube-videos {
-    width: 100%;
-  }
-
-  /* GOOGLE REVIEWS CARD */
-  .review-slider-container {
-    width: 100%;
-    padding: 0 12px;
-    box-sizing: border-box;
-  }
-
-  .review-card-wrapper {
-    max-width: 100%;
-  }
-
-  /* FLOATING BUTTONS SAFE */
-  .floating,
-  .floating-buttons,
-  .contact-floating,
-  .whatsapp-floating {
-    right: 12px !important;
-  }
-
 }

@@ -69,13 +69,13 @@ export default function Header() {
                 <NavLink to='/projects/wallpapers' className='dropdown-item' onClick={() => setShowDropdown(false)}>
                   Wallpapers
                 </NavLink>
-                <NavLink to='/projects/blinds' className='dropdown-item' onClick={() => setShowDropdown(false)}>
+                <NavLink to='/projects/blinds' className='dropdown-item'>
                   Blinds
                 </NavLink>
-                <NavLink to='/projects/curtains' className='dropdown-item' onClick={() => setShowDropdown(false)}>
+                <NavLink to='/projects/curtains' className='dropdown-item'>
                   Curtains
                 </NavLink>
-                <NavLink to='/projects/upholstery' className='dropdown-item' onClick={() => setShowDropdown(false)}>
+                <NavLink to='/projects/upholstery' className='dropdown-item'>
                   Upholstery
                 </NavLink>
               </div>

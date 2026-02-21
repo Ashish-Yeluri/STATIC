@@ -44,18 +44,19 @@ body {
 .header-center .headings:hover { color: black; }
 
 .header-right {
-  min-width: 140px;        /* instead of fixed width */
-  white-space: nowrap;     /* prevent line break */
+  min-width: 140px;
+  white-space: nowrap;
   font-weight: 600;
   color: #000;
   background: rgb(255,121,121);
   padding: clamp(8px, 1.5vw, 10px);
   border-radius: 10px;
   font-size: clamp(14px, 1.5vw, 16px);
-  display: flex;           /* keep content inline */
+  display: flex;
   align-items: center;
   justify-content: center;
 }
+
 /* ================= DROPDOWN ================= */
 .dropdown-wrapper { position: relative; }
 
@@ -99,15 +100,10 @@ body {
 }
 
 .shipping-icon { font-size: 20px; }
-/* ================= MOBILE + TABLET ================= */
-@media (max-width: 1023px) {
 
-  .header-left { order: 1; }
-  .header-right { order: 2; }
-
-}
-
-/* ================= MOBILE ONLY ================= */
+/* ================================================= */
+/* ================= MOBILE (≤768px) =============== */
+/* ================================================= */
 @media (max-width: 768px) {
 
   body { padding-top: 110px; }
@@ -115,6 +111,19 @@ body {
   .header {
     flex-wrap: wrap;
     gap: 8px;
+    padding: 10px 14px;
+  }
+
+  .header-left { 
+    order: 1; 
+    flex: 1;
+  }
+
+  .header-right { 
+    order: 2; 
+    flex: 1;
+    justify-content: flex-end;
+    min-width: auto;
   }
 
   .header-center {
@@ -122,41 +131,68 @@ body {
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 6px;
+  }
+
+  .header-center .headings {
+    font-size: 14px;
+  }
+
+  .header-left .logo {
+    height: 36px;
   }
 
   .shipping-banner {
     flex-direction: column;
     gap: 4px;
+    padding: 8px 6px;
+  }
+
+  .shipping-banner h2 {
+    font-size: 13px;
   }
 }
 
-/* ================= TABLET ONLY ================= */
-/* ================= TABLET HEADER FIX ================= */
+
+/* ================================================= */
+/* ================= TABLET (769–1023px) =========== */
+/* ================================================= */
 @media (min-width: 769px) and (max-width: 1023px) {
 
+  body { padding-top: 90px; }
+
   .header {
-    justify-content: space-between;   /* restore normal flow */
-    position: relative;
+    padding: 12px 24px;
   }
 
-  .header-left {
-    flex: 0 0 auto;
-  }
-
-  .header-right {
-    flex: 0 0 auto;
+  .header-left .logo {
+    height: 40px;
   }
 
   .header-center {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    flex-wrap: nowrap;
-
-    /* 👇 prevents overlap with phone */
-    max-width: calc(100% - 260px);
-    overflow: hidden;
+    gap: 18px;
   }
 
+  .header-center .headings {
+    font-size: 16px;
+  }
+
+  .header-right {
+    font-size: 14px;
+    padding: 8px 12px;
+    min-width: 120px;
+  }
+
+  .shipping-banner h2 {
+    font-size: 16px;
+  }
+}
+
+
+/* ================================================= */
+/* ================= DESKTOP (≥1024px) ============= */
+/* ================================================= */
+@media (min-width: 1024px) {
+  body { padding-top: 80px; }
 }

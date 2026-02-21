@@ -13,9 +13,8 @@ export default function Header() {
       <header className='header'>
         {/* Left - Logo */}
         <div className='header-left'>
-           <Link to="/">
+           <Link to="/"></Link>
           <img src={logo} alt='Design Walls Logo' className='logo' />
-           </Link>
         </div>
 
         {/* Center - Menu */}
@@ -66,16 +65,16 @@ export default function Header() {
             </span>
             {showDropdown && (
               <div className='dropdown-menu'>
-                <NavLink to='/projects/wallpapers' className='dropdown-item' onClick={() => setShowDropdown(false)}>
+                <NavLink to='/projects/wallpapers' className='dropdown-item'>
                   Wallpapers
                 </NavLink>
-                <NavLink to='/projects/blinds' className='dropdown-item' onClick={() => setShowDropdown(false)}>
+                <NavLink to='/projects/blinds' className='dropdown-item'>
                   Blinds
                 </NavLink>
-                <NavLink to='/projects/curtains' className='dropdown-item' onClick={() => setShowDropdown(false)}>
+                <NavLink to='/projects/curtains' className='dropdown-item'>
                   Curtains
                 </NavLink>
-                <NavLink to='/projects/upholstery' className='dropdown-item' onClick={() => setShowDropdown(false)}>
+                <NavLink to='/projects/upholstery' className='dropdown-item'>
                   Upholstery
                 </NavLink>
               </div>

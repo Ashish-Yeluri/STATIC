@@ -132,6 +132,7 @@ body {
 
 /* ================= TABLET ONLY ================= */
 /* ================= TABLET HEADER FIX ================= */
+/* ================= TABLET HEADER FIX ================= */
 @media (min-width: 769px) and (max-width: 1023px) {
 
   .header {

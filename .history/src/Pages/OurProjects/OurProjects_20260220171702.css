@@ -79,7 +79,7 @@
 /* Tablet + Mobile */
 @media (max-width: 1024px) {
 
-  .with-menu-gap { padding-top: 70px; }
+  .with-menu-gap { padding-top: 120px; }
 
   .hero-row img { height: 400px; }
 

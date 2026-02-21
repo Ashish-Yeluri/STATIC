@@ -8,6 +8,7 @@ export default function Products() {
   const [expandedIndexes, setExpandedIndexes] = useState({});
   const textRef = useRef(null);
 
+
   const toggleDescription = (key) => {
     setExpandedIndexes((prev) => ({
       ...prev,

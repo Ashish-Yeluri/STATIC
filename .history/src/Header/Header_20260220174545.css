@@ -15,44 +15,45 @@ body {
 .active-link { color: black !important; }
 
 /* ================= HEADER ================= */
+/* ================= HEADER ================= */
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: clamp(12px, 2vw, 14px) clamp(20px, 4vw, 40px);
   border-bottom: 1px solid #eaeaea;
+}
+
+/* LEFT */
+.header-left {
+  flex: 0 0 auto;   /* fixed width */
 }
 
 .header-left .logo {
   height: clamp(40px, 5vw, 45px);
   cursor: pointer;
+  display: block;
 }
 
+/* CENTER */
 .header-center {
+  flex: 1;                 /* take middle space */
   display: flex;
+  justify-content: center; /* center menu */
   gap: clamp(12px, 2vw, 28px);
 }
 
-.header-center .headings {
-  text-decoration: none;
-  color: red;
-  font-weight: bold;
-  font-size: larger;
-  transition: color 0.3s;
-}
-
-.header-center .headings:hover { color: black; }
-
+/* RIGHT */
 .header-right {
-  min-width: 140px;        /* instead of fixed width */
-  white-space: nowrap;     /* prevent line break */
+  flex: 0 0 auto;   /* fixed width */
+  min-width: 140px;
+  white-space: nowrap;
   font-weight: 600;
   color: #000;
   background: rgb(255,121,121);
   padding: clamp(8px, 1.5vw, 10px);
   border-radius: 10px;
   font-size: clamp(14px, 1.5vw, 16px);
-  display: flex;           /* keep content inline */
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -131,32 +132,31 @@ body {
 }
 
 /* ================= TABLET ONLY ================= */
-/* ================= TABLET HEADER FIX ================= */
 @media (min-width: 769px) and (max-width: 1023px) {
 
-  .header {
-    justify-content: space-between;   /* restore normal flow */
-    position: relative;
-  }
+  body { padding-top: 95px; }
 
-  .header-left {
-    flex: 0 0 auto;
-  }
+  .header { padding: 12px 24px; }
 
-  .header-right {
-    flex: 0 0 auto;
-  }
+  .header-left .logo { height: 40px; }
 
   .header-center {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
+    gap: 18px;
     flex-wrap: nowrap;
-
-    /* 👇 prevents overlap with phone */
-    max-width: calc(100% - 260px);
-    overflow: hidden;
   }
 
+  .header-center .headings { font-size: 16px; }
+
+  .header-right {
+    min-width: 120px;
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .shipping-banner {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .shipping-banner h2 { font-size: 16px; }
 }

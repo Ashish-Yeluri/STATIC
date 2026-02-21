@@ -99,13 +99,6 @@ body {
 }
 
 .shipping-icon { font-size: 20px; }
-/* ================= MOBILE + TABLET ================= */
-@media (max-width: 1023px) {
-
-  .header-left { order: 1; }
-  .header-right { order: 2; }
-
-}
 
 /* ================= MOBILE ONLY ================= */
 @media (max-width: 768px) {
@@ -124,39 +117,11 @@ body {
     flex-wrap: wrap;
   }
 
+  .header-left { order: 1; }
+  .header-right { order: 2; }
+
   .shipping-banner {
     flex-direction: column;
     gap: 4px;
   }
-}
-
-/* ================= TABLET ONLY ================= */
-/* ================= TABLET HEADER FIX ================= */
-@media (min-width: 769px) and (max-width: 1023px) {
-
-  .header {
-    justify-content: space-between;   /* restore normal flow */
-    position: relative;
-  }
-
-  .header-left {
-    flex: 0 0 auto;
-  }
-
-  .header-right {
-    flex: 0 0 auto;
-  }
-
-  .header-center {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    flex-wrap: nowrap;
-
-    /* 👇 prevents overlap with phone */
-    max-width: calc(100% - 260px);
-    overflow: hidden;
-  }
-
 }

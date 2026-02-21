@@ -131,32 +131,22 @@ body {
 }
 
 /* ================= TABLET ONLY ================= */
-/* ================= TABLET HEADER FIX ================= */
+/* ================= TABLET ================= */
+/* ================= TABLET FIX ================= */
 @media (min-width: 769px) and (max-width: 1023px) {
 
-  .header {
-    justify-content: space-between;   /* restore normal flow */
-    position: relative;
+  .header-center {
+    flex: 1;
+    justify-content: center;
+    min-width: 0;   /* 👈 prevents pushing logo */
   }
 
   .header-left {
-    flex: 0 0 auto;
+    margin-right: auto;  /* 👈 locks logo left */
   }
 
   .header-right {
-    flex: 0 0 auto;
-  }
-
-  .header-center {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    flex-wrap: nowrap;
-
-    /* 👇 prevents overlap with phone */
-    max-width: calc(100% - 260px);
-    overflow: hidden;
+    margin-left: auto;   /* 👈 locks phone right */
   }
 
 }

@@ -522,7 +522,9 @@
   .review-card-wrapper{max-width:500px}
 }
 
+/* ================================================= */
 /* ================= TABLET (≤1023px) ============== */
+/* ================================================= */
 @media (max-width: 1023px) {
 
   /* SECTIONS PADDING */
@@ -553,11 +555,6 @@
     flex: 1 1 45%;
     max-width: 100%;
   }
-   .catalogue-image::before {
-    left: 20px;   /* was 40px → prevents overlap */
-    top: -20px;
-  }
-
 
   /* CATALOGUE TEXT ALIGN */
   .catalogue-heading,
@@ -577,62 +574,58 @@
   }
 }
 
-/* =============== MOBILE OVERFLOW FIX ============= */
+
+/* ================================================= */
+/* ================= MOBILE (≤600px) =============== */
+/* ================================================= */
 @media (max-width: 600px) {
 
-  /* Prevent horizontal overflow everywhere */
-  html, body {
-    overflow-x: hidden;
-  }
+  /* SLIDER */
+  .slider { height: 240px; }
 
-  /* Sections must never exceed screen */
+  /* SECTIONS PADDING */
+  .about-section,
+  .catalogue-section,
   .youtube-section,
   .overview-section,
-  .reviews-section,
-  .about-section,
-  .catalogue-section {
-    max-width: 100%;
-    overflow-x: hidden;
+  .reviews-section {
+    padding: 40px 16px;
   }
-    .overview-grid {
-    grid-template-columns: repeat(2, 1fr); /* 👈 2 per row */
+
+  /* STACK ALL */
+  .about-image,
+  .catalogue-image,
+  .about-content,
+  .catalogue-content {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  /* CLIENT LOGOS */
+  .brand-logo img,
+  .client-logo img {
+    width: 90px;
+    height: 90px;
+  }
+
+  /* TITLES */
+  .about-heading,
+  .catalogue-heading,
+  .overview-title,
+  .youtube-title,
+  .reviews-title {
+    font-size: 22px;
+  }
+
+  /* OVERVIEW GRID */
+  .overview-grid {
+    grid-template-columns: 1fr;
     gap: 30px;
   }
 
-
-  /* YOUTUBE HEADER FIX */
-  .youtube-header {
-    flex-wrap: wrap;
-    gap: 12px;
-    text-align: center;
-  }
-
-  .youtube-button {
-    margin-left: 0;   /* was 200px → pushed off screen */
-  }
-
-  /* YOUTUBE VIDEOS SAFE WIDTH */
-  .youtube-videos {
-    width: 100%;
-  }
-
-  /* GOOGLE REVIEWS CARD */
-  .review-slider-container {
-    width: 100%;
-    padding: 0 12px;
-    box-sizing: border-box;
-  }
-
+  /* REVIEWS */
   .review-card-wrapper {
     max-width: 100%;
-  }
-
-  /* FLOATING BUTTONS SAFE */
-  .floating,
-  .floating-buttons,
-  .contact-floating,
-  .whatsapp-floating {
-    right: 12px !important;
   }
 
 }
