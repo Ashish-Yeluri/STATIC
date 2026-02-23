@@ -200,7 +200,7 @@ export default function About() {
 
         <p className="bigbash-text">
     {AboutBox.bigBashText}
-       </p>
+  </p>
 
         <div className="bigbash-grid">
           {AboutBox.bigBash.map((bash, i) => (
