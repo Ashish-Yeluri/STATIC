@@ -199,8 +199,12 @@ export default function About() {
         <h2 className="section-title">Big Bash</h2>
 
         <p className="bigbash-text">
-    {AboutBox.bigBashText}
-       </p>
+          The jersey launch was a Big BASH! The event was
+          absolutely incredible in every way, and each year
+          the vibe and enthusiasm for the event increases.
+          We delightfully sponsored the Man of Match and
+          Man of the Series for the BIG BASH 2022
+        </p>
 
         <div className="bigbash-grid">
           {AboutBox.bigBash.map((bash, i) => (
