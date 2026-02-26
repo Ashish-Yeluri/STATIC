@@ -8,6 +8,7 @@ import HomeMain from './Home/HomeMain';
 import About from './Pages/About/About';
 import Catalogue from './Pages/Catalogue/Catalogue';
 import Contact from './Pages/Contact/Contact'
+import Blog from './Pages/Blog/Blog'
 import OurProjects from './Pages/OurProjects/OurProjects';
 import Promise from './Promise/Promise';
 import Products from './Pages/Products/Products';
