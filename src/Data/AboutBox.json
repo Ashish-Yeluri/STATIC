@@ -40,101 +40,21 @@
       "image": "/images/About/4.jpg"
     },
     {
-      "id": 1,
-      "image": "/images/About/1.jpg"
+      "id": 5,
+      "image": "/images/About/5.jpg"
     },
     {
-      "id": 2,
-      "image": "/images/About/2.jpg"
+      "id": 6,
+      "image": "/images/About/6.jpg"
     },
     {
-      "id": 3,
-      "image": "/images/About/3.jpg"
+      "id": 7,
+      "image": "/images/About/7.jpg"
     },
     {
-      "id": 4,
-      "image": "/images/About/4.jpg"
-    },
-    {
-      "id": 1,
-      "image": "/images/About/1.jpg"
-    },
-    {
-      "id": 2,
-      "image": "/images/About/2.jpg"
-    },
-    {
-      "id": 3,
-      "image": "/images/About/3.jpg"
-    },
-    {
-      "id": 4,
-      "image": "/images/About/4.jpg"
-    },
-    {
-      "id": 1,
-      "image": "/images/About/1.jpg"
-    },
-    {
-      "id": 2,
-      "image": "/images/About/2.jpg"
-    },
-    {
-      "id": 3,
-      "image": "/images/About/3.jpg"
-    },
-    {
-      "id": 4,
-      "image": "/images/About/4.jpg"
-    },
-    {
-      "id": 1,
-      "image": "/images/About/1.jpg"
-    },
-    {
-      "id": 2,
-      "image": "/images/About/2.jpg"
-    },
-    {
-      "id": 3,
-      "image": "/images/About/3.jpg"
-    },
-    {
-      "id": 4,
-      "image": "/images/About/4.jpg"
-    },
-    {
-      "id": 1,
-      "image": "/images/About/1.jpg"
-    },
-    {
-      "id": 2,
-      "image": "/images/About/2.jpg"
-    },
-    {
-      "id": 3,
-      "image": "/images/About/3.jpg"
-    },
-    {
-      "id": 4,
-      "image": "/images/About/4.jpg"
-    },
-    {
-      "id": 1,
-      "image": "/images/About/1.jpg"
-    },
-    {
-      "id": 2,
-      "image": "/images/About/2.jpg"
-    },
-    {
-      "id": 3,
-      "image": "/images/About/3.jpg"
-    },
-    {
-      "id": 4,
-      "image": "/images/About/4.jpg"
-    }
+      "id": 8,
+      "image": "/images/About/8.jpg"
+    } 
   ],
 
   "awardImages": [
