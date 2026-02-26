@@ -35,20 +35,31 @@ body {
 
 .header-center .headings {
   text-decoration: none;
-  color: red;
   font-weight: bold;
   font-size: larger;
-  transition: color 0.3s;
+  transition: 0.3s ease;
+
+  background: linear-gradient(90deg, #547272, #7c004b);
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #d32f2f;
 }
 
-.header-center .headings:hover { color: black; }
+.header-center .active-link {
+  background: linear-gradient(45deg, #b1cb73, #e6738a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .header-right {
   min-width: 140px;        /* instead of fixed width */
   white-space: nowrap;     /* prevent line break */
   font-weight: 600;
   color: #000;
-  background: rgb(255,121,121);
+  background: linear-gradient(135deg, #88f0ba, #dfd0a8, #f57070);
   padding: clamp(8px, 1.5vw, 10px);
   border-radius: 10px;
   font-size: clamp(14px, 1.5vw, 16px);
@@ -82,7 +93,7 @@ body {
 
 /* ================= BANNER ================= */
 .shipping-banner {
-  background: #d32f2f;
+  background: linear-gradient(135deg, #e4a5a5, #e1198a, #b5b5b5);
   color: white;
   text-align: center;
   padding: 10px 0;

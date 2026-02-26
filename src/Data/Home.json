@@ -1,10 +1,10 @@
 {
   "slider": [
-    { "id": 1, "src": "/images/Home/slide1.avif" },
-    { "id": 2, "src": "/images/Home/slide2.avif" },
-    { "id": 3, "src": "/images/Home/slide3.avif" },
-    { "id": 4, "src": "/images/Home/slide4.avif" },
-    { "id": 5, "src": "/images/Home/slide5.avif" }
+    { "id": 1, "src": "/images/Home/SLIDES/1.jpg" },
+    { "id": 2, "src": "/images/Home/SLIDES/2.jpg" },
+    { "id": 3, "src": "/images/Home/SLIDES/3.jpg" },
+    { "id": 4, "src": "/images/Home/SLIDES/4.jpg" },
+    { "id": 5, "src": "/images/Home/SLIDES/5.jpg" }
   ],
   "categories": [
     { "id": 1, "title": "Wallpapers", "src": "/images/Home/1.avif" },
@@ -55,14 +55,14 @@
     { "id": 4, "name": "Brand J", "logo": "/images/Home/excel.png" }
   ],
   "about": {
-    "image": "/images/Home/design1.avif",
-    "heading": "Transforming Dreams into Walls of Elegance",
-    "description": "At Design Walls, we're dedicated to making your space truly yours by infusing it with personalized style and creativity. We believe in turning your space into a canvas for your imagination to flourish.\n\nWe see walls as blank canvases awaiting your artistic touch. Our journey begins with exploration, as we delve into your unique tastes, interests, and aspirations for your space. Whether you're drawn to bold, vibrant designs or prefer subtle, understated elegance, our team is dedicated to capturing your vision and bringing it to life.\n\nOur designers combine cutting-edge technology with traditional craftsmanship to craft bespoke wallpaper designs that are as unique as you are. From hand-drawn illustrations to digitally rendered patterns, each creation is infused with passion and attention to detail, ensuring that your walls become a reflection of your individuality.\n\nWe harness the latest printing techniques and premium materials to produce wallpapers of uncompromising quality and durability. Resulting in spaces that not only inspire and delight but also speak volumes about who you are and what you truly love."
+  "image": "/images/Home/design.jpg",
+  "heading": "Elevating Spaces with Timeless Drapery Elegance",
+  "description": "At AL Home Decor, we believe curtains are more than just window coverings — they are expressions of personality, comfort, and refined living. Our mission is to transform your interiors into spaces that feel warm, inviting, and beautifully yours.\n\nWe see every window as an opportunity to enhance light, texture, and atmosphere. Our journey begins by understanding your style, your lifestyle, and the mood you wish to create. Whether you are inspired by luxurious, flowing fabrics or drawn to clean, modern minimalism, our team is committed to translating your vision into perfectly tailored drapery solutions.\n\nOur designers blend contemporary design sensibilities with time-honored craftsmanship to create bespoke curtains that reflect sophistication and individuality. From carefully selected premium fabrics to precision stitching and flawless finishes, every detail is thoughtfully curated to ensure elegance in every fold.\n\nUsing superior materials and advanced fabrication techniques, we deliver curtains that are not only visually stunning but also durable, functional, and crafted to stand the test of time. The result is a harmonious balance of beauty and practicality — spaces that inspire comfort, elevate everyday living, and truly feel like home."
   },
    "catalogueSection": {
-    "image": "/images/Home/design2.avif",
-    "heading": "Make Every Wall a Masterpiece",
-    "description": "Personalize Your Space with Exquisite Wallpapers\nReady to transform your space effortlessly with Design Wall's curated collection of customizable wallpapers?\n\nFrom timeless classics to modern marvels,\n\nExplore endless possibilities and make your dream space a reality today."
+    "image": "/images/Home/design2.jpg",
+    "heading": "Make Every Window a Masterpiece",
+    "description": "Elevate Your Space with Elegant Curtains\nReady to transform your interiors effortlessly with Design Drapes' curated collection of premium and customizable curtains?\n\nFrom luxurious sheers to rich blackout drapes,\n\nDiscover endless styles, textures, and colors to frame your windows beautifully and bring your dream space to life today."
   },
   "title": "Design Walls - Overview",
   "items": [
@@ -114,8 +114,8 @@
       ]
     },
       "parallaxSection": {
-      "image": "/images/Home/bigImage.avif",
-      "text": "WRAP YOUR WORLD IN ART"
+      "image": "/images/Home/bigImage.jpg",
+      "text": "Where Windows Wear Luxury"
     },
      "parallaxSectionTwo": {
     "image": "/images/Home/bigImage2.jpg",
