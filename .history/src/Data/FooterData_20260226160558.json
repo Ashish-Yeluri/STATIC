@@ -1,0 +1,44 @@
+{
+  "getInTouch": {
+    "title": "GET IN TOUCH",
+    "locations": [
+      {
+        "name": "LIBERTY",
+        "mapQuery": "Miyapur,Hyderabad",
+        "phone": "9494767687"
+      }    
+    ]
+  },
+
+  "mainFooter": {
+    "companyName":"AL-Home Decor",
+    "description": "Enhancing walls, windows, and floors with elegant décor solutions. Discover premium wallpapers, curtains, blinds, and flooring designed to transform your living spaces with style and comfort.",
+
+    "usefulLinks": [
+     "Our Story",
+    "Contact Us",
+    "Find Our Showroom",
+    "Design Consultation",
+    "Customize Your Décor"
+    ],
+
+    "categoriesOne": [
+      "Wallpapers",
+    "Curtains",
+    "Blinds",
+    "Wooden Flooring",
+    "Carpets & Tiles"
+    ],
+
+    "categoriesTwo": [
+      "Mattress",
+      "Sofa Fabrics",
+      "Wallpapers",
+      "Window Blinds",
+      "Wooden Flooring"
+    ]
+  },
+
+  "copyright":
+    "Copyright © 2025 AL-Home Decor, All rights reserved."
+}

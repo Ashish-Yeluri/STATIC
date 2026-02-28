@@ -1,0 +1,37 @@
+{
+  "title": "Our Promise to You",
+  "subtitle": "Bringing elegance and comfort to homes across India with trusted décor solutions.",
+  "items": [
+    {
+      "icon": "warranty",
+      "title": "Lifetime   Home Decor Warranty",
+      "desc": "We stand by our quality with lifetime warranty on all AL-Home Decor products and services."
+    },
+    {
+      "icon": "quality",
+      "title": "Expert Quality Inspection",
+      "desc":"Each curtain, wallpaper, and décor item is checked with precision for flawless finish and durability."
+    },
+    {
+      "icon": "install",
+      "title": "10-Day Installation",
+      "desc": "Seamless installation for curtains, wallpapers, and décor with expert care."
+    },
+    {
+      "icon": "design",
+      "title": "Made-to-Measure Designs",
+      "desc": "Custom curtains and wallpapers tailored to your space, style, and preferences."
+    },
+    {
+      "icon": "interior",
+      "title": "Complete Home Décor",
+      "desc": "A curated range of curtains, wallpapers, and décor to style every corner of your home."
+
+    },
+    {
+      "icon": "cost",
+      "title":"Transparent Pricing",
+      "desc": "Transparent pricing with no surprises."
+    }
+  ]
+}

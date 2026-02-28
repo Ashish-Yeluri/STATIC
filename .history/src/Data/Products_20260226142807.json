@@ -1,0 +1,173 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Curtains",
+      "image": "/images/products/1.jpg",
+      "description": "High durability and long-lasting performance are essential for commercial carpets due to heavy daily foot traffic. Choosing premium-quality carpeting ensures lasting comfort, resilience, and appearance, making it a smart long-term investment for your space."
+    },
+
+    {
+      "id": 2,
+      "title": "Wallpapers",
+      "image": "/images/products/wall.avif",
+
+      "history": {
+        "heading": "History Of Wallpapers",
+        "image": "/images/products/history1.avif",
+        "short": "Wallpapers transform walls with rich patterns, textures, and timeless decorative appeal.",
+        "full": "Wallpapers have long been a statement element in interior décor, enhancing spaces with pattern, depth, and character. From classic artistic motifs to modern textured finishes, today’s wallpapers offer an elegant way to personalize walls and elevate the ambiance of any room."
+      },
+
+      "sideBySide": [
+        {
+          "title": "Modern Wallpaper Designs",
+          "image": "/images/products/history2.avif",
+         "description": "Modern wallpapers feature clean designs and soft textures that perfectly suit today’s stylish interiors."
+        },
+        {
+          "title": "Classic Wallpaper Designs",
+          "image": "/images/products/history3.avif",
+          "description": "Classic wallpapers include floral, damask, and ornamental styles that bring timeless charm to living spaces."
+
+        }
+      ],
+
+      "bigImage": "/images/products/wooden.avif",
+"types": [
+  {
+    "title": "Paper Wallpaper",
+    "description": "Decorative patterns printed on a paper base, offering a classic look ideal for low-moisture interior spaces."
+  },
+  {
+    "title": "Vinyl-Coated (Paper-Backed)",
+    "description": "Paper-based wallpaper finished with a protective vinyl coating for added durability and easy maintenance."
+  },
+  {
+    "title": "Non-Woven Wallpaper",
+    "description": "Made from blended natural and synthetic fibers, providing a breathable, tear-resistant, and refined textured finish."
+  },
+  {
+    "title": "Solid Vinyl Wallpaper",
+    "description": "Fully vinyl construction that delivers superior strength, washability, and long-lasting performance in busy areas."
+  },
+  {
+    "title": "PVC / Coated Vinyl Wallpaper",
+    "description": "Moisture-resistant and budget-friendly wallpaper with a protective coating, suitable for kitchens and humid spaces."
+  },
+  {
+    "title": "Fabric Wallpaper",
+    "description": "Luxurious textile-based wallpaper that adds depth, softness, and rich elegance to feature walls and interiors."
+  }
+],
+
+      "whyImages": [
+        { "id": 1, "image": "/images/products/history5.avif" },
+        { "id": 2, "image": "/images/products/history6.avif" }
+      ],
+
+            "why": {
+        "leftTitle": "Why Wallpaper?",
+       "points": [
+  {
+    "title": "Easy & Clean Installation",
+    "text": "Wallpapers are installed quickly and neatly, without the dust, odor, or post-work mess typically associated with painting."
+  },
+  {
+    "title": "Wide Design Selection",
+    "text": "From nature-inspired motifs to modern geometric patterns, wallpapers offer endless design possibilities to define your room’s personality."
+  },
+  {
+    "title": "Custom Design Options",
+    "text": "Create a truly personal space with wallpapers customized to your preferred colors, themes, and design inspirations."
+  },
+  {
+    "title": "Instant Interior Transformation",
+    "text": "Even a single feature wall in elegant wallpaper can instantly enhance the ambiance and visual appeal of a room."
+  }
+],
+"rightTitle": "We Help You Choose the Perfect Wallpaper",
+"rightText": [
+  "From accurate wall measurement to expert installation, AL-Home Decor provides complete guidance to ensure a seamless experience.",
+  "Our specialists recommend wallpaper designs that harmonize with your interiors, creating a cohesive and beautifully styled space."
+]
+      }
+
+    },
+
+    {
+      "id": 3,
+      "title": "Wooden Flooring",
+      "image": "/images/products/wooden.avif",
+      "descriptions": [
+          {
+      "short": "Elegant wooden floors with enduring appeal.",
+      "full": "Crafted for longevity and style, wooden flooring delivers natural sophistication and lasting performance."
+    },
+    {
+      "short": "Adds warmth and refinement.",
+      "full": "Wooden textures and tones enrich interiors with depth, comfort, and timeless elegance."
+    }
+      ]
+    },
+
+    {
+      "id": 4,
+      "title": "Window Blinds",
+      "image": "/images/products/Blinds.avif",
+      "subHeading": "Blinds",
+     "subCategories": [
+  {
+    "name": "Roller Blinds",
+    "image": "/images/products/roller.avif",
+    "short": "Clean, modern light control.",
+    "full": "Sleek roller blinds offer smooth operation and precise light filtering with a minimalist contemporary look."
+  },
+  {
+    "name": "Bamboo Blinds",
+    "image": "/images/products/bamboo.avif",
+    "short": "Natural eco elegance.",
+    "full": "Crafted from natural bamboo, these blinds bring warmth, texture, and organic charm to relaxed, earthy interiors."
+  },
+  {
+    "name": "Vertical Blinds",
+    "image": "/images/products/vertical.avif",
+    "short": "Perfect for wide openings.",
+    "full": "Vertical blinds provide flexible light control and privacy, ideal for large windows and sliding glass doors."
+  },
+  {
+    "name": "Roman Blinds",
+    "image": "/images/products/roaman.avif",
+    "short": "Soft fabric luxury.",
+    "full": "Roman blinds combine curtain-like fabric elegance with the convenience of adjustable blind functionality."
+  },
+  {
+    "name": "Pleated Blinds",
+    "image": "/images/products/pleated.avif",
+    "short": "Lightweight modern style.",
+    "full": "Pleated blinds feature crisp folds and a slim profile, adding refined texture and space-saving style to windows."
+  },
+  {
+    "name": "Wooden Blinds",
+    "image": "/images/products/woodenn.avif",
+    "short": "Timeless natural wood.",
+    "full": "Wooden blinds deliver classic warmth and durability, enhancing interiors with rich natural grain and elegance."
+  }
+]
+    },
+
+    {
+      "id": 5,
+      "title": "Vinyl Tiles",
+      "image": "/images/products/5.avif",
+      "description": "Vinyl tiles are cost-effective and durable."
+    },
+
+    {
+      "id": 6,
+      "title": "Carpet Tiles",
+      "image": "/images/products/6.avif",
+      "description": "Carpet tiles provide comfort and modularity."
+    }
+  ]
+}

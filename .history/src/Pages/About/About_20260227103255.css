@@ -1,0 +1,226 @@
+/* PAGE */
+.about-page {
+  overflow-x: hidden;
+}
+
+/* HERO */
+.about-hero {
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.about-overlay {
+  background: rgba(206, 66, 66, 0.6);
+  color: #fff;
+  height: 450px;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-title {
+  font-size: 60px;
+}
+
+.about-socials {
+  display: flex;
+  gap: 16px;
+  font-size: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* BOXES */
+.about-box-wrapper {
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.about-box {
+  width: 23%;
+  background: #f7f7f7;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.about-box h3 {
+   color:#c41e79;
+  font-size: 30px;
+}
+.about-box p{
+   color:#816077;
+   font
+}
+/* TEAM */
+.team-section {
+  padding: 60px;
+}
+
+.team-slider {
+  position: relative;
+  margin-top: 30px;
+}
+
+.slider-window {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider-track {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.5s ease;
+}
+
+.team-card {
+  flex: 0 0 25%;
+  height: 400px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.team-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 1.2s;
+  cursor: pointer;
+}
+
+.team-image:hover {
+  transform: scale(1.08);
+}
+
+.team-name {
+  padding: 12px;
+  font-weight: 600;
+}
+
+/* SLIDER ARROWS */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 4px 12px;
+}
+
+.arrow-left { left: -40px; }
+.arrow-right { right: -40px; }
+
+/* MODAL */
+.image-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.full-image {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.close-btn {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  font-size: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal-arrow {
+  position: absolute;
+  font-size: 60px;
+  background: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-left { left: 30px; }
+.modal-right { right: 30px; }
+
+
+/* ================================================= */
+/* ========== TABLET + MOBILE BASE (≤1023px) ======= */
+/* ================================================= */
+@media (max-width: 1023px) {
+
+  /* HERO */
+  .about-title { font-size: 46px; }
+
+  /* BOXES */
+  .about-box-wrapper {
+    padding: 30px 24px;
+    gap: 24px;
+  }
+
+  .about-box {
+    width: calc(50% - 12px);   /* perfect 2-column */
+  }
+
+  /* TEAM */
+  .team-card { flex: 0 0 33.33%; }
+
+  
+
+  /* SECTIONS */
+  .team-section {
+    padding: 40px 24px;
+  }
+}
+
+
+/* ================= MOBILE (≤600px) =============== */
+@media (max-width: 600px) {
+
+  /* HERO */
+  .about-hero {
+    height: 320px;
+  }
+
+  .about-overlay {
+    height: 320px;
+    padding: 28px 18px;
+    background: rgba(206, 66, 66, 0.85); /* stronger red */
+  }
+
+  .about-title { font-size: 32px; }
+
+  /* BOXES */
+  .about-box-wrapper {
+    padding: 20px 16px;
+    gap: 18px;
+  }
+
+  .about-box {
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* TEAM */
+  .team-card { flex: 0 0 100%; }
+  .slider-arrow { display: none; }
+
+  
+  /* SECTIONS */
+  .team-section {
+    padding: 30px 16px;
+  }
+
+}

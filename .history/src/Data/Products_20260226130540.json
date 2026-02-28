@@ -1,0 +1,173 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Curtains",
+      "image": "/images/products/1.jpg",
+      "description": "High durability and long-lasting performance are essential for commercial carpets due to heavy daily foot traffic. Choosing premium-quality carpeting ensures lasting comfort, resilience, and appearance, making it a smart long-term investment for your space."
+    },
+
+    {
+      "id": 2,
+      "title": "Wallpapers",
+      "image": "/images/products/wall.avif",
+
+      "history": {
+        "heading": "History Of Wallpapers",
+        "image": "/images/products/history1.avif",
+        "short": "Wallpapers transform walls with rich patterns, textures, and timeless decorative appeal.",
+"full": "Wallpapers have long been a statement element in interior décor, enhancing spaces with pattern, depth, and character. From classic artistic motifs to modern textured finishes, today’s wallpapers offer an elegant way to personalize walls and elevate the ambiance of any room."
+      },
+
+      "sideBySide": [
+        {
+          "title": "Modern Wallpaper Designs",
+          "image": "/images/products/history2.avif",
+          "description": "Modern wallpapers feature minimal patterns, abstract art, and clean textures that complement contemporary interiors."
+        },
+        {
+          "title": "Classic Wallpaper Designs",
+          "image": "/images/products/history3.avif",
+          "description": "Classic wallpapers include floral, damask, and ornamental styles that bring timeless charm to living spaces."
+        }
+      ],
+
+      "bigImage": "/images/products/wooden.avif",
+
+      "types": [
+        {
+          "title": "Paper",
+          "description": "In this type, decorative design is printed over a paper base."
+        },
+        {
+          "title": "Paper-backed Vinyl",
+          "description": "The bottom paper has liquid vinyl coated over it."
+        },
+        {
+          "title": "Non-Woven",
+          "description": "Natural or synthetic fibers with classy appearance."
+        },
+        {
+          "title": "Solid Vinyl",
+          "description": "Solid vinyl sheet applied over paper or fabric."
+        },
+        {
+          "title": "PVC or Coated Vinyl",
+          "description": "Affordable and moisture-resistant option."
+        },
+        {
+          "title": "Fabric",
+          "description": "Fabric-based or fabric-backed wallpaper."
+        }
+      ],
+
+      "whyImages": [
+        { "id": 1, "image": "/images/products/history5.avif" },
+        { "id": 2, "image": "/images/products/history6.avif" }
+      ],
+
+            "why": {
+        "leftTitle": "Why Wallpaper?",
+        "points": [
+          {
+            "title": "Ease of application",
+            "text": "Unlike paints, wallpapers are often applied in record time without creating dust or any cleaning hassles post-application."
+          },
+          {
+            "title": "Variety of designs",
+            "text": "From nature-inspired themes to contemporary geometric prints, wallpapers are available various designs which will provides a unique character to your room."
+          },
+          {
+            "title": "Customized prints",
+            "text": "If you're trying to find a customized ambiance, you'll even customize wallpapers in prints or designs supported your ideas and inspirations."
+          },
+          {
+            "title": "Instant makeover",
+            "text": "By covering even some of a wall with elegant wallpaper, you'll instantly elevate the room’s vibe."
+          }
+        ],
+        "rightTitle": "We are here to suggest you the best wallpaper...",
+        "rightText": [
+          "Right from the wall measurements to the wallpaper installation we are here to assist and make your home even look more beautiful.",
+          "Our team will suggest wallpaper to your home consistent with your interiors and make the space more attractive."
+        ]
+      }
+
+    },
+
+    {
+      "id": 3,
+      "title": "Wooden Flooring",
+      "image": "/images/products/wooden.avif",
+      "descriptions": [
+        {
+          "short": "Wooden flooring offers timeless beauty.",
+          "full": "Wooden flooring offers timeless beauty and durability."
+        },
+        {
+          "short": "Enhances interiors naturally.",
+          "full": "Enhances interiors with warmth and elegance."
+        }
+      ]
+    },
+
+    {
+      "id": 4,
+      "title": "Window Blinds",
+      "image": "/images/products/Blinds.avif",
+      "subHeading": "Blinds",
+      "subCategories": [
+        {
+          "name": "Roller Blinds",
+          "image": "/images/products/roller.avif",
+          "short": "Sleek light control.",
+          "full": "Minimal and elegant blinds."
+        },
+        {
+          "name": "Bamboo Blinds",
+          "image": "/images/products/bamboo.avif",
+          "short": "Eco-friendly blinds.",
+          "full": "Natural and warm appearance."
+        },
+        {
+          "name": "Vertical Blinds",
+          "image": "/images/products/vertical.avif",
+          "short": "For large windows.",
+          "full": "Ideal for sliding doors."
+        },
+        {
+          "name": "Roman Blinds",
+          "image": "/images/products/roaman.avif",
+          "short": "Luxurious look.",
+          "full": "Fabric elegance with control."
+        },
+        {
+          "name": "Pleated Blinds",
+          "image": "/images/products/pleated.avif",
+          "short": "Modern styling.",
+          "full": "Compact and stylish blinds."
+        },
+        {
+          "name": "Wooden Blinds",
+          "image": "/images/products/woodenn.avif",
+          "short": "Classic finish.",
+          "full": "Timeless wooden charm."
+        }
+      ]
+    },
+
+    {
+      "id": 5,
+      "title": "Vinyl Tiles",
+      "image": "/images/products/5.avif",
+      "description": "Vinyl tiles are cost-effective and durable."
+    },
+
+    {
+      "id": 6,
+      "title": "Carpet Tiles",
+      "image": "/images/products/6.avif",
+      "description": "Carpet tiles provide comfort and modularity."
+    }
+  ]
+}

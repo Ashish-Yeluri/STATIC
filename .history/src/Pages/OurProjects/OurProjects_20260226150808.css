@@ -1,0 +1,143 @@
+/* ================= PROJECT CONTAINER ================= */
+.projects-container { padding-top: 20px; }
+.with-menu-gap { padding-top: 80px; }
+.no-menu-gap { padding-top: 30px; }
+
+/* ================= TOP CATEGORY MENU ================= */
+.top-category-menu {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.top-category-menu button {
+  background: linear-gradient(45deg, #8b74a1, #e577d8, #5d184c);
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px 20px;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+/* hover same as catalogue button */
+.top-category-menu button:hover {
+  background: linear-gradient(45deg, #f8d69f, #89368a, #b3abb1);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(139, 54, 138, 0.25);
+}
+
+/* ================= SECTION ================= */
+.wallpaper-section {
+  margin: 60px 0;
+  scroll-margin-top: 130px;
+}
+
+/* ================= HERO ================= */
+.hero-row img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+/* ================= TITLES ================= */
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: red;
+}
+
+.curtain-heading {
+  text-align: center;
+  color: red;
+  font-size: 32px;
+  margin: 20px 0 30px;
+}
+
+/* ================= HORIZONTAL ================= */
+.horizontal-row {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+.horizontal-row img {
+  width: 159px;
+  height: 150px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* ================================================= */
+/* ================= RESPONSIVE ===================== */
+/* ================================================= */
+
+/* Tablet + Mobile */
+@media (max-width: 1024px) {
+
+  .with-menu-gap { padding-top: 70px; }
+
+  .hero-row img { height: 400px; }
+
+  .section-title { font-size: 24px; }
+  .curtain-heading { font-size: 28px; }
+
+  .horizontal-row img {
+    width: 140px;
+    height: 130px;
+  }
+
+   .top-category-menu {
+    justify-content: flex-start;   /* 👈 fix visibility */
+    padding: 0 20px;               /* keep left space */
+    scroll-padding-left: 20px;     /* safe scroll start */
+  }
+
+  .top-category-menu button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+/* Mobile only */
+@media (max-width: 600px) {
+
+  .with-menu-gap { padding-top: 110px; }
+  .no-menu-gap { padding-top: 20px; }
+
+  .hero-row img { height: 250px; }
+
+  .section-title { font-size: 20px; margin-bottom: 25px; }
+  .curtain-heading { font-size: 24px; }
+
+  .horizontal-row {
+    gap: 8px;
+    padding: 0 10px;
+  }
+
+  .horizontal-row img {
+    width: 120px;
+    height: 110px;
+  }
+
+   .top-category-menu {
+    justify-content: flex-start;   /* left align */
+    padding: 0 12px;
+    gap: 10px;
+    scroll-padding-left: 12px;
+  }
+
+  .top-category-menu button {
+    font-size: 13px;
+    padding: 6px 14px;
+  }
+}

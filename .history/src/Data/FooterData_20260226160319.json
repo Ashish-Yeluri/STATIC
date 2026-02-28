@@ -1,0 +1,44 @@
+{
+  "getInTouch": {
+    "title": "GET IN TOUCH",
+    "locations": [
+      {
+        "name": "LIBERTY",
+        "mapQuery": "17.4833509,78.3043801",,
+        "phone": "9494767687"
+      }    
+    ]
+  },
+
+  "mainFooter": {
+    "companyName": "BHAVANI FURNISHINGS",
+    "description": "Shape Your Space Create a space that reflects your style, fits your needs, and enhances your mood. Contact us today!",
+
+    "usefulLinks": [
+      "Our Story",
+      "NRI Living Spaces",
+      "Find us near you",
+      "Interior designers & Architects",
+      "Design your dream space"
+    ],
+
+    "categoriesOne": [
+      "Artificial Turf",
+      "Bedsheets",
+      "Carpets & Rugs",
+      "Curtains",
+      "Cushions"
+    ],
+
+    "categoriesTwo": [
+      "Mattress",
+      "Sofa Fabrics",
+      "Wallpapers",
+      "Window Blinds",
+      "Wooden Flooring"
+    ]
+  },
+
+  "copyright":
+    "Copyright © 2025 AL-Home Decor, All rights reserved."
+}

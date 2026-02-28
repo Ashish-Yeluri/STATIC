@@ -1,0 +1,59 @@
+{
+  "getInTouch": {
+    "title": "GET IN TOUCH",
+    "locations": [
+      {
+        "name": "LIBERTY",
+        "mapQuery": "Miyapur,Hyderabad",
+        "phone": "09848685322"
+      },
+      {
+        "name": "NALLAGANDLA",
+        "mapQuery": "Nallagandla,Hyderabad",
+        "phone": "07815930182"
+      },
+      {
+        "name": "CHAMPAPET",
+        "mapQuery": "Champapet,Hyderabad",
+        "phone": "08522801282"
+      },
+      {
+        "name": "NARSINGI",
+        "mapQuery": "Narsingi,Hyderabad",
+        "phone": "9000301282"
+      }
+    ]
+  },
+
+  "mainFooter": {
+    "companyName": "BHAVANI FURNISHINGS",
+    "description": "Shape Your Space Create a space that reflects your style, fits your needs, and enhances your mood. Contact us today!",
+
+    "usefulLinks": [
+      "Our Story",
+      "NRI Living Spaces",
+      "Find us near you",
+      "Interior designers & Architects",
+      "Design your dream space"
+    ],
+
+    "categoriesOne": [
+      "Artificial Turf",
+      "Bedsheets",
+      "Carpets & Rugs",
+      "Curtains",
+      "Cushions"
+    ],
+
+    "categoriesTwo": [
+      "Mattress",
+      "Sofa Fabrics",
+      "Wallpapers",
+      "Window Blinds",
+      "Wooden Flooring"
+    ]
+  },
+
+  "copyright":
+    "Copyright © 2025 AL-Home, All rights reserved."
+}

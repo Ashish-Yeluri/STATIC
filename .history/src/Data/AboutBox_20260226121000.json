@@ -1,0 +1,126 @@
+{
+  "content": [
+    {
+      "id": 1,
+      "title": "Our Story",
+      "description": ""
+    },
+    {
+      "id": 2,
+      "title": "Our Approach",
+      "description": "Our mission at Design Walls is to exceed the expectations of our clients by delivering unparalleled quality and service. We believe that every space has a story to tell, and it's our privilege to turn those stories into captivating works of art that reflect the unique personality and style of each individual.  "
+    },
+    {
+      "id": 3,
+      "title": "Our Mission",
+      "description": "At the heart of our approach lies a dedication to collaboration and creativity. We understand that the key to creating truly exceptional spaces lies in understanding the visions and aspirations of our clients. From initial consultations to final installation, we work closely with our clients every step of the way to ensure that their vision is brought to life with precision and care. "
+    },
+    {
+      "id": 4,
+      "title": "Our Promise",
+      "description": "As we continue to grow and evolve, our commitment to our clients remains steadfast. At Design Walls, we promise to continue pushing the boundaries of creativity and craftsmanship to create spaces that inspire, uplift, and delight. With each project we undertake, we strive to exceed expectations and leave a lasting impression that speaks volumes about our dedication to our craft."
+    }
+  ],
+
+  "teamImages": [
+    {
+      "id": 1,
+      "image": "/images/About/1.jpg"
+    },
+    {
+      "id": 2,
+      "image": "/images/About/2.jpg"
+    },
+    {
+      "id": 3,
+      "image": "/images/About/3.jpg"
+    },
+    {
+      "id": 4,
+      "image": "/images/About/4.jpg"
+    },
+    {
+      "id": 5,
+      "image": "/images/About/5.jpg"
+    },
+    {
+      "id": 6,
+      "image": "/images/About/6.jpg"
+    },
+    {
+      "id": 7,
+      "image": "/images/About/7.jpg"
+    },
+    {
+      "id": 8,
+      "image": "/images/About/8.jpg"
+    } 
+  ],
+
+  "awardImages": [
+    {
+      "id":1,
+      "image":"/images/About/1.jpg"
+    },
+    {
+      "id":2,
+      "image":"/images/About/1.jpg"
+    },
+    {
+      "id":3,
+      "image":"/images/About/1.jpg"
+    },
+    {
+      "id":4,
+      "image":"/images/About/1.jpg"
+    },
+    {
+      "id":5,
+      "image":"/images/About/1.jpg"
+    },
+    {
+      "id":6,
+      "image":"/images/About/1.jpg"
+    }
+
+  ],
+  "bigBashText": "The jersey launch was a Big BASH! The event was absolutely incredible in every way, and each year the vibe and enthusiasm for the event increases. We delightfully sponsored the Man of Match and Man of the Series for the BIG BASH 2022",
+  "bigBash": [
+    {
+      "id": 1,
+      "image":"/images/About/1.jpg"
+    },
+    {
+      "id": 2,
+      "image":"/images/About/1.jpg"
+    },
+    {
+      "id": 3,
+      "image":"/images/About/1.jpg"
+    },
+    {
+      "id": 4,
+      "image":"/images/About/1.jpg"
+    },
+    {
+      "id": 5,
+      "image":"/images/About/1.jpg"
+    },
+    {
+      "id": 6,
+      "image":"/images/About/1.jpg"
+    },
+    {
+      "id": 7,
+      "image":"/images/About/1.jpg"
+    },
+    {
+      "id": 8,
+      "image":"/images/About/1.jpg"
+    },
+    {
+      "id": 9,
+      "image":"/images/About/1.jpg"
+    }
+  ]
+}

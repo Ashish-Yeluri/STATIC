@@ -1,0 +1,310 @@
+/* PAGE */
+.about-page {
+  overflow-x: hidden;
+}
+
+/* HERO */
+.about-hero {
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.about-overlay {
+  background: rgba(206, 66, 66, 0.6);
+  color: #fff;
+  height: 450px;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-title {
+  font-size: 60px;
+}
+
+.about-socials {
+  display: flex;
+  gap: 16px;
+  font-size: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* BOXES */
+.about-box-wrapper {
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.about-box {
+  width: 23%;
+  background: #f7f7f7;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.about-box h3 {
+   color:#c41e79;
+  font-size: 30px;
+}
+.about-box
+/* TEAM */
+.team-section {
+  padding: 60px;
+}
+
+.team-slider {
+  position: relative;
+  margin-top: 30px;
+}
+
+.slider-window {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider-track {
+  display: flex;
+  gap: 30px;
+  transition: transform 0.5s ease;
+}
+
+.team-card {
+  flex: 0 0 25%;
+  height: 400px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.team-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 1.2s;
+  cursor: pointer;
+}
+
+.team-image:hover {
+  transform: scale(1.08);
+}
+
+.team-name {
+  padding: 12px;
+  font-weight: 600;
+}
+
+/* SLIDER ARROWS */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 4px 12px;
+}
+
+.arrow-left { left: -40px; }
+.arrow-right { right: -40px; }
+
+/* MODAL */
+.image-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.full-image {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
+.close-btn {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  font-size: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal-arrow {
+  position: absolute;
+  font-size: 60px;
+  background: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-left { left: 30px; }
+.modal-right { right: 30px; }
+
+/* AWARDS */
+.awards-section {
+  padding: 60px;
+  text-align: center;
+}
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.award-card {
+  height: 200px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.award-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .4s;
+}
+
+.award-card img:hover {
+  transform: scale(1.08);
+}
+
+/* BIG BASH */
+.bigbash-section {
+  padding: 60px;
+  text-align: center;
+}
+
+.bigbash-text {
+  max-width: 900px;
+  margin: 20px auto 40px;
+  line-height: 1.7;
+  font-size: 16px;
+  color: #444;
+}
+
+.bigbash-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.bigbash-card {
+  height: 260px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f7f7f7;
+}
+
+.bigbash-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .6s;
+}
+
+.bigbash-card img:hover {
+  transform: scale(0.92);
+}
+
+/* ================================================= */
+/* ========== TABLET + MOBILE BASE (≤1023px) ======= */
+/* ================================================= */
+@media (max-width: 1023px) {
+
+  /* HERO */
+  .about-title { font-size: 46px; }
+
+  /* BOXES */
+  .about-box-wrapper {
+    padding: 30px 24px;
+    gap: 24px;
+  }
+
+  .about-box {
+    width: calc(50% - 12px);   /* perfect 2-column */
+  }
+
+  /* TEAM */
+  .team-card { flex: 0 0 33.33%; }
+
+  /* GRIDS */
+  .awards-grid,
+  .bigbash-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  /* SECTIONS */
+  .team-section,
+  .awards-section,
+  .bigbash-section {
+    padding: 40px 24px;
+  }
+}
+
+
+/* ================================================= */
+/* ================= MOBILE (≤600px) =============== */
+/* ================================================= */
+@media (max-width: 600px) {
+
+  /* HERO */
+  .about-hero {
+    height: 320px;
+  }
+
+  .about-overlay {
+    height: 320px;
+    padding: 28px 18px;
+    background: rgba(206, 66, 66, 0.85); /* stronger red */
+  }
+
+  .about-title { font-size: 32px; }
+
+  /* BOXES */
+  .about-box-wrapper {
+    padding: 20px 16px;
+    gap: 18px;
+  }
+
+  .about-box {
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* TEAM */
+  .team-card { flex: 0 0 100%; }
+  .slider-arrow { display: none; }
+
+  /* GRIDS */
+  .awards-grid,
+  .bigbash-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* SECTIONS */
+  .team-section,
+  .awards-section,
+  .bigbash-section {
+    padding: 30px 16px;
+  }
+
+  .bigbash-text { font-size: 14px; }
+}
