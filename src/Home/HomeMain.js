@@ -105,7 +105,7 @@ export default function HomeMain({ image, text }) {
  
   // Big Image
  
-  const { image: parallaxImage, text: parallaxText } = data.parallaxSection;
+  // const { image: parallaxImage, text: parallaxText } = data.parallaxSection;
  
   useEffect(() => {
     const handleScroll = () => {
@@ -319,7 +319,7 @@ export default function HomeMain({ image, text }) {
       </section>
  
       {/* PARALLAX SECTION */}
-      <div className='parallax-wrapper'>
+      {/* <div className='parallax-wrapper'>
         <div
           ref={imageRef}
           className='parallax-image'
@@ -332,7 +332,7 @@ export default function HomeMain({ image, text }) {
         <div ref={textRef} className='parallax-text'>
           {parallaxText}
         </div>
-      </div>
+      </div> */}
  
       {/* Design Image */}
       <div className='about-section'>
@@ -355,7 +355,7 @@ export default function HomeMain({ image, text }) {
       </div>
  
       {/* YOUTUBE */}
-      <section className='youtube-section'>
+      {/* <section className='youtube-section'>
         <div className='youtube-header'>
           <h2 className='youtube-title'>{data.youtube.heading}</h2>
  
@@ -382,10 +382,10 @@ export default function HomeMain({ image, text }) {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
  
       {/* Brands */}
-      <div className='brands'>
+      {/* <div className='brands'>
         <h1 className='clientHead'>Brands</h1>
         <div className='brands-wrapper-container'>
           <div className='brands-content'>
@@ -413,7 +413,7 @@ export default function HomeMain({ image, text }) {
             </div>
           )}
         </div>
-      </div>
+      </div> */}
  
       {/* 2nd Big Image */}
       {/* SECOND PARALLAX SECTION */}

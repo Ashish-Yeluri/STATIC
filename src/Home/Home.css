@@ -327,7 +327,7 @@
 
 .overview-title{
   font-size:28px;
-  color:#c40000;
+  color:#55134f;
   margin-bottom:80px;
 }
 
@@ -447,12 +447,14 @@
   text-align:center;
   background-size:cover;
   background-position:center;
+  
 }
 
 .reviews-title{
   font-size:26px;
   margin-bottom:60px;
   color:red;
+  /* margin-top: -60px; */
 }
 
 .review-slider-container{
@@ -470,6 +472,7 @@
   border-radius:16px;
   background:#fff;
   box-shadow:0 8px 20px rgba(0,0,0,.15);
+  margin-top: -40px;
 }
 
 .review-inner{
