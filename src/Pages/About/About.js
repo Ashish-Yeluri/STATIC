@@ -8,7 +8,7 @@ import {
   FaPinterestP,
 } from "react-icons/fa";
 
-import hero from "../About/Main.avif";
+import hero from "../About/Main2.jpg";
 import AboutBox from "../../Data/AboutBox.json";
 import "./About.css";
 
@@ -68,7 +68,7 @@ export default function About() {
       >
         <div className="about-overlay">
           <h1 className="about-title">
-            About <br /> Design Walls
+            About <br /> AL Home Decor
           </h1>
 
           <div className="about-socials">
@@ -94,7 +94,7 @@ export default function About() {
 
       {/* TEAM */}
       <div className="team-section">
-        <h2 className="section-title">Team Design Walls</h2>
+        <h2 className="section-title">Al Home Decor</h2>
 
         <div className="team-slider">
           {currentIndex > 0 && (
