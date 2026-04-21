@@ -298,7 +298,7 @@ export default function HomeMain({ image, text }) {
       <section
         className='overview-section'
         style={{
-          '--top-scratch': `url(${process.env.PUBLIC_URL}/Images/Home/scratch1.png)`,
+          '--top-scratch': `url(${process.env.PUBLIC_URL}/Images/Home/scratch11.png)`,
           '--bottom-scratch': `url(${process.env.PUBLIC_URL}/Images/Home/scratch2.png)`,
         }}
       >

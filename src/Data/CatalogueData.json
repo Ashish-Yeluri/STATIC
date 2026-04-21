@@ -13,30 +13,47 @@
     {
       "id": 2,
       "title": "Modern Collection",
+<<<<<<< HEAD
       "image": "Images/Catalogue/Catalogue2.webp",
+=======
+      "image": "/imagesgeetha/catalogue/image2.jpg",
+>>>>>>> 0053abd65d80ff6ee852c7dc315e8ebf97dbe59d
       "pdf": ""
     },
     {
       "id": 3,
       "title": "Kids Collection",
+<<<<<<< HEAD
       "image":"Images/Catalogue/Catalogue3.jpeg",
+=======
+      "image": "/imagesgeetha/catalogue/image3.jpg",
+>>>>>>> 0053abd65d80ff6ee852c7dc315e8ebf97dbe59d
       "pdf": ""
     },
     {
       "id": 4,
       "title": "Texture Collection",
+<<<<<<< HEAD
       "image": "Images/Catalogue/Catalogue4.jpg",
+=======
+      "image": "/imagesgeetha/catalogue/image4.jpg",
+>>>>>>> 0053abd65d80ff6ee852c7dc315e8ebf97dbe59d
       "pdf": ""
     },
     {
       "id": 5,
       "title": "Floral Collection",
+<<<<<<< HEAD
       "image": "Images/Catalogue/Catalogue5.jpg",
+=======
+      "image": "/imagesgeetha/catalogue/image2.jpg",
+>>>>>>> 0053abd65d80ff6ee852c7dc315e8ebf97dbe59d
       "pdf": ""
     },
     {
       "id": 6,
       "title": "Modern Collection",
+<<<<<<< HEAD
       "image": "Images/Catalogue/Catalogue6.png",
       "pdf": ""
     },
@@ -50,6 +67,9 @@
       "id": 8,
       "title": "Texture Collection",
       "image": "Images/Catalogue/Catalogue8.jpg",
+=======
+      "image": "/imagesgeetha/catalogue/image6.jpg",
+>>>>>>> 0053abd65d80ff6ee852c7dc315e8ebf97dbe59d
       "pdf": ""
     }
   ]
