@@ -1,0 +1,252 @@
+{
+  "wallpapers": [
+    {
+      "title": "Living Room",
+      "hero": "/Images/Ourprojects/Wallpapers/Livingroom1.avif",
+      "images": [
+        "/Images/Ourprojects/Wallpapers/Livingroom2.jpg",
+        "/Images/Ourprojects/Wallpapers/Livingroom3.avif",
+        "/Images/Ourprojects/Wallpapers/Livingroom4.jpg",
+        "/Images/Ourprojects/Wallpapers/Livingroom5.avif",
+        "/Images/Ourprojects/Wallpapers/Livingroom6.png",
+        "/Images/Ourprojects/Wallpapers/Livingroom7.jpg",
+        "/Images/Ourprojects/Wallpapers/Livingroom8.avif",
+        "/Images/Ourprojects/Wallpapers/Livingroom9.jpg",
+        "/Images/Ourprojects/Wallpapers/Livingroom10.jpg"
+        
+      ]
+    },
+    {
+      "title": "Master Bedroom",
+      "hero": "/Images/Ourprojects/Wallpapers/Masterbedroom1.jpg",
+      "images": [
+       "/Images/Ourprojects/Wallpapers/Masterbedroom2.jpeg",
+       "/Images/Ourprojects/Wallpapers/Masterbedroom3.jpg",
+       "/Images/Ourprojects/Wallpapers/Masterbedroom4.jpg",
+       "/Images/Ourprojects/Wallpapers/Masterbedroom5.jpg",
+       "/Images/Ourprojects/Wallpapers/Masterbedroom6.jpg",
+       "/Images/Ourprojects/Wallpapers/Masterbedroom7.jpg",
+       "/Images/Ourprojects/Wallpapers/Masterbedroom8.avif",
+       "/Images/Ourprojects/Wallpapers/Masterbedroom9.jpg",
+       "/Images/Ourprojects/Wallpapers/Masterbedroom10.jpg"
+      ]
+    },
+    {
+      "title": "Kids Bedroom",
+      "hero": "/Images/Ourprojects/Wallpapers/Kidsbedroom1.jpg",
+      "images": [
+         "/Images/Ourprojects/Wallpapers/Kidsbedroom2.jpg",
+         "/Images/Ourprojects/Wallpapers/Kidsbedroom3.jpg",
+         "/Images/Ourprojects/Wallpapers/Kidsbedroom4.jpg",
+         "/Images/Ourprojects/Wallpapers/Kidsbedroom5.avif",
+         "/Images/Ourprojects/Wallpapers/Kidsbedroom6.webp",
+         "/Images/Ourprojects/Wallpapers/Kidsbedroom7.jpg",
+         "/Images/Ourprojects/Wallpapers/Kidsbedroom8.jpg",
+         "/Images/Ourprojects/Wallpapers/Kidsbedroom9.jpg",
+         "/Images/Ourprojects/Wallpapers/Kidsbedroom10.jpg"
+      ]
+    },
+    {
+      "title": "Ceiling Wallpapers",
+     "hero": "/Images/Ourprojects/Wallpapers/Ceiling1.jpg",
+      "images": [
+        "/Images/Ourprojects/Wallpapers/Ceiling1.jpg",
+        "/imagesgeetha/wallpapers/master3.avif",
+        "/imagesgeetha/wallpapers/master4.avif",
+        "/imagesgeetha/wallpapers/master5.avif",
+        "/imagesgeetha/wallpapers/master6.avif",
+        "/imagesgeetha/wallpapers/master7.avif",
+        "/imagesgeetha/wallpapers/master8.avif",
+        "/imagesgeetha/wallpapers/master9.avif",
+        "/imagesgeetha/wallpapers/master10.avif"
+      ]
+    },{
+      "title": "Commercial Wallpapers",
+       "hero": "/imagesgeetha/wallpapers/master1.avif",
+      "images": [
+        "/imagesgeetha/wallpapers/master2.avif",
+        "/imagesgeetha/wallpapers/master3.avif",
+        "/imagesgeetha/wallpapers/master4.avif",
+        "/imagesgeetha/wallpapers/master5.avif",
+        "/imagesgeetha/wallpapers/master6.avif",
+        "/imagesgeetha/wallpapers/master7.avif",
+        "/imagesgeetha/wallpapers/master8.avif",
+        "/imagesgeetha/wallpapers/master9.avif",
+        "/imagesgeetha/wallpapers/master10.avif"
+      ]
+    },
+    {
+      "title": "Personalized Wallpapers",
+      "hero": "/imagesgeetha/wallpapers/master1.avif",
+      "images": [
+        "/imagesgeetha/wallpapers/master2.avif",
+        "/imagesgeetha/wallpapers/master3.avif",
+        "/imagesgeetha/wallpapers/master4.avif",
+        "/imagesgeetha/wallpapers/master5.avif",
+        "/imagesgeetha/wallpapers/master6.avif",
+        "/imagesgeetha/wallpapers/master7.avif",
+        "/imagesgeetha/wallpapers/master8.avif",
+        "/imagesgeetha/wallpapers/master9.avif",
+        "/imagesgeetha/wallpapers/master10.avif"
+      ]
+    },
+    {
+      "title": "TV Unit",
+       "hero": "/imagesgeetha/wallpapers/master1.avif",
+      "images": [
+        "/imagesgeetha/wallpapers/master2.avif",
+        "/imagesgeetha/wallpapers/master3.avif",
+        "/imagesgeetha/wallpapers/master4.avif",
+        "/imagesgeetha/wallpapers/master5.avif",
+        "/imagesgeetha/wallpapers/master6.avif",
+        "/imagesgeetha/wallpapers/master7.avif",
+        "/imagesgeetha/wallpapers/master8.avif",
+        "/imagesgeetha/wallpapers/master9.avif",
+        "/imagesgeetha/wallpapers/master10.avif"
+      ]
+    }
+  ],
+   "blinds": [
+    {
+      "title": "Roller Blinds",
+      "hero": "/imagesgeetha/wallpapers/master1.avif",
+      "images": [
+        "/imagesgeetha/wallpapers/master2.avif",
+        "/imagesgeetha/wallpapers/master3.avif",
+        "/imagesgeetha/wallpapers/master4.avif",
+        "/imagesgeetha/wallpapers/master5.avif",
+        "/imagesgeetha/wallpapers/master6.avif",
+        "/imagesgeetha/wallpapers/master7.avif",
+        "/imagesgeetha/wallpapers/master8.avif",
+        "/imagesgeetha/wallpapers/master9.avif",
+        "/imagesgeetha/wallpapers/master10.avif"
+      ]
+    },
+    {
+      "title": "Roman Blinds",
+      "hero": "/imagesgeetha/wallpapers/master1.avif",
+      "images": [
+        "/imagesgeetha/wallpapers/master2.avif",
+        "/imagesgeetha/wallpapers/master3.avif",
+        "/imagesgeetha/wallpapers/master4.avif",
+        "/imagesgeetha/wallpapers/master5.avif",
+        "/imagesgeetha/wallpapers/master6.avif",
+        "/imagesgeetha/wallpapers/master7.avif",
+        "/imagesgeetha/wallpapers/master8.avif",
+        "/imagesgeetha/wallpapers/master9.avif",
+        "/imagesgeetha/wallpapers/master10.avif"
+      ]
+    },
+     {
+      "title": "Zebra Blinds",
+      "hero": "/imagesgeetha/wallpapers/master1.avif",
+      "images": [
+        "/imagesgeetha/wallpapers/master2.avif",
+        "/imagesgeetha/wallpapers/master3.avif",
+        "/imagesgeetha/wallpapers/master4.avif",
+        "/imagesgeetha/wallpapers/master5.avif",
+        "/imagesgeetha/wallpapers/master6.avif",
+        "/imagesgeetha/wallpapers/master7.avif",
+        "/imagesgeetha/wallpapers/master8.avif",
+        "/imagesgeetha/wallpapers/master9.avif",
+        "/imagesgeetha/wallpapers/master10.avif"
+      ]
+    },
+     {
+      "title": "Chic Blinds",
+      "hero": "/imagesgeetha/wallpapers/master1.avif",
+      "images": [
+        "/imagesgeetha/wallpapers/master2.avif",
+        "/imagesgeetha/wallpapers/master3.avif",
+        "/imagesgeetha/wallpapers/master4.avif",
+        "/imagesgeetha/wallpapers/master5.avif",
+        "/imagesgeetha/wallpapers/master6.avif",
+        "/imagesgeetha/wallpapers/master7.avif",
+        "/imagesgeetha/wallpapers/master8.avif",
+        "/imagesgeetha/wallpapers/master9.avif",
+        "/imagesgeetha/wallpapers/master10.avif"
+      ]
+    },
+     {
+      "title": "Venetian Blinds",
+      "hero": "/imagesgeetha/wallpapers/master1.avif",
+      "images": [
+        "/imagesgeetha/wallpapers/master2.avif",
+        "/imagesgeetha/wallpapers/master3.avif",
+        "/imagesgeetha/wallpapers/master4.avif",
+        "/imagesgeetha/wallpapers/master5.avif",
+        "/imagesgeetha/wallpapers/master6.avif",
+        "/imagesgeetha/wallpapers/master7.avif",
+        "/imagesgeetha/wallpapers/master8.avif",
+        "/imagesgeetha/wallpapers/master9.avif",
+        "/imagesgeetha/wallpapers/master10.avif"
+      ]
+    },
+     {
+      "title": "Customised Blinds",
+      "hero": "/imagesgeetha/wallpapers/master1.avif",
+      "images": [
+        "/imagesgeetha/wallpapers/master2.avif",
+        "/imagesgeetha/wallpapers/master3.avif",
+        "/imagesgeetha/wallpapers/master4.avif",
+        "/imagesgeetha/wallpapers/master5.avif",
+        "/imagesgeetha/wallpapers/master6.avif",
+        "/imagesgeetha/wallpapers/master7.avif",
+        "/imagesgeetha/wallpapers/master8.avif",
+        "/imagesgeetha/wallpapers/master9.avif",
+        "/imagesgeetha/wallpapers/master10.avif"
+      ]
+    },
+     {
+      "title": "Vertical Blinds",
+      "hero": "/imagesgeetha/wallpapers/master1.avif",
+      "images": [
+        "/imagesgeetha/wallpapers/master2.avif",
+        "/imagesgeetha/wallpapers/master3.avif",
+        "/imagesgeetha/wallpapers/master4.avif",
+        "/imagesgeetha/wallpapers/master5.avif",
+        "/imagesgeetha/wallpapers/master6.avif",
+        "/imagesgeetha/wallpapers/master7.avif",
+        "/imagesgeetha/wallpapers/master8.avif",
+        "/imagesgeetha/wallpapers/master9.avif",
+        "/imagesgeetha/wallpapers/master10.avif"
+      ]
+    }
+  ],
+
+  "curtains": [
+    {
+      "title": "Curtains",
+      "hero": "/imagesgeetha/wallpapers/curtain1.png",
+      "images": [
+        "/imagesgeetha/wallpapers/master2.avif",
+        "/imagesgeetha/wallpapers/master3.avif",
+        "/imagesgeetha/wallpapers/master4.avif",
+        "/imagesgeetha/wallpapers/master5.avif",
+        "/imagesgeetha/wallpapers/master6.avif",
+        "/imagesgeetha/wallpapers/master7.avif",
+        "/imagesgeetha/wallpapers/master8.avif",
+        "/imagesgeetha/wallpapers/master9.avif",
+        "/imagesgeetha/wallpapers/master10.avif"
+      ]
+    }
+  ],
+
+  "upholstery": [
+    {
+      "title": "Upholstery",
+      "hero": "/imagesgeetha/wallpapers/master1.avif",
+      "images": [
+        "/imagesgeetha/wallpapers/master2.avif",
+        "/imagesgeetha/wallpapers/master3.avif",
+        "/imagesgeetha/wallpapers/master4.avif",
+        "/imagesgeetha/wallpapers/master5.avif",
+        "/imagesgeetha/wallpapers/master6.avif",
+        "/imagesgeetha/wallpapers/master7.avif",
+        "/imagesgeetha/wallpapers/master8.avif",
+        "/imagesgeetha/wallpapers/master9.avif",
+        "/imagesgeetha/wallpapers/master10.avif"
+      ]
+    }
+]
+}

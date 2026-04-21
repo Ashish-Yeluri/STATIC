@@ -1,0 +1,164 @@
+{
+  "slider": [
+    { "id": 1, "src": "/images/Home/SLIDES/1.jpg" },
+    { "id": 2, "src": "/images/Home/SLIDES/2.jpg" },
+    { "id": 3, "src": "/images/Home/SLIDES/3.jpg" },
+    { "id": 4, "src": "/images/Home/SLIDES/4.jpg" },
+    { "id": 5, "src": "/images/Home/SLIDES/5.jpg" }
+  ],
+  "categories": [
+    { "id": 1, "title": "Wallpapers", "src": "/images/Home/1.avif" },
+    { "id": 2, "title": "Curtains", "src": "/images/Home/2.avif" },
+    { "id": 3, "title": "Blinds", "src": "/images/Home/3.avif" },
+    { "id": 4, "title": "Wooden\nFlooring", "src": "/images/Home/4.avif" },
+    { "id": 5, "title": "Carpet\nFlooring", "src": "/images/Home/5.avif" },
+    { "id": 6, "title": "Vinyl\nFlooring", "src": "/images/Home/6.avif" },
+    { "id": 7, "title": "Frames", "src": "/images/Home/7.avif" },
+    { "id": 8, "title": "Upholstery", "src": "/images/Home/8.avif" }
+  ],
+  "clients": [
+    { "id": 1, "name": "Client A", "logo": "/images/Home/client1.webp" },
+    { "id": 2, "name": "Client B", "logo": "/images/Home/client2.png" },
+    { "id": 3, "name": "Client C", "logo": "/images/Home/client3.png" },
+    { "id": 4, "name": "Client D", "logo": "/images/Home/client4.png" },
+    { "id": 5, "name": "Client E", "logo": "/images/Home/client5.png" },
+    { "id": 6, "name": "Client F", "logo": "/images/Home/client6.jpg" },
+    { "id": 7, "name": "Client A", "logo": "/images/Home/client1.webp" },
+    { "id": 8, "name": "Client B", "logo": "/images/Home/client8.png" },
+    { "id": 9, "name": "Client C", "logo": "/images/Home/client9.jpg" },
+    { "id": 10, "name": "Client D", "logo": "/images/Home/client4.png" },
+    { "id": 11, "name": "Client E", "logo": "/images/Home/client5.png" },
+    { "id": 12, "name": "Client F", "logo": "/images/Home/client6.jpg" },
+    { "id": 13, "name": "Client A", "logo": "/images/Home/client1.webp" },
+    { "id": 14, "name": "Client B", "logo": "/images/Home/client2.png" },
+    { "id": 15, "name": "Client C", "logo": "/images/Home/client3.png" },
+    { "id": 16, "name": "Client D", "logo": "/images/Home/client4.png" },
+    { "id": 17, "name": "Client E", "logo": "/images/Home/client9.jpg" },
+    { "id": 18, "name": "Client F", "logo": "/images/Home/client3.png" },
+    { "id": 19, "name": "Client A", "logo": "/images/Home/client7.png" },
+    { "id": 20, "name": "Client B", "logo": "/images/Home/client2.png" },
+    { "id": 21, "name": "Client C", "logo": "/images/Home/client3.png" },
+    { "id": 22, "name": "Client D", "logo": "/images/Home/client4.png" },
+    { "id": 23, "name": "Client E", "logo": "/images/Home/client5.png" },
+    { "id": 24, "name": "Client F", "logo": "/images/Home/client6.jpg" },
+    { "id": 24, "name": "Client A", "logo": "/images/Home/client1.webp" } 
+  ],
+  "brands": [
+    { "id": 1, "name": "Brand A", "logo": "/images/Home/stc.jpg" },
+    { "id": 2, "name": "Brand B", "logo": "/images/Home/nilaya.png" },
+    { "id": 3, "name": "Brand C", "logo": "/images/Home/vescom.jpg" },
+    { "id": 4, "name": "Brand D", "logo": "/images/Home/york.jpg" },
+    { "id": 5, "name": "Brand E", "logo": "/images/Home/k2.jpg" },
+    { "id": 6, "name": "Brand F", "logo": "/images/Home/marb.png" },
+     { "id": 1, "name": "Brand G", "logo": "/images/Home/design.png" },
+    { "id": 2, "name": "Brand H", "logo": "/images/Home/eij.png" },
+    { "id": 4, "name": "Brand J", "logo": "/images/Home/excel.png" }
+  ],
+  "about": {
+  "image": "/images/Home/design.jpg",
+  "heading": "Elevating Spaces with Timeless Drapery Elegance",
+  "description": "At AL Home Decor, we believe curtains are more than just window coverings — they are expressions of personality, comfort, and refined living. Our mission is to transform your interiors into spaces that feel warm, inviting, and beautifully yours.\n\nWe see every window as an opportunity to enhance light, texture, and atmosphere. Our journey begins by understanding your style, your lifestyle, and the mood you wish to create. Whether you are inspired by luxurious, flowing fabrics or drawn to clean, modern minimalism, our team is committed to translating your vision into perfectly tailored drapery solutions.\n\nOur designers blend contemporary design sensibilities with time-honored craftsmanship to create bespoke curtains that reflect sophistication and individuality. From carefully selected premium fabrics to precision stitching and flawless finishes, every detail is thoughtfully curated to ensure elegance in every fold.\n\nUsing superior materials and advanced fabrication techniques, we deliver curtains that are not only visually stunning but also durable, functional, and crafted to stand the test of time. The result is a harmonious balance of beauty and practicality — spaces that inspire comfort, elevate everyday living, and truly feel like home."
+  },
+   "catalogueSection": {
+    "image": "/images/Home/design2.jpg",
+    "heading": "Make Every Window a Masterpiece",
+    "description": "Elevate Your Space with Elegant Curtains\nReady to transform your interiors effortlessly with Design Drapes' curated collection of premium and customizable curtains?\n\nFrom luxurious sheers to rich blackout drapes,\n\nDiscover endless styles, textures, and colors to frame your windows beautifully and bring your dream space to life today."
+  },
+  "title": "AL Home Decor - Overview",
+  "items": [
+    {
+      "label": "Since",
+      "image": "/images/Home/2021.jpeg"
+    },
+    {
+      "label": "Team Size",
+      "image": "/images/Home/20+Team.png"
+    },
+    {
+      "label": "Designs",
+      "image": "/images/Home/ov5.png"
+    },
+    {
+      "label": "Projects",
+      "image": "/images/Home/ov6.avif"
+    },
+    {
+      "label": "Collaborations",
+      "image": "/images/Home/ov7.png"
+    }
+  ],
+    "youtube": {
+      "heading": "YOUTUBE",
+      "viewMoreLink": "https://www.youtube.com/@designwalls",
+      "videos": [
+        {
+          "id": 1,
+          "embedId": "EMMwedILwqU"
+        },
+        {
+          "id": 2,
+          "embedId": "jYHxCuhGdoE?si"
+        },
+        {
+          "id": 3,
+          "embedId": "MDGN9YXrur8?si"
+        }
+      ]
+    },
+      "parallaxSection": {
+      "image": "/images/Home/bigImage.jpg",
+      "text": "Where Windows Wear Luxury"
+    },
+     "parallaxSectionTwo": {
+    "image": "/images/Home/bigImage2.jpg",
+    "text": "LET YOUR WALLS SPEAK​"
+  },
+  "googleReviewsSection": {
+    "background": "/images/Home/big3.jpg",
+    "title": "Google Reviews",
+    "reviews": [
+      {
+        "id": 1,
+        "name": "Aditya",
+        "rating": 5,
+        "comment": "Excellent work and premium finish."
+      },
+      {
+        "id": 2,
+        "name": "Ananya",
+        "rating": 5,
+        "comment": "Professional team and timely delivery."
+      },
+      {
+        "id": 3,
+        "name": "Anvesh",
+        "rating": 4,
+        "comment": "Quality materials and great designs."
+      },
+      {
+        "id": 4,
+        "name": "Akshay",
+        "rating": 4,
+        "comment": "Excellent work and premium finish."
+      },
+      {
+        "id": 5,
+        "name": "Anirudh",
+        "rating": 4,
+        "comment": "Professional team and timely delivery."
+      },
+      {
+        "id": 6,
+        "name": "Akanksha",
+        "rating": 4,
+        "comment": "Excellent work and premium finish."
+      },
+      {
+        "id": 7,
+        "name": "Adithi",
+        "rating": 4,
+        "comment": "Professional team and timely delivery."
+      }
+    ]
+  }
+}

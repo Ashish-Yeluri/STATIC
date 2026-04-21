@@ -1,0 +1,223 @@
+{
+  "wallpapers": [
+    {
+      "title": "Living Room",
+      "hero": "/Images/Ourprojects/Wallpapers/Livingroom1.avif",
+      "images": [
+        "/Images/Ourprojects/Wallpapers/Livingroom2.jpg",
+        "/Images/Ourprojects/Wallpapers/Livingroom3.avif",
+        "/Images/Ourprojects/Wallpapers/Livingroom4.jpg",
+        "/Images/Ourprojects/Wallpapers/Livingroom5.avif",
+        "/Images/Ourprojects/Wallpapers/Livingroom6.png",
+        "/Images/Ourprojects/Wallpapers/Livingroom7.jpg",
+        "/Images/Ourprojects/Wallpapers/Livingroom8.avif",
+        "/Images/Ourprojects/Wallpapers/Livingroom9.jpg",
+        "/Images/Ourprojects/Wallpapers/Livingroom10.jpg"
+        
+      ]
+    },
+    {
+      "title": "Master Bedroom",
+      "hero": "/Images/Ourprojects/Wallpapers/Masterbedroom1.jpg",
+      "images": [
+       "/Images/Ourprojects/Wallpapers/Masterbedroom2.jpeg",
+       "/Images/Ourprojects/Wallpapers/Masterbedroom3.jpg",
+       "/Images/Ourprojects/Wallpapers/Masterbedroom4.jpg",
+       "/Images/Ourprojects/Wallpapers/Masterbedroom5.webp",
+       "/Images/Ourprojects/Wallpapers/Masterbedroom6.jpg",
+       "/Images/Ourprojects/Wallpapers/Masterbedroom7.jpg",
+       "/Images/Ourprojects/Wallpapers/Masterbedroom8.avif",
+       "/Images/Ourprojects/Wallpapers/Masterbedroom9.jpg",
+       "/Images/Ourprojects/Wallpapers/Masterbedroom10.jpg"
+      ]
+    },
+    {
+      "title": "Kids Bedroom",
+      "hero": "/Images/Ourprojects/Wallpapers/Kidsbedroom1.jpg",
+      "images": [
+         "/Images/Ourprojects/Wallpapers/Kidsbedroom2.jpg",
+         "/Images/Ourprojects/Wallpapers/Kidsbedroom3.jpg",
+         "/Images/Ourprojects/Wallpapers/Kidsbedroom4.jpg",
+         "/Images/Ourprojects/Wallpapers/Kidsbedroom5.avif",
+         "/Images/Ourprojects/Wallpapers/Kidsbedroom6.webp",
+         "/Images/Ourprojects/Wallpapers/Kidsbedroom7.jpg",
+         "/Images/Ourprojects/Wallpapers/Kidsbedroom8.jpg",
+         "/Images/Ourprojects/Wallpapers/Kidsbedroom9.jpg",
+         "/Images/Ourprojects/Wallpapers/Kidsbedroom10.jpg"
+      ]
+    },
+    {
+      "title": "Ceiling Wallpapers",
+     "hero": "/Images/Ourprojects/Wallpapers/Ceiling1.jpg",
+      "images": [
+        "/Images/Ourprojects/Wallpapers/Ceiling2.avif",
+        "/Images/Ourprojects/Wallpapers/Ceiling3.webp",
+        "/Images/Ourprojects/Wallpapers/Ceiling4.webp",
+        "/Images/Ourprojects/Wallpapers/Ceiling5.webp",
+        "/Images/Ourprojects/Wallpapers/Ceiling6.jpg",
+        "/Images/Ourprojects/Wallpapers/Ceiling7.webp",
+        "/Images/Ourprojects/Wallpapers/Ceiling8.jpg",
+        "/Images/Ourprojects/Wallpapers/Ceiling9.jpg",
+        "/Images/Ourprojects/Wallpapers/Ceiling10.jpg"
+        
+      ]
+    },
+    {
+      "title": "TV Unit",
+       "hero": "/Images/Ourprojects/Wallpapers/Tvunit1.webp",
+      "images": [
+       "/Images/Ourprojects/Wallpapers/Tvunit2.jpg",
+       "/Images/Ourprojects/Wallpapers/Tvunit3.jpg",
+       "/Images/Ourprojects/Wallpapers/Tvunit4.jpg",
+       "/Images/Ourprojects/Wallpapers/Tvunit5.jpg",
+       "/Images/Ourprojects/Wallpapers/Tvunit6.avif",
+       "/Images/Ourprojects/Wallpapers/Tvunit7.avif",
+       "/Images/Ourprojects/Wallpapers/Tvunit8.jpg",
+       "/Images/Ourprojects/Wallpapers/Tvunit9.jpg",
+       "/Images/Ourprojects/Wallpapers/Tvunit10.jpg"        
+      ]
+    }
+  ],
+   "blinds": [
+    {
+      "title": "Roller Blinds",
+      "hero": "/Images/OurProjects/Blinds/Roller1.webp",
+      "images": [
+        "/Images/OurProjects/Blinds/Roller2.jpg",
+        "/Images/OurProjects/Blinds/Roller3.jpg",
+        "/Images/OurProjects/Blinds/Roller4.jpg",
+        "/Images/OurProjects/Blinds/Roller5.jpg"       
+      ]
+    },
+    {
+      "title": "Roman Blinds",
+      "hero":"/Images/OurProjects/Blinds/Roman1.jpg" ,
+      "images": [
+        "/Images/OurProjects/Blinds/Roman2.jpg",
+        "/Images/OurProjects/Blinds/Roman3.jpg",
+        "/Images/OurProjects/Blinds/Roman4.jpeg",
+        "/Images/OurProjects/Blinds/Roman5.jpg" 
+      ]
+    },
+     {
+      "title": "Zebra Blinds",
+      "hero": "/Images/OurProjects/Blinds/Zebra1.avif" ,
+      "images": [
+         "/Images/OurProjects/Blinds/Zebra2.jpg",
+        "/Images/OurProjects/Blinds/Zebra3.avif",
+        "/Images/OurProjects/Blinds/Zebra4.png",
+        "/Images/OurProjects/Blinds/Zebra5.avif" 
+      ]
+    },
+     {
+      "title": "Chic Blinds",
+      "hero":  "/Images/OurProjects/Blinds/Chic1.jpg",
+      "images": [
+        "/Images/OurProjects/Blinds/Chic2.jpg",
+        "/Images/OurProjects/Blinds/Chic3.webp",
+        "/Images/OurProjects/Blinds/Chic4.jpeg",
+        "/Images/OurProjects/Blinds/Chic5.jpeg"
+
+      ]
+    },
+    {
+      "title": "venetian Blinds",
+      "hero": "/imagesgeetha/wallpapers/master1.avif",
+      "images": [
+        "/imagesgeetha/wallpapers/master2.avif",
+        "/imagesgeetha/wallpapers/master3.avif",
+        "/imagesgeetha/wallpapers/master4.avif",
+        "/imagesgeetha/wallpapers/master5.avif",
+        "/imagesgeetha/wallpapers/master6.avif",
+        "/imagesgeetha/wallpapers/master7.avif",
+        "/imagesgeetha/wallpapers/master8.avif",
+        "/imagesgeetha/wallpapers/master9.avif",
+        "/imagesgeetha/wallpapers/master10.avif"
+      ]
+    },
+    {
+      "title": "Wooden Blinds",
+      "hero": "/imagesgeetha/wallpapers/master1.avif",
+      "images": [
+        "/imagesgeetha/wallpapers/master2.avif",
+        "/imagesgeetha/wallpapers/master3.avif",
+        "/imagesgeetha/wallpapers/master4.avif",
+        "/imagesgeetha/wallpapers/master5.avif",
+        "/imagesgeetha/wallpapers/master6.avif",
+        "/imagesgeetha/wallpapers/master7.avif",
+        "/imagesgeetha/wallpapers/master8.avif",
+        "/imagesgeetha/wallpapers/master9.avif",
+        "/imagesgeetha/wallpapers/master10.avif"
+      ]
+    },
+     
+    
+     {
+      "title": "Vertical Blinds",
+      "hero": "/imagesgeetha/wallpapers/master1.avif",
+      "images": [
+        "/imagesgeetha/wallpapers/master2.avif",
+        "/imagesgeetha/wallpapers/master3.avif",
+        "/imagesgeetha/wallpapers/master4.avif",
+        "/imagesgeetha/wallpapers/master5.avif",
+        "/imagesgeetha/wallpapers/master6.avif",
+        "/imagesgeetha/wallpapers/master7.avif",
+        "/imagesgeetha/wallpapers/master8.avif",
+        "/imagesgeetha/wallpapers/master9.avif",
+        "/imagesgeetha/wallpapers/master10.avif"
+      ]
+    },
+    {
+      "title": "Sun Shield Blinds",
+      "hero": "/imagesgeetha/wallpapers/master1.avif",
+      "images": [
+        "/imagesgeetha/wallpapers/master2.avif",
+        "/imagesgeetha/wallpapers/master3.avif",
+        "/imagesgeetha/wallpapers/master4.avif",
+        "/imagesgeetha/wallpapers/master5.avif",
+        "/imagesgeetha/wallpapers/master6.avif",
+        "/imagesgeetha/wallpapers/master7.avif",
+        "/imagesgeetha/wallpapers/master8.avif",
+        "/imagesgeetha/wallpapers/master9.avif",
+        "/imagesgeetha/wallpapers/master10.avif"
+      ]
+    }
+  ],
+
+  "curtains": [
+    {
+      "title": "Curtains",
+      "hero": "/Images/OurProjects/Curtains/Curtains1.jpg",
+      "images": [
+        "/Images/OurProjects/Curtains/Curtains2.jpg",
+        "/Images/OurProjects/Curtains/Curtains3.jpg",
+        "/Images/OurProjects/Curtains/Curtains4.jpg",
+        "/Images/OurProjects/Curtains/Curtains5.jpg",
+        "/Images/OurProjects/Curtains/Curtains6.png",
+        "/Images/OurProjects/Curtains/Curtains7.avif",
+        "/Images/OurProjects/Curtains/Curtains8.jpg",
+        "/Images/OurProjects/Curtains/Curtains9.jpg",
+        "/Images/OurProjects/Curtains/Curtains10.webp"
+       
+      ]
+    }
+  ],
+
+  "upholstery": [
+    {
+      "title": "Upholstery",
+      "hero": "/Images/OurProjects/Upholstery/Upholstery1.jpg",
+      "images": [
+        "/Images/OurProjects/Upholstery/Upholstery2.jpg",
+        "/Images/OurProjects/Upholstery/Upholstery3.jpg",
+        "/Images/OurProjects/Upholstery/Upholstery4.jpg",
+        "/Images/OurProjects/Upholstery/Upholstery5.jpg",
+        "/Images/OurProjects/Upholstery/Upholstery6.jpg",
+        "/Images/OurProjects/Upholstery/Upholstery7.avif",
+        "/Images/OurProjects/Upholstery/Upholstery8.jpg",
+        "/Images/OurProjects/Upholstery/Upholstery9.jpeg",
+        "/Images/OurProjects/Upholstery/Upholstery10.webp"       
+      ]
+    }
+]
+}
