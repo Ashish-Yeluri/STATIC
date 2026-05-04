@@ -2,17 +2,17 @@
   "wallpapers": [
     {
       "title": "Living Room",
-      "hero": "/Images/Ourprojects/Wallpapers/Livingroom1.avif",
+      "hero": "/Images/Ourprojects/Wallpapers/L1.jpeg",
       "images": [
-        "/Images/Ourprojects/Wallpapers/Livingroom2.jpg",
-        "/Images/Ourprojects/Wallpapers/Livingroom3.avif",
-        "/Images/Ourprojects/Wallpapers/Livingroom4.jpg",
-        "/Images/Ourprojects/Wallpapers/Livingroom5.avif",
-        "/Images/Ourprojects/Wallpapers/Livingroom6.png",
-        "/Images/Ourprojects/Wallpapers/Livingroom7.jpg",
-        "/Images/Ourprojects/Wallpapers/Livingroom8.avif",
-        "/Images/Ourprojects/Wallpapers/Livingroom9.jpg",
-        "/Images/Ourprojects/Wallpapers/Livingroom10.jpg"
+        "/Images/Ourprojects/Wallpapers/L2.jpeg",
+        "/Images/Ourprojects/Wallpapers/L3.jpeg",
+        "/Images/Ourprojects/Wallpapers/L4.jpeg",
+        "/Images/Ourprojects/Wallpapers/L5.jpeg",
+        "/Images/Ourprojects/Wallpapers/L6.jpeg",
+        "/Images/Ourprojects/Wallpapers/L7.jpeg",
+        "/Images/Ourprojects/Wallpapers/L8.jpeg",
+        "/Images/Ourprojects/Wallpapers/L9.jpeg",
+        "/Images/Ourprojects/Wallpapers/L10.jpeg"
         
       ]
     },
@@ -35,15 +35,15 @@
       "title": "Kids Bedroom",
       "hero": "/Images/Ourprojects/Wallpapers/Kidsbedroom1.jpg",
       "images": [
-         "/Images/Ourprojects/Wallpapers/Kidsbedroom2.jpg",
-         "/Images/Ourprojects/Wallpapers/Kidsbedroom3.jpg",
-         "/Images/Ourprojects/Wallpapers/Kidsbedroom4.jpg",
-         "/Images/Ourprojects/Wallpapers/Kidsbedroom5.avif",
-         "/Images/Ourprojects/Wallpapers/Kidsbedroom6.webp",
-         "/Images/Ourprojects/Wallpapers/Kidsbedroom7.jpg",
-         "/Images/Ourprojects/Wallpapers/Kidsbedroom8.jpg",
+         "/Images/Ourprojects/Wallpapers/K1.jpeg",
+         "/Images/Ourprojects/Wallpapers/K2.jpeg",
+         "/Images/Ourprojects/Wallpapers/K3.jpeg",
+         "/Images/Ourprojects/Wallpapers/K4.jpeg",
          "/Images/Ourprojects/Wallpapers/Kidsbedroom9.jpg",
-         "/Images/Ourprojects/Wallpapers/Kidsbedroom10.jpg"
+         "/Images/Ourprojects/Wallpapers/Kidsbedroom10.jpg",
+         "/Images/Ourprojects/Wallpapers/K5.jpeg",
+         "/Images/Ourprojects/Wallpapers/K6.jpeg",
+         "/Images/Ourprojects/Wallpapers/K7.jpeg"
       ]
     },
     {
@@ -81,17 +81,17 @@
    "blinds": [
     {
       "title": "Roller Blinds",
-      "hero": "/Images/OurProjects/Blinds/Roller1.webp",
+      "hero": "/Images/OurProjects/Blinds/R1.jpeg",
       "images": [
-        "/Images/OurProjects/Blinds/Roller2.jpg",
-        "/Images/OurProjects/Blinds/Roller3.jpg",
-        "/Images/OurProjects/Blinds/Roller4.jpg",
-        "/Images/OurProjects/Blinds/Roller5.jpg"       
+        "/Images/OurProjects/Blinds/R2.jpeg",
+        "/Images/OurProjects/Blinds/R3.jpeg",
+        "/Images/OurProjects/Blinds/R4.jpeg",
+        "/Images/OurProjects/Blinds/R5.jpeg"       
       ]
     },
     {
       "title": "Roman Blinds",
-      "hero":"/Images/OurProjects/Blinds/Roman1.jpg" ,
+      "hero":"/Images/OurProjects/Blinds/Roman1.jpeg" ,
       "images": [
         "/Images/OurProjects/Blinds/Roman2.jpg",
         "/Images/OurProjects/Blinds/Roman3.jpg",
@@ -111,12 +111,12 @@
     },
      {
       "title": "Chic Blinds",
-      "hero":  "/Images/OurProjects/Blinds/Chic1.jpg",
+      "hero":  "/Images/OurProjects/Blinds/C1.jpeg",
       "images": [
-        "/Images/OurProjects/Blinds/Chic2.jpg",
-        "/Images/OurProjects/Blinds/Chic3.webp",
-        "/Images/OurProjects/Blinds/Chic4.jpg",
-        "/Images/OurProjects/Blinds/Chic5.jpg"
+        "/Images/OurProjects/Blinds/C2.jpeg",
+        "/Images/OurProjects/Blinds/C3.jpeg",
+        "/Images/OurProjects/Blinds/C4.jpeg",
+        "/Images/OurProjects/Blinds/C5.jpeg"
 
       ]
     },
@@ -132,21 +132,21 @@
     },
     {
       "title": "Wooden Blinds",
-      "hero": "/Images/OurProjects/Blinds/Wooden1.jpg",
+      "hero": "/Images/OurProjects/Blinds/W1.jpeg",
       "images": [
-        "/Images/OurProjects/Blinds/Wooden2.jpg",
-        "/Images/OurProjects/Blinds/Wooden3.jpg",
-        "/Images/OurProjects/Blinds/Wooden4.jpg",
-        "/Images/OurProjects/Blinds/Wooden5.jpg"
+        "/Images/OurProjects/Blinds/W2.jpeg",
+        "/Images/OurProjects/Blinds/W3.jpeg",
+        "/Images/OurProjects/Blinds/W4.jpeg",
+        "/Images/OurProjects/Blinds/W5.jpeg"
       ]
     },
      
     
      {
       "title": "Vertical Blinds",
-      "hero":  "/Images/OurProjects/Blinds/Vertical1.jpg",
+      "hero":  "/Images/OurProjects/Blinds/V1.jpeg",
       "images": [
-        "/Images/OurProjects/Blinds/Vertical2.jpg",
+        "/Images/OurProjects/Blinds/V2.jpeg",
         "/Images/OurProjects/Blinds/Vertical3.jpg",
         "/Images/OurProjects/Blinds/Vertical4.jpg",
         "/Images/OurProjects/Blinds/Vertical5.jpeg"
@@ -167,17 +167,17 @@
   "curtains": [
     {
       "title": "Curtains",
-      "hero": "/Images/OurProjects/Curtains/Curtains1.jpg",
+      "hero": "/Images/OurProjects/Curtains/C1.jpeg",
       "images": [
-        "/Images/OurProjects/Curtains/Curtains2.jpg",
-        "/Images/OurProjects/Curtains/Curtains3.jpg",
-        "/Images/OurProjects/Curtains/Curtains4.jpg",
-        "/Images/OurProjects/Curtains/Curtains5.jpg",
-        "/Images/OurProjects/Curtains/Curtains6.png",
-        "/Images/OurProjects/Curtains/Curtains7.avif",
-        "/Images/OurProjects/Curtains/Curtains8.jpg",
-        "/Images/OurProjects/Curtains/Curtains9.jpg",
-        "/Images/OurProjects/Curtains/Curtains10.webp"
+        "/Images/OurProjects/Curtains/C2.jpeg",
+        "/Images/OurProjects/Curtains/C3.jpeg",
+        "/Images/OurProjects/Curtains/C4.jpeg",
+        "/Images/OurProjects/Curtains/C5.jpeg",
+        "/Images/OurProjects/Curtains/C6.jpeg",
+        "/Images/OurProjects/Curtains/C7.jpeg",
+        "/Images/OurProjects/Curtains/C8.jpeg",
+        "/Images/OurProjects/Curtains/C9.jpeg",
+        "/Images/OurProjects/Curtains/C10.jpeg"
        
       ]
     }
