@@ -22,8 +22,8 @@
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0,0,0,.3);
   transition: .3s;
-  z-index: 2;          /* ⭐ important */
-  position: relative;  /* ⭐ isolate */
+  z-index: 2;
+  position: relative;
 }
 
 .consultation-tab:hover {
@@ -62,4 +62,61 @@
   text-decoration: none;
   z-index: 1;
   position: relative;
+}
+
+
+/* =========================================== */
+/* ===== TABLET (768px – 1023px) ============= */
+/* =========================================== */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .floating-contact {
+    right: 0;
+    gap: 10px;
+  }
+
+  .consultation-tab {
+    padding: 14px 9px;
+    font-size: 14px;
+  }
+
+  .call-btn,
+  .whatsapp-btn {
+    width: 44px;
+    height: 44px;
+    font-size: 17px;
+  }
+}
+
+
+/* =========================================== */
+/* ===== MOBILE (< 768px) ==================== */
+/* =========================================== */
+@media (max-width: 767px) {
+
+  .floating-contact {
+    right: 0;
+    top: auto;
+    bottom: 20px;
+    transform: none;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding-right: 12px;
+  }
+
+  .consultation-tab {
+    writing-mode: horizontal-tb;
+    transform: none;
+    padding: 10px 14px;
+    font-size: 13px;
+    border-radius: 8px;
+  }
+
+  .call-btn,
+  .whatsapp-btn {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+  }
 }

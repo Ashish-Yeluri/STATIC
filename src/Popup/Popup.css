@@ -16,7 +16,7 @@
   to   { opacity: 1; }
 }
 
-/* BOX — matches .contact-form glass style */
+/* BOX */
 .popup-box {
   width: 90%;
   max-width: 480px;
@@ -26,18 +26,13 @@
   border-radius: 12px;
   padding: 35px 40px;
 
-  /* same glass background as .contact-form */
   background: rgba(129, 96, 119, 0.18);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 
-  /* same border as .contact-form */
   border: 2.5px solid rgba(255, 255, 255, 0.65);
-
-  /* outer glow matching contact gradient */
   box-shadow: 0 12px 40px rgba(139, 54, 138, 0.2);
 
-  /* same gradient background as .contact-container */
   background: linear-gradient(135deg, #f6e9f1, #efcfe8, #e7b9dd);
 
   animation: slideUp 0.4s ease;
@@ -48,7 +43,6 @@
   to   { transform: translateY(0);    opacity: 1; }
 }
 
-/* hide scrollbar */
 .popup-box::-webkit-scrollbar { display: none; }
 
 /* CLOSE BUTTON */
@@ -65,7 +59,7 @@
 }
 .popup-close:hover { color: #8b74a1; }
 
-/* TITLE — matches .contact-form h2 */
+/* TITLE */
 .popup-title {
   font-size: 22px;
   color: #4a3a45;
@@ -81,14 +75,14 @@
   margin-bottom: 18px;
 }
 
-/* FORM LAYOUT — matches .contact-form form */
+/* FORM LAYOUT */
 .popup-box form {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-/* LABELS — matches .contact-form label */
+/* LABELS */
 .popup-box label {
   margin-bottom: 4px;
   font-size: 14px;
@@ -97,7 +91,7 @@
   display: block;
 }
 
-/* INPUTS — matches .contact-form input/textarea */
+/* INPUTS */
 .popup-box input,
 .popup-box textarea {
   padding: 11px;
@@ -117,7 +111,7 @@
   border-color: #8b74a1;
 }
 
-/* ERROR — matches .error */
+/* ERROR */
 .popup-error {
   color: black;
   font-size: 12px;
@@ -125,7 +119,7 @@
   margin-bottom: 10px;
 }
 
-/* SUBMIT BUTTON — matches .contact-form button */
+/* SUBMIT BUTTON */
 .popup-submit {
   margin-top: 20px;
   align-self: flex-end;
@@ -162,40 +156,28 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-  .popup-box {
-    padding: 24px;
-    max-width: 95%;
-  }
 
-  .popup-submit {
-    align-self: stretch;    /* full width button on mobile */
-    text-align: center;
-  }
-}
-/* ================= TABLET (601px - 1024px) ================= */
-@media (min-width: 601px) and (max-width: 1024px) {
+/* =========================================== */
+/* ===== TABLET (768px – 1023px) ============= */
+/* =========================================== */
+@media (min-width: 768px) and (max-width: 1023px) {
 
   .popup-box {
-    width: 70%;                /* not too wide, not too narrow */
-    max-width: 560px;          /* slightly wider than mobile */
+    width: 70%;
+    max-width: 560px;
     padding: 30px 36px;
     max-height: 88vh;
+    overflow-y: auto;
   }
 
-  .popup-title {
-    font-size: 20px;
-  }
+  .popup-title { font-size: 20px; }
 
   .popup-subtitle {
     font-size: 13px;
     margin-bottom: 16px;
   }
 
-  .popup-box label {
-    font-size: 13px;
-  }
+  .popup-box label { font-size: 13px; }
 
   .popup-box input,
   .popup-box textarea {
@@ -207,5 +189,23 @@
     padding: 10px 40px;
     font-size: 14px;
     align-self: flex-end;
+  }
+}
+
+
+/* =========================================== */
+/* ===== MOBILE (< 768px) ==================== */
+/* =========================================== */
+@media (max-width: 767px) {
+
+  .popup-box {
+    padding: 22px 18px;
+    max-width: 96%;
+    width: 96%;
+  }
+
+  .popup-submit {
+    align-self: stretch;
+    text-align: center;
   }
 }

@@ -1,47 +1,96 @@
 *{box-sizing:border-box}
 
-/* ================= SLIDER ================= */
+/* ═══════════════════════════════════════════
+   SLIDER  —  crossfade approach
+   Every image stacks in the same spot via
+   position:absolute. Only the active slide
+   has opacity:1. Zero translateX, zero bleed,
+   works regardless of parent padding/scrollbar.
+═══════════════════════════════════════════ */
 .slider {
   position: relative;
-  width: 100%;
-  height: 900px;
-  overflow: hidden;
+  width: 100%;          /* fits naturally inside the page flow */
+  height: 90vh;
+  max-height: 900px;
+  overflow: hidden;     /* safety belt — hides anything that escapes */
+  background: #111;     /* shows while first image loads */
 }
 
-.slider-track {
-  display: flex;
-  height: 100%;
-  transition: transform 0.8s ease-in-out;
-}
- 
+/* ALL slides sit on top of each other, invisible by default */
 .slide-image {
-  width: 100vw; /* 👈 VERY IMPORTANT */
+  position: absolute;
+  inset: 0;             /* top:0 right:0 bottom:0 left:0 */
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  flex-shrink: 0;
+  object-position: center;
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out;
+  will-change: opacity;
 }
 
-/* keep your original arrow layout */
-.slider-controls{
-  position:absolute;
-  top:15px;
-  right:15px;
-  display:flex;
-  gap:10px;
+/* Only the active slide is visible */
+.slide-image.slide-active {
+  opacity: 1;
+  position: relative;   /* keeps the .slider height alive */
 }
 
-.slider-controls button{
-  background:rgba(0,0,0,.6);
-  border:none;
-  color:#fff;
-  font-size:16px;
-  padding:6px 10px;
-  cursor:pointer;
-  border-radius:4px;
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+  pointer-events: none;
+  z-index: 10;
 }
 
-.slider-controls button:hover{
-  background:rgba(0,0,0,.8);
+.slider-controls button {
+  pointer-events: all;
+  background: rgba(0,0,0,0.45);
+  border: none;
+  color: #fff;
+  font-size: 28px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.25s;
+  line-height: 1;
+}
+
+.slider-controls button:hover {
+  background: rgba(0,0,0,0.75);
+}
+
+/* Dot indicators */
+.slider-dots {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.slider-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.slider-dot.dot-active {
+  background: #fff;
+  transform: scale(1.3);
 }
 
 
@@ -51,7 +100,7 @@
   justify-content:center;
   flex-wrap:wrap;
   gap:30px;
- background: #6a435b;
+  background: #6a435b;
   padding:30px 20px;
   width: 100%;
 }
@@ -79,8 +128,6 @@
 
 .category-text{font-size:large; color: #fff;font-weight:600 ;}
 
-
-/* Expand on hover */
 .category-item:hover .category-circle {
   transform: scale(1.15);
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
@@ -88,7 +135,6 @@
 
 .category-item:hover .category-image {
   transform: scale(1.1);
- transform: scale(1.1);
 }
 
 
@@ -125,7 +171,6 @@
   justify-content:center;
   gap:30px;
 }
-
 
 .brand-logo img,
 .client-logo img{
@@ -218,7 +263,6 @@
   transition: all .3s ease;
 }
 
-/* hover = same as your buttons */
 .about-toggle:hover{
   background: linear-gradient(45deg, #f8d69f, #89368a, #b3abb1);
   transform: translateY(-1px);
@@ -305,26 +349,6 @@
   text-align:center;
 }
 
-.overview-section::before,
-.overview-section::after{
-  content:"";
-  position:absolute;
-  left:0;
-  width:100%;
-  height:80px;
-  background-size:cover;
-}
-
-.overview-section::before{
-  top:0;
-  background:var(--top-scratch) no-repeat center;
-}
-
-.overview-section::after{
-  bottom:0;
-  background:var(--bottom-scratch) no-repeat center;
-}
-
 .overview-title{
   font-size:28px;
   color:#55134f;
@@ -386,7 +410,7 @@
   transition: all 0.3s ease;
   margin-left: 200px;
 }
- 
+
 .youtube-button:hover {
   background: #000;
   color: #fff;
@@ -431,7 +455,6 @@
   z-index: 1;
 }
 
-/* CONTENT OVER IMAGE */
 .parallax-content {
   position: relative;
   z-index: 2;
@@ -445,16 +468,13 @@
 .reviews-section{
   padding:60px 15px;
   text-align:center;
-  background-size:cover;
-  background-position:center;
-  
+  background: #f5f0f3;
 }
 
 .reviews-title{
   font-size:26px;
-  margin-bottom:60px;
+  margin-bottom:40px;
   color:#c41e79;
-  /* margin-top: -60px; */
 }
 
 .review-slider-container{
@@ -466,13 +486,12 @@
 
 .review-card-wrapper{
   width:100%;
-  max-width:320px;
-  height:200px;
+  max-width:620px;
+  height:220px;
   overflow:hidden;
   border-radius:16px;
   background:#fff;
-  box-shadow:0 8px 20px rgba(0,0,0,.15);
-  margin-top: -40px;
+  box-shadow:0 8px 28px rgba(196,30,121,.15);
 }
 
 .review-inner{
@@ -482,8 +501,8 @@
 
 .review-inner-item{
   min-width:100%;
-  height:200px;
-  padding:16px;
+  height:220px;
+  padding:24px 32px;
   display:flex;
   flex-direction:column;
   justify-content:center;
@@ -509,91 +528,89 @@
 .review-arrow:hover{background:#151414}
 
 
-/* ================= RESPONSIVE (REDUCED) ================= */
-@media (min-width:600px){
-  .slider{height:450px}
-  .overview-grid{grid-template-columns:repeat(2,1fr)}
-  .youtube-videos{grid-template-columns:repeat(2,1fr)}
-  .review-card-wrapper{max-width:420px}
+/* =========================================== */
+/* ===== DESKTOP (≥ 1024px) ================= */
+/* =========================================== */
+@media (min-width: 1024px) {
+  .slider { height: 80vh; max-height: 700px; }
+  .overview-grid { grid-template-columns: repeat(4, 1fr); }
+  .youtube-videos { grid-template-columns: repeat(3, 1fr); }
+  .parallax-wrapper { height: 100vh; }
+  .parallax-text { font-size: 56px; }
+  .review-card-wrapper { max-width: 680px; }
+  .brands-wrapper-container,
+  .clients-wrapper { width: 800px; }
 }
 
-@media (min-width:768px){
-  .category-circle{width:90px;height:90px}
-  .category-image{width:48px;height:48px}
-  .category-text{font-size:15px}
-}
 
-@media (min-width:1024px){
-  .slider{height:700px}
-  .overview-grid{grid-template-columns:repeat(4,1fr)}
-  .youtube-videos{grid-template-columns:repeat(3,1fr)}
-  .parallax-wrapper{height:100vh}
-  .parallax-text{font-size:56px}
-  .review-card-wrapper{max-width:500px}
-}
+/* =========================================== */
+/* ===== TABLET (768px – 1023px) ============= */
+/* =========================================== */
+@media (min-width: 768px) and (max-width: 1023px) {
 
-/* ================= TABLET (≤1023px) ============== */
-@media (max-width: 1023px) {
+  html, body { overflow-x: hidden; }
 
-  /* SECTIONS PADDING */
+  .slider { height: 60vh; max-height: 500px; }
+
+  .category-circle { width: 80px; height: 80px; }
+  .category-image { width: 42px; height: 42px; }
+  .category-text { font-size: 14px; }
+
+  .brands-wrapper-container,
+  .clients-wrapper { width: 100%; }
+
   .about-section,
   .catalogue-section,
   .youtube-section,
   .overview-section,
-  .reviews-section {
-    padding: 50px 20px;
-  }
+  .reviews-section { padding: 50px 24px; }
 
-  /* CLIENTS WIDTH */
-  .brands-wrapper-container,
-  .clients-wrapper {
-    width: 100%;
-  }
-
-  /* ABOUT / CATALOGUE STACK */
   .about-section,
-  .catalogue-section {
-    gap: 30px;
-  }
+  .catalogue-section { gap: 30px; }
 
   .about-image,
   .catalogue-image,
   .about-content,
-  .catalogue-content {
-    flex: 1 1 45%;
-    max-width: 100%;
-  }
-   .catalogue-image::before {
-    left: 20px;   /* was 40px → prevents overlap */
-    top: -20px;
-  }
-  /* CATALOGUE TEXT ALIGN */
+  .catalogue-content { flex: 1 1 45%; max-width: 100%; }
+
+  .catalogue-image::before { left: 20px; top: -20px; }
+
   .catalogue-heading,
   .catalogue-description,
-  .catalogue-button {
-    margin-left: 0;
-  }
+  .catalogue-button { margin-left: 0; }
 
-  /* OVERVIEW */
-  .overview-title {
-    margin-bottom: 50px;
-  }
+  .overview-grid { grid-template-columns: repeat(2, 1fr); }
+  .overview-title { margin-bottom: 50px; }
 
-  /* REVIEWS */
-  .review-card-wrapper {
-    max-width: 420px;
-  }
+  .youtube-videos { grid-template-columns: repeat(2, 1fr); }
+  .youtube-button { margin-left: 60px; }
+
+  .review-card-wrapper { max-width: 560px; }
+
+  .parallax-image { background-attachment: scroll; }
 }
 
-/* =============== MOBILE OVERFLOW FIX ============= */
-@media (max-width: 600px) {
 
-  /* Prevent horizontal overflow everywhere */
-  html, body {
-    overflow-x: hidden;
-  }
+/* =========================================== */
+/* ===== MOBILE (< 768px) ==================== */
+/* =========================================== */
+@media (max-width: 767px) {
 
-  /* Sections must never exceed screen */
+  html, body { overflow-x: hidden; }
+
+  .slider { height: 55vw; max-height: 320px; }
+
+  .categories-wrapper { gap: 18px; padding: 20px 12px; }
+  .category-circle { width: 60px; height: 60px; }
+  .category-image { width: 30px; height: 30px; }
+  .category-text { font-size: 12px; }
+
+  .brands-wrapper-container,
+  .clients-wrapper { width: 100%; padding: 24px 12px; }
+
+  .brand-logo img,
+  .client-logo img { width: 90px; height: 90px; }
+
   .youtube-section,
   .overview-section,
   .reviews-section,
@@ -601,46 +618,36 @@
   .catalogue-section {
     max-width: 100%;
     overflow-x: hidden;
-  }
-    .overview-grid {
-    grid-template-columns: repeat(2, 1fr); /* 👈 2 per row */
-    gap: 30px;
+    padding: 36px 16px;
   }
 
+  .about-image,
+  .catalogue-image,
+  .about-content,
+  .catalogue-content { flex: 1 1 100%; max-width: 100%; }
 
-  /* YOUTUBE HEADER FIX */
-  .youtube-header {
-    flex-wrap: wrap;
-    gap: 12px;
-    text-align: center;
-  }
+  .catalogue-image::before { display: none; }
 
-  .youtube-button {
-    margin-left: 0;   /* was 200px → pushed off screen */
-  }
+  .catalogue-heading,
+  .catalogue-description,
+  .catalogue-button { margin-left: 0; }
 
-  /* YOUTUBE VIDEOS SAFE WIDTH */
-  .youtube-videos {
-    width: 100%;
-  }
+  .overview-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .overview-title { margin-bottom: 36px; font-size: 22px; }
 
-  /* GOOGLE REVIEWS CARD */
-  .review-slider-container {
-    width: 100%;
-    padding: 0 12px;
-    box-sizing: border-box;
-  }
+  .youtube-videos { grid-template-columns: 1fr; width: 100%; }
 
-  .review-card-wrapper {
-    max-width: 100%;
-  }
+  .youtube-header { flex-wrap: wrap; gap: 12px; text-align: center; }
+  .youtube-button { margin-left: 0; }
 
-  /* FLOATING BUTTONS SAFE */
+  .review-slider-container { width: 100%; padding: 0 12px; box-sizing: border-box; }
+  .review-card-wrapper { max-width: 100%; }
+
+  .parallax-image { background-attachment: scroll; }
+  .parallax-content { padding: 60px 8%; }
+
   .floating,
   .floating-buttons,
   .contact-floating,
-  .whatsapp-floating {
-    right: 12px !important;
-  }
-
+  .whatsapp-floating { right: 12px !important; }
 }

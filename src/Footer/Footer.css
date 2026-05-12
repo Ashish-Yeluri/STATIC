@@ -14,7 +14,7 @@
   font-size: 25px;
 }
 
-/* GRID */
+/* GRID — Desktop: 4 columns */
 .footer-grid {
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr 1fr;
@@ -84,16 +84,64 @@
   color: #aaa;
 }
 
-/* MOBILE */
-@media (max-width: 900px) {
+
+/* =========================================== */
+/* ===== TABLET (768px – 1023px) ============= */
+/* =========================================== */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .footer {
+    padding: 30px 6% 0;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 36px;
+  }
+
+  .footer-contact-title {
+    font-size: 22px;
+    margin-bottom: 22px;
+  }
+
+  .footer-map .location-card {
+    max-width: 100%;
+  }
+}
+
+
+/* =========================================== */
+/* ===== MOBILE (< 768px) ==================== */
+/* =========================================== */
+@media (max-width: 767px) {
+
+  .footer {
+    padding: 28px 6% 0;
+  }
+
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 28px;
     text-align: center;
   }
 
+  .footer-contact-title {
+    font-size: 20px;
+  }
+
   .footer-map .location-card {
-    max-width: 340px;
+    max-width: 320px;
     margin: auto;
+  }
+
+  .footer-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 20px;
+  }
+
+  .footer-links li {
+    margin-bottom: 0;
   }
 }

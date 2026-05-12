@@ -114,22 +114,31 @@ body {
 }
 
 .shipping-icon { font-size: 20px; }
-/* ================= MOBILE + TABLET ================= */
-@media (max-width: 1023px) {
 
-  .header-left { order: 1; }
-  .header-right { order: 2; }
 
-}
+/* =========================================== */
+/* ===== TABLET (768px – 1023px) ============= */
+/* =========================================== */
+@media (min-width: 768px) and (max-width: 1023px) {
 
-/* ================= MOBILE ONLY ================= */
-@media (max-width: 768px) {
-
-  body { padding-top: 110px; }
+  body { padding-top: 90px; }
 
   .header {
-    flex-wrap: wrap;
-    gap: 8px;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .header-left {
+    order: 1;
+    flex: 0 0 auto;
+  }
+
+  .header-right {
+    order: 2;
+    flex: 0 0 auto;
+    min-width: 120px;
+    font-size: 14px;
+    padding: 8px 12px;
   }
 
   .header-center {
@@ -137,41 +146,60 @@ body {
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 10px;
+    padding: 6px 0 2px;
+  }
+
+  .header-center .headings {
+    font-size: 15px;
+  }
+
+  .shipping-banner h2 {
+    font-size: 15px;
+  }
+}
+
+
+/* =========================================== */
+/* ===== MOBILE (< 768px) ==================== */
+/* =========================================== */
+@media (max-width: 767px) {
+
+  body { padding-top: 115px; }
+
+  .header {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 16px;
+  }
+
+  .header-left { order: 1; }
+  .header-right {
+    order: 2;
+    min-width: 110px;
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+
+  .header-center {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .header-center .headings {
+    font-size: 14px;
   }
 
   .shipping-banner {
     flex-direction: column;
     gap: 4px;
-  }
-}
-
-/* ================= TABLET ONLY ================= */
-/* ================= TABLET HEADER FIX ================= */
-@media (min-width: 769px) and (max-width: 1023px) {
-
-  .header {
-    justify-content: space-between;   /* restore normal flow */
-    position: relative;
+    padding: 8px 12px;
   }
 
-  .header-left {
-    flex: 0 0 auto;
+  .shipping-banner h2 {
+    font-size: 13px;
   }
-
-  .header-right {
-    flex: 0 0 auto;
-  }
-
-  .header-center {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    flex-wrap: nowrap;
-
-    /* 👇 prevents overlap with phone */
-    max-width: calc(100% - 260px);
-    overflow: hidden;
-  }
-
 }

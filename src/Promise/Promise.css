@@ -10,8 +10,6 @@
   font-weight: 700;
   margin-bottom: 12px;
   letter-spacing: 0.5px;
-
-  /* gradient text */
   background: linear-gradient(90deg, #c41e79, #816077);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -19,12 +17,12 @@
 }
 
 .promise-subtitle {
-   color: #3f2b3a; /* brand text */
+   color: #3f2b3a;
   margin-bottom: 50px;
   font-size: large
 }
 
-/* ===== GRID: 3 PER ROW ===== */
+/* ===== GRID: 3 PER ROW (Desktop) ===== */
 .promise-grid {
   width: min(92%, 1150px);
   margin: auto;
@@ -44,7 +42,6 @@
   overflow: hidden;
 }
 
-/* soft glow background on hover */
 .promise-card::before {
   content: "";
   position: absolute;
@@ -58,7 +55,6 @@
   opacity: 1;
 }
 
-/* lift + shadow */
 .promise-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 14px 28px rgba(196, 30, 121, 0.15);
@@ -92,18 +88,34 @@
   font-size: large
 }
 
-/* ================= TABLET ================= */
-@media (max-width: 900px) {
+
+/* =========================================== */
+/* ===== TABLET (768px – 1023px) ============= */
+/* =========================================== */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .promise-section { padding: 60px 0; }
+
   .promise-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
   }
+
+  .promise-subtitle { margin-bottom: 36px; }
 }
 
-/* ================= MOBILE ================= */
-@media (max-width: 600px) {
-  .promise-section { padding: 60px 0; }
-  .promise-subtitle { margin-bottom: 30px; }
+
+/* =========================================== */
+/* ===== MOBILE (< 768px) ==================== */
+/* =========================================== */
+@media (max-width: 767px) {
+
+  .promise-section { padding: 50px 0; }
+
+  .promise-subtitle { margin-bottom: 28px; }
+
   .promise-grid {
     grid-template-columns: 1fr;
+    gap: 18px;
   }
 }
