@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
+
 import './Home.css';
 import homeData from '../Data/Home.json';
 import clientsData from '../Data/Home.json';
@@ -15,18 +16,17 @@ export default function HomeMain({ image, text }) {
   const [current, setCurrent] = useState(0);
   const intervalRef           = useRef(null);
 
-  const startAutoSlide = () => {
+  const startAutoSlide = useCallback(() => {
     clearInterval(intervalRef.current);
     intervalRef.current = setInterval(() => {
       setCurrent((prev) => (prev + 1) % totalSlides);
     }, 3000);
-  };
+  }, [totalSlides]);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (totalSlides > 0) startAutoSlide();
     return () => clearInterval(intervalRef.current);
-  }, [totalSlides]);
+  }, [totalSlides, startAutoSlide]);
 
   const nextSlide = () => {
     clearInterval(intervalRef.current);
@@ -79,20 +79,20 @@ export default function HomeMain({ image, text }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const reviewIntervalRef               = useRef(null);
 
-  const startReviewAutoSlide = () => {
+  const stopReviewAutoSlide = useCallback(() => {
+    if (reviewIntervalRef.current) clearInterval(reviewIntervalRef.current);
+  }, []);
+
+  const startReviewAutoSlide = useCallback(() => {
     stopReviewAutoSlide();
     reviewIntervalRef.current = setInterval(() => setCurrentIndex((p) => p + 1), 3000);
-  };
-  const stopReviewAutoSlide = () => {
-    if (reviewIntervalRef.current) clearInterval(reviewIntervalRef.current);
-  };
+  }, [stopReviewAutoSlide]);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (reviews.length === 0) return;
     startReviewAutoSlide();
     return () => stopReviewAutoSlide();
-  }, [reviews.length]);
+  }, [reviews.length, startReviewAutoSlide, stopReviewAutoSlide]);
 
   const handleReviewTransitionEnd = () => {
     if (currentIndex === reviews.length - 1) {
