@@ -25,62 +25,62 @@
   "teamImages": [
     {
       "id": 1,
-      "image": "/images/About/1.jpg"
+      "image": "/Images/About/1.jpg"
     },
     {
       "id": 2,
-      "image": "/images/About/2.jpg"
+      "image": "/Images/About/2.jpg"
     },
     {
       "id": 3,
-      "image": "/images/About/3.jpg"
+      "image": "/Images/About/3.jpg"
     },
     {
       "id": 4,
-      "image": "/images/About/4.jpg"
+      "image": "/Images/About/4.jpg"
     },
     {
       "id": 5,
-      "image": "/images/About/5.jpg"
+      "image": "/Images/About/5.jpg"
     },
     {
       "id": 6,
-      "image": "/images/About/6.jpg"
+      "image": "/Images/About/6.jpg"
     },
     {
       "id": 7,
-      "image": "/images/About/7.jpg"
+      "image": "/Images/About/7.jpg"
     },
     {
       "id": 8,
-      "image": "/images/About/8.jpg"
+      "image": "/Images/About/8.jpg"
     } 
   ],
 
   "awardImages": [
     {
       "id":1,
-      "image":"/images/About/1.jpg"
+      "image":"/Images/About/1.jpg"
     },
     {
       "id":2,
-      "image":"/images/About/1.jpg"
+      "image":"/Images/About/1.jpg"
     },
     {
       "id":3,
-      "image":"/images/About/1.jpg"
+      "image":"/Images/About/1.jpg"
     },
     {
       "id":4,
-      "image":"/images/About/1.jpg"
+      "image":"/Images/About/1.jpg"
     },
     {
       "id":5,
-      "image":"/images/About/1.jpg"
+      "image":"/Images/About/1.jpg"
     },
     {
       "id":6,
-      "image":"/images/About/1.jpg"
+      "image":"/Images/About/1.jpg"
     }
 
   ],
@@ -88,39 +88,39 @@
   "bigBash": [
     {
       "id": 1,
-      "image":"/images/About/1.jpg"
+      "image":"/Images/About/1.jpg"
     },
     {
       "id": 2,
-      "image":"/images/About/1.jpg"
+      "image":"/Images/About/1.jpg"
     },
     {
       "id": 3,
-      "image":"/images/About/1.jpg"
+      "image":"/Images/About/1.jpg"
     },
     {
       "id": 4,
-      "image":"/images/About/1.jpg"
+      "image":"/Images/About/1.jpg"
     },
     {
       "id": 5,
-      "image":"/images/About/1.jpg"
+      "image":"/Images/About/1.jpg"
     },
     {
       "id": 6,
-      "image":"/images/About/1.jpg"
+      "image":"/Images/About/1.jpg"
     },
     {
       "id": 7,
-      "image":"/images/About/1.jpg"
+      "image":"/Images/About/1.jpg"
     },
     {
       "id": 8,
-      "image":"/images/About/1.jpg"
+      "image":"/Images/About/1.jpg"
     },
     {
       "id": 9,
-      "image":"/images/About/1.jpg"
+      "image":"/Images/About/1.jpg"
     }
   ]
 }

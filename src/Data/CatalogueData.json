@@ -7,49 +7,49 @@
     {
       "id": 1,
       "title": "Floral Collectionaaaa",
-      "image": "/images/Catalogue/Catalogue1.jpg",
+      "image": "/Images/Catalogue/Catalogue1.jpg",
       "pdf": ""
     },
     {
       "id": 2,
       "title": "Modern Collection",
-      "image": "/images/Catalogue/Catalogue2.webp",
+      "image": "/Images/Catalogue/Catalogue2.webp",
       "pdf": ""
     },
     {
       "id": 3,
       "title": "Kids Collection",
-      "image":"/images/Catalogue/Catalogue3.jpeg",
+      "image":"/Images/Catalogue/Catalogue3.jpeg",
       "pdf": ""
     },
     {
       "id": 4,
       "title": "Texture Collection",
-      "image": "/images/Catalogue/Catalogue4.jpg",
+      "image": "/Images/Catalogue/Catalogue4.jpg",
       "pdf": ""
     },
     {
       "id": 5,
       "title": "Floral Collection",
-      "image": "/images/Catalogue/Catalogue5.jpg",
+      "image": "/Images/Catalogue/Catalogue5.jpg",
       "pdf": ""
     },
     {
       "id": 6,
       "title": "Modern Collection",
-      "image": "/images/Catalogue/Catalogue6.png",
+      "image": "/Images/Catalogue/Catalogue6.png",
       "pdf": ""
     },
     {
       "id": 7,
       "title": "Kids Collection",
-      "image": "/images/Catalogue/Catalogue7.jpg",
+      "image": "/Images/Catalogue/Catalogue7.jpg",
       "pdf": ""
     },
     {
       "id": 8,
       "title": "Texture Collection",
-      "image": "/images/Catalogue/Catalogue8.jpg",
+      "image": "/Images/Catalogue/Catalogue8.jpg",
       "pdf": ""
     }
   ]

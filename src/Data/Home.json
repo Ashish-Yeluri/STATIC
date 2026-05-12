@@ -1,44 +1,44 @@
 {
   "slider": [
-    { "id": 1, "src": "/images/Home/SLIDES/1.jpg" },
-    { "id": 2, "src": "/images/Home/SLIDES/2.jpg" },
-    { "id": 3, "src": "/images/Home/SLIDES/3.jpg" },
-    { "id": 4, "src": "/images/Home/SLIDES/4.jpg" },
-    { "id": 5, "src": "/images/Home/SLIDES/5.jpg" }
+    { "id": 1, "src": "/Images/Home/SLIDES/1.jpg" },
+    { "id": 2, "src": "/Images/Home/SLIDES/2.jpg" },
+    { "id": 3, "src": "/Images/Home/SLIDES/3.jpg" },
+    { "id": 4, "src": "/Images/Home/SLIDES/4.jpg" },
+    { "id": 5, "src": "/Images/Home/SLIDES/5.jpg" }
   ],
   "categories": [
-    { "id": 1, "title": "Wallpapers", "src": "/images/Home/1.png" },
-    { "id": 2, "title": "Curtains", "src": "/images/Home/2.png" },
-    { "id": 3, "title": "Blinds", "src": "/images/Home/3.png" },
-    { "id": 4, "title": "Wooden\nFlooring", "src": "/images/Home/4.png" },
-    { "id": 5, "title": "Carpet\nFlooring", "src": "/images/Home/5.png" },
-    { "id": 6, "title": "Vinyl\nFlooring", "src": "/images/Home/6.png" },
-    { "id": 7, "title": "Frames", "src": "/images/Home/7.png" },
-    { "id": 8, "title": "Upholstery", "src": "/images/Home/8.png" }
+    { "id": 1, "title": "Wallpapers", "src": "/Images/Home/1.png" },
+    { "id": 2, "title": "Curtains", "src": "/Images/Home/2.png" },
+    { "id": 3, "title": "Blinds", "src": "/Images/Home/3.png" },
+    { "id": 4, "title": "Wooden\nFlooring", "src": "/Images/Home/4.png" },
+    { "id": 5, "title": "Carpet\nFlooring", "src": "/Images/Home/5.png" },
+    { "id": 6, "title": "Vinyl\nFlooring", "src": "/Images/Home/6.png" },
+    { "id": 7, "title": "Frames", "src": "/Images/Home/7.png" },
+    { "id": 8, "title": "Upholstery", "src": "/Images/Home/8.png" }
   ],
   "clients": [
-    { "id": 1, "name": "Client A", "logo": "/images/Home/client1.webp" },
-    { "id": 2, "name": "Client B", "logo": "/images/Home/client3.png" }
+    { "id": 1, "name": "Client A", "logo": "/Images/Home/client1.webp" },
+    { "id": 2, "name": "Client B", "logo": "/Images/Home/client3.png" }
    
   ],
   "brands": [
-    { "id": 1, "name": "Brand A", "logo": "/images/Home/stc.jpg" },
-    { "id": 2, "name": "Brand B", "logo": "/images/Home/nilaya.png" },
-    { "id": 3, "name": "Brand C", "logo": "/images/Home/vescom.jpg" },
-    { "id": 4, "name": "Brand D", "logo": "/images/Home/york.jpg" },
-    { "id": 5, "name": "Brand E", "logo": "/images/Home/k2.jpg" },
-    { "id": 6, "name": "Brand F", "logo": "/images/Home/marb.png" },
-     { "id": 1, "name": "Brand G", "logo": "/images/Home/design.png" },
-    { "id": 2, "name": "Brand H", "logo": "/images/Home/eij.png" },
-    { "id": 4, "name": "Brand J", "logo": "/images/Home/excel.png" }
+    { "id": 1, "name": "Brand A", "logo": "/Images/Home/stc.jpg" },
+    { "id": 2, "name": "Brand B", "logo": "/Images/Home/nilaya.png" },
+    { "id": 3, "name": "Brand C", "logo": "/Images/Home/vescom.jpg" },
+    { "id": 4, "name": "Brand D", "logo": "/Images/Home/york.jpg" },
+    { "id": 5, "name": "Brand E", "logo": "/Images/Home/k2.jpg" },
+    { "id": 6, "name": "Brand F", "logo": "/Images/Home/marb.png" },
+     { "id": 1, "name": "Brand G", "logo": "/Images/Home/design.png" },
+    { "id": 2, "name": "Brand H", "logo": "/Images/Home/eij.png" },
+    { "id": 4, "name": "Brand J", "logo": "/Images/Home/excel.png" }
   ],
   "about": {
-  "image": "/images/Home/design.jpg",
+  "image": "/Images/Home/design.jpg",
   "heading": "Elevating Spaces with Timeless Drapery Elegance",
   "description": "At AL Home Decor, we believe curtains are more than just window coverings — they are expressions of personality, comfort, and refined living. Our mission is to transform your interiors into spaces that feel warm, inviting, and beautifully yours.\n\nWe see every window as an opportunity to enhance light, texture, and atmosphere. Our journey begins by understanding your style, your lifestyle, and the mood you wish to create. Whether you are inspired by luxurious, flowing fabrics or drawn to clean, modern minimalism, our team is committed to translating your vision into perfectly tailored drapery solutions.\n\nOur designers blend contemporary design sensibilities with time-honored craftsmanship to create bespoke curtains that reflect sophistication and individuality. From carefully selected premium fabrics to precision stitching and flawless finishes, every detail is thoughtfully curated to ensure elegance in every fold.\n\nUsing superior materials and advanced fabrication techniques, we deliver curtains that are not only visually stunning but also durable, functional, and crafted to stand the test of time. The result is a harmonious balance of beauty and practicality — spaces that inspire comfort, elevate everyday living, and truly feel like home."
   },
    "catalogueSection": {
-    "image": "/images/Home/design2.jpg",
+    "image": "/Images/Home/design2.jpg",
     "heading": "Make Every Window a Masterpiece",
     "description": "Elevate Your Space with Elegant Curtains\nReady to transform your interiors effortlessly with Design Drapes' curated collection of premium and customizable curtains?\n\nFrom luxurious sheers to rich blackout drapes,\n\nDiscover endless styles, textures, and colors to frame your windows beautifully and bring your dream space to life today."
   },
@@ -46,23 +46,23 @@
   "items": [
     {
       "label": "Since",
-      "image": "/images/Home/2021.jpeg"
+      "image": "/Images/Home/2021.jpeg"
     },
     {
       "label": "Team Size",
-      "image": "/images/Home/20Team.png"
+      "image": "/Images/Home/20Team.png"
     },
     {
       "label": "Designs",
-      "image": "/images/Home/ov5.png"
+      "image": "/Images/Home/ov5.png"
     },
     {
       "label": "Projects",
-      "image": "/images/Home/ov6.avif"
+      "image": "/Images/Home/ov6.avif"
     },
     {
       "label": "Collaborations",
-      "image": "/images/Home/ov7.png"
+      "image": "/Images/Home/ov7.png"
     }
   ],
     "youtube": {
@@ -84,15 +84,15 @@
       ]
     },
       "parallaxSection": {
-      "image": "/images/Home/bigImage.jpg",
+      "image": "/Images/Home/bigImage.jpg",
       "text": "Where Windows Wear Luxury"
     },
      "parallaxSectionTwo": {
-    "image": "/images/Home/bigImage2.jpg",
+    "image": "/Images/Home/bigImage2.jpg",
     "text": "LET YOUR WALLS SPEAK​"
   },
   "googleReviewsSection": {
-    "background": "/images/Home/big3.jpg",
+    "background": "/Images/Home/big3.jpg",
     "title": "Google Reviews",
     "reviews": [
       {

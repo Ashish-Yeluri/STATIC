@@ -3,18 +3,18 @@
     {
       "id": 1,
       "title": "Curtains",
-      "image": "/images/Products/Curtain1.jpeg",
+      "image": "/Images/Products/Curtain1.jpeg",
      "description": "High durability and long-lasting performance are essential qualities for modern curtains, especially in homes, offices, hotels, and commercial spaces where they are used daily. Premium-quality curtains are crafted using high-grade fabrics and strong stitching techniques to ensure they maintain their beauty, structure, and functionality over time. With the right materials and design, curtains can effectively withstand frequent use, exposure to sunlight, and environmental conditions without losing their elegance or color.\nBeyond durability, curtains play an important role in enhancing the comfort and atmosphere of any interior space. They help control natural light, provide privacy, reduce glare, and contribute to better temperature regulation within a room. Well-designed curtains can also improve acoustic comfort by reducing outside noise and creating a calmer indoor environment.\nFrom sheer and lightweight fabrics that allow soft daylight to flow into the room, to thicker blackout curtains that provide complete light control, there are many styles available to suit different functional and aesthetic needs. Carefully selected curtains can complement furniture, wall colors, and overall interior design, adding depth, warmth, and sophistication to the space.\nChoosing premium curtains is not only a decorative decision but also a practical investment in long-term interior comfort and style. With proper installation and maintenance, high-quality curtains can retain their appearance and functionality for many years, making them an excellent choice for both residential and commercial interiors."
     },
 
     {
       "id": 2,
       "title": "Wallpapers",
-      "image": "/images/Products/Wallpaper1.jpeg",
+      "image": "/Images/Products/Wallpaper1.jpeg",
 
       "history": {
         "heading": "History Of Wallpapers",
-        "image": "/images/Products/Wallpaper2.avif",
+        "image": "/Images/Products/Wallpaper2.avif",
        "short": "Wallpapers transform walls with rich patterns, textures, and timeless decorative appeal.",
         "full": "Wallpapers transform walls with rich patterns, textures, and timeless decorative appeal. They enhance interior spaces by adding visual depth, character, and personality to any room. From traditional artistic motifs and floral designs to contemporary geometric patterns and textured finishes, modern wallpapers provide a versatile way to style walls. High-quality wallpapers are designed to be durable, easy to maintain, and suitable for a variety of interior settings including living rooms, bedrooms, offices, and commercial spaces. With a wide range of colors, materials, and designs available, wallpapers allow homeowners and designers to create unique, elegant, and visually engaging interiors."
       },
@@ -22,18 +22,18 @@
       "sideBySide": [
         {
           "title": "Modern Wallpaper Designs",
-          "image": "/images/Products/Wallpaper3.avif",
+          "image": "/Images/Products/Wallpaper3.avif",
          "description": "Modern wallpapers feature clean designs and soft textures that perfectly suit today’s stylish interiors."
         },
         {
           "title": "Classic Wallpaper Designs",
-          "image": "/images/Products/Wallpaper5.jpg",
+          "image": "/Images/Products/Wallpaper5.jpg",
           "description": "Classic wallpapers include floral, damask, and ornamental styles that bring timeless charm to living spaces."
 
         }
       ],
 
-      "bigImage": "/images/Products/Wallpaper4.jpg",
+      "bigImage": "/Images/Products/Wallpaper4.jpg",
 "types": [
   {
     "title": "Paper Wallpaper",
@@ -62,8 +62,8 @@
 ],
 
       "whyImages": [
-        { "id": 1, "image": "/images/Products/Wallpaper5.jpg" },
-        { "id": 2, "image": "/images/Products/Wallpaper6.jpg" }
+        { "id": 1, "image": "/Images/Products/Wallpaper5.jpg" },
+        { "id": 2, "image": "/Images/Products/Wallpaper6.jpg" }
       ],
 
             "why": {
@@ -98,7 +98,7 @@
     {
       "id": 3,
       "title": "Wooden Flooring",
-      "image": "/images/Products/Woodenflooring.webp",
+      "image": "/Images/Products/Woodenflooring.webp",
       "descriptions": [
           {
       
@@ -113,42 +113,42 @@
     {
       "id": 4,
       "title": "Window Blinds",
-      "image": "/images/products/Blinds.jpeg",
+      "image": "/Images/Products/Blinds.jpeg",
       "subHeading": "Blinds",
      "subCategories": [
   {
     "name": "Roller Blinds",
-    "image": "/images/products/roller.avif",
+    "image": "/Images/Products/roller.avif",
     "short": "Clean, modern light control.",
     "full": "Sleek roller blinds offer smooth operation and precise light filtering with a minimalist contemporary look."
   },
   {
     "name": "Bamboo Blinds",
-    "image": "/images/products/bamboo.avif",
+    "image": "/Images/Products/bamboo.avif",
     "short": "Natural eco elegance.",
     "full": "Crafted from natural bamboo, these blinds bring warmth, texture, and organic charm to relaxed, earthy interiors."
   },
   {
     "name": "Vertical Blinds",
-    "image": "/images/products/vertical.avif",
+    "image": "/Images/Products/vertical.avif",
     "short": "Perfect for wide openings.",
     "full": "Vertical blinds provide flexible light control and privacy, ideal for large windows and sliding glass doors."
   },
   {
     "name": "Roman Blinds",
-    "image": "/images/products/roaman.avif",
+    "image": "/Images/Products/roaman.avif",
     "short": "Soft fabric luxury.",
     "full": "Roman blinds combine curtain-like fabric elegance with the convenience of adjustable blind functionality."
   },
   {
     "name": "Pleated Blinds",
-    "image": "/images/products/pleated.avif",
+    "image": "/Images/Products/pleated.avif",
     "short": "Lightweight modern style.",
     "full": "Pleated blinds feature crisp folds and a slim profile, adding refined texture and space-saving style to windows."
   },
   {
     "name": "Wooden Blinds",
-    "image": "/images/products/woodenn.avif",
+    "image": "/Images/Products/woodenn.avif",
     "short": "Timeless natural wood.",
     "full": "Wooden blinds deliver classic warmth and durability, enhancing interiors with rich natural grain and elegance."
   }
@@ -158,13 +158,13 @@
    {
   "id": 5,
   "title": "Vinyl Tiles",
-  "image": "/images/products/5.avif",
+  "image": "/Images/Products/5.avif",
   "description": "Vinyl tiles offer a durable, water-resistant, and cost-effective flooring solution that replicates the look of wood or stone while ensuring easy maintenance and long-lasting performance."
 },
 {
   "id": 6,
   "title": "Carpet Tiles",
-  "image": "/images/products/6.avif",
+  "image": "/Images/Products/6.avif",
   "description": "Carpet tiles combine softness and insulation with modular flexibility, allowing easy installation, replacement, and creative layout designs for comfortable, versatile interiors."
 }
   ]
