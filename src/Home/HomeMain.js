@@ -157,7 +157,7 @@ export default function HomeMain({ image, text }) {
         {categoryImages.map((item) => (
           <div key={item.id} className='category-item'>
             <div className='category-circle'>
-              <img src={item.src} alt={item.title} className='category-image' />
+              <img src={process.env.PUBLIC_URL + item.src} alt={item.title} className='category-image' />
             </div>
             <p className='category-text'>
               {item.title.split('\n').map((line, i) => (
@@ -171,7 +171,7 @@ export default function HomeMain({ image, text }) {
       {/* Catalogue */}
       <div className='catalogue-section'>
         <div className='catalogue-image'>
-          <img src={catalogueImage} alt='Catalogue Wall' />
+          <img src={process.env.PUBLIC_URL + catalogueImage} alt='Catalogue Wall' />
         </div>
         <div className='catalogue-content'>
           <h2 className='catalogue-heading'>{catalogueHeading}</h2>
@@ -196,7 +196,7 @@ export default function HomeMain({ image, text }) {
       {/* About */}
       <div className='about-section'>
         <div className='about-image'>
-          <img src={aboutImage} alt='About Design Walls' />
+          <img src={process.env.PUBLIC_URL + aboutImage} alt='About Design Walls' />
         </div>
         <div className='about-content'>
           <h2 className='about-heading'>{aboutHeading}</h2>
@@ -225,13 +225,13 @@ export default function HomeMain({ image, text }) {
         <div className='clients-wrapper'>
           {clientsData.clients.map((client) => (
             <div key={client.id} className='client-logo' onClick={() => openModal(client.logo)}>
-              <img src={client.logo} alt={client.name} />
+              <img src={process.env.PUBLIC_URL + client.logo} alt={client.name} />
             </div>
           ))}
           {modalLogo && (
             <div className='modal-overlay' onClick={closeModal}>
               <div className='modal-content' onClick={(e) => e.stopPropagation()}>
-                <img src={modalLogo} alt='Client Logo' />
+                <img src={process.env.PUBLIC_URL + modalLogo} alt='Client Logo' />
               </div>
             </div>
           )}

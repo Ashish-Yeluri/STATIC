@@ -116,7 +116,7 @@ export default function About() {
               {AboutBox.teamImages.map((member, index) => (
                 <div key={member.id} className="team-card">
                   <img
-                    src={member.image}
+                    src={process.env.PUBLIC_URL + member.image}
                     alt={member.name}
                     className="team-image"
                     draggable={false}
@@ -148,7 +148,7 @@ export default function About() {
                 )}
 
                 <img
-                  src={AboutBox.teamImages[previewIndex].image}
+                  src={process.env.PUBLIC_URL + AboutBox.teamImages[previewIndex].image}
                   alt="Full"
                   className="full-image"
                   onClick={(e) => e.stopPropagation()}

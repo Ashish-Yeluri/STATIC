@@ -23,7 +23,7 @@ export default function Catalogue() {
             rel="noopener noreferrer"
             className="catalogue-card"
           >
-            <img src={item.image} alt={item.title} />
+            <img src={process.env.PUBLIC_URL + item.image} alt={item.title} />
           </a>
         ))}
       </div>

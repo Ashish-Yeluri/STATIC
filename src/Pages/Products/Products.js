@@ -55,7 +55,7 @@ export default function Products() {
               <h3 className='product-title'>{item.title}</h3>
 
               <div className='product-card'>
-                <img src={item.image} alt={item.title} />
+                <img src={process.env.PUBLIC_URL + item.image} alt={item.title} />
 
                 <div className='product-overlay'>
                   <span
@@ -86,7 +86,7 @@ export default function Products() {
             {/* LEFT IMAGE (not for blinds & wallpapers) */}
             {!activeProduct.subCategories && !activeProduct.history && (
               <div className='detail-image'>
-                <img src={activeProduct.image} alt={activeProduct.title} />
+                <img src={process.env.PUBLIC_URL + activeProduct.image} alt={activeProduct.title} />
               </div>
             )}
 
@@ -118,7 +118,7 @@ export default function Products() {
                     {activeProduct.subCategories.map((sub, index) => (
                       <div key={index} className='sub-card'>
                         <h4>{sub.name}</h4>
-                        <img src={sub.image} alt={sub.name} />
+                        <img src={process.env.PUBLIC_URL + sub.image} alt={sub.name} />
 
                         <p>
                           {expandedIndexes[`sub-${index}`]
@@ -149,7 +149,7 @@ export default function Products() {
                     {/* LEFT IMAGE */}
                     <div className='history-image'>
                       <img
-                        src={activeProduct.history.image}
+                        src={process.env.PUBLIC_URL + activeProduct.history.image}
                         alt={activeProduct.history.heading}
                       />
                     </div>
@@ -178,7 +178,7 @@ export default function Products() {
                     {activeProduct.sideBySide.map((item, index) => (
                       <div key={index} className='sub-card'>
                         <h4>{item.title}</h4>
-                        <img src={item.image} alt={item.title} />
+                        <img src={process.env.PUBLIC_URL + item.image} alt={item.title} />
                         <p>{item.description}</p>
                       </div>
                     ))}
@@ -219,7 +219,7 @@ export default function Products() {
                       {activeProduct.whyImages.map((img) => (
                         <div key={img.id} className='sub-card'>
                           <img
-                            src={img.image}
+                            src={process.env.PUBLIC_URL + img.image}
                             alt='Why Wallpaper'
                             style={{
                               width: '100%',

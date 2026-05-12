@@ -26,7 +26,7 @@ function ProjectSection({ title, hero, images, sectionRef }) {
 
       {/* HERO */}
       <div className="hero-row">
-        <img src={currentHero} alt={title} />
+        <img src={process.env.PUBLIC_URL + currentHero} alt={title} />
       </div>
 
       {/* THUMBNAILS */}
@@ -34,7 +34,7 @@ function ProjectSection({ title, hero, images, sectionRef }) {
         {images.map((img, index) => (
           <img
             key={index}
-            src={img}
+            src={process.env.PUBLIC_URL + img}
             alt=""
             onClick={() => handleImageClick(img)}
             className={currentHero === img ? "active-thumb" : ""}
