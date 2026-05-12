@@ -22,6 +22,7 @@ export default function HomeMain({ image, text }) {
     }, 3000);
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (totalSlides > 0) startAutoSlide();
     return () => clearInterval(intervalRef.current);
@@ -39,9 +40,6 @@ export default function HomeMain({ image, text }) {
     startAutoSlide();
   };
 
-  // ─────────────────────────────────────────────
-  // REST OF PAGE STATE
-  // ─────────────────────────────────────────────
   const imageRef2 = useRef(null);
   const textRef2  = useRef(null);
 
@@ -61,7 +59,6 @@ export default function HomeMain({ image, text }) {
   const navigate = useNavigate();
   const handleExplore = () => navigate('/catalogue');
 
-  // Parallax
   useEffect(() => {
     const handleScroll = () => {
       if (!imageRef2.current || !textRef2.current) return;
@@ -76,18 +73,11 @@ export default function HomeMain({ image, text }) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Reviews
   const rawReviews = data.googleReviewsSection?.reviews || [];
   const reviews    = rawReviews.length > 0 ? [...rawReviews, rawReviews[0]] : [];
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const reviewIntervalRef               = useRef(null);
-
-  useEffect(() => {
-    if (reviews.length === 0) return;
-    startReviewAutoSlide();
-    return () => stopReviewAutoSlide();
-  }, [reviews.length]);
 
   const startReviewAutoSlide = () => {
     stopReviewAutoSlide();
@@ -96,6 +86,13 @@ export default function HomeMain({ image, text }) {
   const stopReviewAutoSlide = () => {
     if (reviewIntervalRef.current) clearInterval(reviewIntervalRef.current);
   };
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(() => {
+    if (reviews.length === 0) return;
+    startReviewAutoSlide();
+    return () => stopReviewAutoSlide();
+  }, [reviews.length]);
 
   const handleReviewTransitionEnd = () => {
     if (currentIndex === reviews.length - 1) {
