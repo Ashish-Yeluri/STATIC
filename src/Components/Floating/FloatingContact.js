@@ -17,13 +17,13 @@ export default function FloatingContact() {
       </div>
 
       {/* Call */}
-      <a href="tel:+917981507828" className="call-btn">
+      <a href="tel:+916309821900" className="call-btn">
         <FaPhoneAlt />
       </a>
 
       {/* WhatsApp */}
       <a
-        href="https://api.whatsapp.com/send/?phone=%2B917981507828&text&type=phone_number&app_absent=0"
+        href="https://api.whatsapp.com/send/?phone=%2B916309821900&text&type=phone_number&app_absent=0"
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-btn"

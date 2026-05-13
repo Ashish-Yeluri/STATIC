@@ -117,7 +117,7 @@ export default function Header() {
 
         {/* Right - Contact */}
         <div className='header-right'>
-          <span>📞 +91 98765 43210</span>
+          <span>📞 +91 63098 21900</span>
         </div>
       </header>
       <div className='shipping-banner'>
