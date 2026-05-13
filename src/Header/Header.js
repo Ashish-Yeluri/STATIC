@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import './Header.css';
-import logo from '../Header/AL.png'
+import headerData from '../Data/Header.json';
 import { FaTruck, FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
@@ -17,7 +17,11 @@ export default function Header() {
             to='/'
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
-            <img src={logo} alt='AL-Home Decor' className='logo' />
+            <img
+              src={process.env.PUBLIC_URL + headerData.logo.src}
+              alt={headerData.logo.alt}
+              className='logo'
+            />
           </Link>
         </div>
 
