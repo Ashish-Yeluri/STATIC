@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import './Header.css';
-import logo from '../Header/dw.avif'
+import logo from '../Header/AL.png'
 import { FaTruck, FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
@@ -13,9 +13,12 @@ export default function Header() {
       <header className='header'>
         {/* Left - Logo */}
         <div className='header-left'>
-           <Link to="/">
-          <img src={logo} alt='Design Walls Logo' className='logo' />
-           </Link>
+          <Link
+            to='/'
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          >
+            <img src={logo} alt='AL-Home Decor' className='logo' />
+          </Link>
         </div>
 
         {/* Center - Menu */}
@@ -66,16 +69,32 @@ export default function Header() {
             </span>
             {showDropdown && (
               <div className='dropdown-menu'>
-                <NavLink to='/projects/wallpapers' className='dropdown-item' onClick={() => setShowDropdown(false)}>
+                <NavLink
+                  to='/projects/wallpapers'
+                  className='dropdown-item'
+                  onClick={() => setShowDropdown(false)}
+                >
                   Wallpapers
                 </NavLink>
-                <NavLink to='/projects/blinds' className='dropdown-item' onClick={() => setShowDropdown(false)}>
+                <NavLink
+                  to='/projects/blinds'
+                  className='dropdown-item'
+                  onClick={() => setShowDropdown(false)}
+                >
                   Blinds
                 </NavLink>
-                <NavLink to='/projects/curtains' className='dropdown-item' onClick={() => setShowDropdown(false)}>
+                <NavLink
+                  to='/projects/curtains'
+                  className='dropdown-item'
+                  onClick={() => setShowDropdown(false)}
+                >
                   Curtains
                 </NavLink>
-                <NavLink to='/projects/upholstery' className='dropdown-item' onClick={() => setShowDropdown(false)}>
+                <NavLink
+                  to='/projects/upholstery'
+                  className='dropdown-item'
+                  onClick={() => setShowDropdown(false)}
+                >
                   Upholstery
                 </NavLink>
               </div>
@@ -90,9 +109,6 @@ export default function Header() {
           >
             Contact Us
           </NavLink>
-
-
-
         </nav>
 
         {/* Right - Contact */}

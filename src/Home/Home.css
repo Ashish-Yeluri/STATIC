@@ -10,8 +10,8 @@
 .slider {
   position: relative;
   width: 100%;          /* fits naturally inside the page flow */
-  height: 90vh;
-  max-height: 900px;
+  height: 100vh;
+  min-height: 750px;
   overflow: hidden;     /* safety belt — hides anything that escapes */
   background: #111;     /* shows while first image loads */
 }
@@ -438,7 +438,7 @@
 
 
 /* ================= PARALLAX ================= */
-.parallax-wrapper {
+/* .parallax-wrapper {
   position: relative;
   height: 100vh;
 }
@@ -461,8 +461,52 @@
   margin-top: -100vh;
   padding: 120px 20%;
   color: rgb(120, 5, 59);
+} */
+
+
+
+/* ================= PARALLAX ================= */
+.parallax-wrapper {
+  position: relative;
+  height: 500px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
+.parallax-image {
+  display: none;
+}
+
+.parallax-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #58183b !important;
+  font-size: 56px;
+  font-weight: 700;
+  padding: 20px;
+}
+/* color: rgb(120, 5, 59); */
+/* .parallax-text {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 2;
+  text-align: center;
+  color: #000 !important;
+  font-size: 56px;
+  font-weight: 700;
+  padding: 20px;
+  width: 100%;
+  text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.7);
+} */
 
 /* ================= REVIEWS ================= */
 .reviews-section{
@@ -532,7 +576,7 @@
 /* ===== DESKTOP (≥ 1024px) ================= */
 /* =========================================== */
 @media (min-width: 1024px) {
-  .slider { height: 80vh; max-height: 700px; }
+  .slider { height: 100vh; max-height: 850px; }
   .overview-grid { grid-template-columns: repeat(4, 1fr); }
   .youtube-videos { grid-template-columns: repeat(3, 1fr); }
   .parallax-wrapper { height: 100vh; }
@@ -550,7 +594,7 @@
 
   html, body { overflow-x: hidden; }
 
-  .slider { height: 60vh; max-height: 500px; }
+  .slider { height: 75vh; max-height: 650px; }
 
   .category-circle { width: 80px; height: 80px; }
   .category-image { width: 42px; height: 42px; }
@@ -588,6 +632,10 @@
   .review-card-wrapper { max-width: 560px; }
 
   .parallax-image { background-attachment: scroll; }
+    .parallax-wrapper {
+      background-attachment: scroll;
+      height: 400px;
+    }
 }
 
 
@@ -598,7 +646,7 @@
 
   html, body { overflow-x: hidden; }
 
-  .slider { height: 55vw; max-height: 320px; }
+  .slider { height: 70vh; min-height: 420px; }
 
   .categories-wrapper { gap: 18px; padding: 20px 12px; }
   .category-circle { width: 60px; height: 60px; }
@@ -643,7 +691,16 @@
   .review-slider-container { width: 100%; padding: 0 12px; box-sizing: border-box; }
   .review-card-wrapper { max-width: 100%; }
 
-  .parallax-image { background-attachment: scroll; }
+  .parallax-image { background-attachment: scroll; position: absolute; }
+    .parallax-wrapper {
+      background-attachment: scroll;
+      height: 300px;
+    }
+  
+    .parallax-text {
+      font-size: 28px;
+    }
+    
   .parallax-content { padding: 60px 8%; }
 
   .floating,

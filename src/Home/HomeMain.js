@@ -120,7 +120,6 @@ export default function HomeMain({ image, text }) {
 
   return (
     <div>
-
       {/* ══════════ SLIDER — crossfade, no translate ══════════ */}
       <div className='slider'>
         {sliderImages.map((src, i) => (
@@ -157,11 +156,18 @@ export default function HomeMain({ image, text }) {
         {categoryImages.map((item) => (
           <div key={item.id} className='category-item'>
             <div className='category-circle'>
-              <img src={process.env.PUBLIC_URL + item.src} alt={item.title} className='category-image' />
+              <img
+                src={process.env.PUBLIC_URL + item.src}
+                alt={item.title}
+                className='category-image'
+              />
             </div>
             <p className='category-text'>
               {item.title.split('\n').map((line, i) => (
-                <span key={i}>{line}<br /></span>
+                <span key={i}>
+                  {line}
+                  <br />
+                </span>
               ))}
             </p>
           </div>
@@ -171,12 +177,17 @@ export default function HomeMain({ image, text }) {
       {/* Catalogue */}
       <div className='catalogue-section'>
         <div className='catalogue-image'>
-          <img src={process.env.PUBLIC_URL + catalogueImage} alt='Catalogue Wall' />
+          <img
+            src={process.env.PUBLIC_URL + catalogueImage}
+            alt='Catalogue Wall'
+          />
         </div>
         <div className='catalogue-content'>
           <h2 className='catalogue-heading'>{catalogueHeading}</h2>
           <p className='catalogue-description'>{catalogueDescription}</p>
-          <button className='catalogue-button' onClick={handleExplore}>Explore Catalogue</button>
+          <button className='catalogue-button' onClick={handleExplore}>
+            Explore Catalogue
+          </button>
         </div>
       </div>
 
@@ -186,7 +197,11 @@ export default function HomeMain({ image, text }) {
         <div className='overview-grid'>
           {data.items.map((item, index) => (
             <div className='overview-card' key={index}>
-              <img src={process.env.PUBLIC_URL + item.image} alt={item.label} className='overview-image' />
+              <img
+                src={process.env.PUBLIC_URL + item.image}
+                alt={item.label}
+                className='overview-image'
+              />
               <p className='overview-label'>{item.label}</p>
             </div>
           ))}
@@ -196,12 +211,17 @@ export default function HomeMain({ image, text }) {
       {/* About */}
       <div className='about-section'>
         <div className='about-image'>
-          <img src={process.env.PUBLIC_URL + aboutImage} alt='About Design Walls' />
+          <img
+            src={process.env.PUBLIC_URL + aboutImage}
+            alt='About Design Walls'
+          />
         </div>
         <div className='about-content'>
           <h2 className='about-heading'>{aboutHeading}</h2>
           <p className='about-description'>
-            {expanded ? aboutDescription : aboutDescription.split('\n').slice(0, 2).join('\n')}
+            {expanded
+              ? aboutDescription
+              : aboutDescription.split('\n').slice(0, 2).join('\n')}
           </p>
           <button className='about-toggle' onClick={toggleExpanded}>
             {expanded ? 'Show Less' : 'Show More'}
@@ -210,13 +230,23 @@ export default function HomeMain({ image, text }) {
       </div>
 
       {/* Second Parallax */}
-      <div className='parallax-wrapper'>
+      {/* <div className='parallax-wrapper'>
         <div
           ref={imageRef2}
           className='parallax-image'
           style={{ backgroundImage: `url(${process.env.PUBLIC_URL}${parallaxImage2})` }}
         />
         <div ref={textRef2} className='parallax-text'>{parallaxText2}</div>
+      </div> */}
+
+      {/* CORRECT — image style on the wrapper itself */}
+      <div
+        className='parallax-wrapper'
+        style={{
+          backgroundImage: `url(${process.env.PUBLIC_URL}${parallaxImage2})`,
+        }}
+      >
+        <div className='parallax-text'>{parallaxText2}</div>
       </div>
 
       {/* Clients */}
@@ -224,14 +254,27 @@ export default function HomeMain({ image, text }) {
         <h2 className='clientHead'>Clients</h2>
         <div className='clients-wrapper'>
           {clientsData.clients.map((client) => (
-            <div key={client.id} className='client-logo' onClick={() => openModal(client.logo)}>
-              <img src={process.env.PUBLIC_URL + client.logo} alt={client.name} />
+            <div
+              key={client.id}
+              className='client-logo'
+              onClick={() => openModal(client.logo)}
+            >
+              <img
+                src={process.env.PUBLIC_URL + client.logo}
+                alt={client.name}
+              />
             </div>
           ))}
           {modalLogo && (
             <div className='modal-overlay' onClick={closeModal}>
-              <div className='modal-content' onClick={(e) => e.stopPropagation()}>
-                <img src={process.env.PUBLIC_URL + modalLogo} alt='Client Logo' />
+              <div
+                className='modal-content'
+                onClick={(e) => e.stopPropagation()}
+              >
+                <img
+                  src={process.env.PUBLIC_URL + modalLogo}
+                  alt='Client Logo'
+                />
               </div>
             </div>
           )}
@@ -243,7 +286,9 @@ export default function HomeMain({ image, text }) {
         <h2 className='reviews-title'>{data.googleReviewsSection?.title}</h2>
         <div className='review-slider-container'>
           {currentIndex > 0 && (
-            <button className='review-arrow left' onClick={handlePrev}>❮</button>
+            <button className='review-arrow left' onClick={handlePrev}>
+              ❮
+            </button>
           )}
           <div className='review-card-wrapper'>
             <div
@@ -260,10 +305,11 @@ export default function HomeMain({ image, text }) {
               ))}
             </div>
           </div>
-          <button className='review-arrow right' onClick={handleNext}>❯</button>
+          <button className='review-arrow right' onClick={handleNext}>
+            ❯
+          </button>
         </div>
       </section>
-
     </div>
   );
 }
