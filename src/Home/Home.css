@@ -639,14 +639,16 @@
 }
 
 
-/* =========================================== */
-/* ===== MOBILE (< 768px) ==================== */
-/* =========================================== */
 @media (max-width: 767px) {
 
   html, body { overflow-x: hidden; }
 
-  .slider { height: 70vh; min-height: 420px; }
+  .slider {  
+    height: 20vh;
+    min-height: 220px;
+    width: 100vw;
+    margin-left: 0;
+    margin-right: 0;}
 
   .categories-wrapper { gap: 18px; padding: 20px 12px; }
   .category-circle { width: 60px; height: 60px; }
