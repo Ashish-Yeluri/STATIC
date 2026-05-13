@@ -40,8 +40,6 @@ export default function HomeMain({ image, text }) {
     startAutoSlide();
   };
 
-  // const imageRef2 = useRef(null);
-  // const textRef2  = useRef(null);
 
   const [modalLogo, setModalLogo] = useState(null);
   const openModal  = (logo) => setModalLogo(logo);
@@ -59,19 +57,7 @@ export default function HomeMain({ image, text }) {
   const navigate = useNavigate();
   const handleExplore = () => navigate('/catalogue');
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (!imageRef2.current || !textRef2.current) return;
-  //     const wrapper  = imageRef2.current.parentElement;
-  //     const rect     = wrapper.getBoundingClientRect();
-  //     const progress = Math.min(Math.max(-rect.top / rect.height, 0), 1);
-  //     imageRef2.current.style.transform = `translate3d(0,${progress * 300 * 1.6}px,0) scale(1.2)`;
-  //     textRef2.current.style.transform  = `translate(-50%,-50%)`;
-  //   };
-  //   handleScroll();
-  //   window.addEventListener('scroll', handleScroll, { passive: true });
-  //   return () => window.removeEventListener('scroll', handleScroll);
-  // }, []);
+ 
 
   const rawReviews = data.googleReviewsSection?.reviews || [];
   const reviews    = rawReviews.length > 0 ? [...rawReviews, rawReviews[0]] : [];
