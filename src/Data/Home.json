@@ -1,7 +1,7 @@
 {
   "slider": [
     { "id": 1, "src": "/Images/Home/SLIDES/1.jpg" },
-    { "id": 2, "src": "/Images/Home/SLIDES/2.jpg" },
+    { "id": 2, "src": "/Images/Home/SLIDES/2.png" },
     { "id": 3, "src": "/Images/Home/SLIDES/3.jpg" },
     { "id": 4, "src": "/Images/Home/SLIDES/4.jpg" },
     { "id": 5, "src": "/Images/Home/SLIDES/5.jpg" }

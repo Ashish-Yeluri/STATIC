@@ -5,6 +5,10 @@ import "../Floating/FloatingContact.css";
 export default function FloatingContact() {
   const navigate = useNavigate();
 
+  const whatsappMessage = encodeURIComponent(
+    "Hi, I'm interested in a free consultation. Please get in touch with me.",
+  );
+
   return (
     <div className="floating-contact">
 
@@ -23,7 +27,7 @@ export default function FloatingContact() {
 
       {/* WhatsApp */}
       <a
-        href="https://api.whatsapp.com/send/?phone=%2B916309821900&text&type=phone_number&app_absent=0"
+        href={`https://api.whatsapp.com/send/?phone=%2B916309821900&text=${whatsappMessage}&type=phone_number&app_absent=0`}
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-btn"
