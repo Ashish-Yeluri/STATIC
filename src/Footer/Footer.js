@@ -1,5 +1,6 @@
 import "./Footer.css";
 import footerData from "../Data/FooterData.json";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
 
@@ -38,7 +39,21 @@ export default function Footer() {
       <h3>Useful Links</h3>
       <ul>
         {mainFooter.usefulLinks.map((item, index) => (
-          <li key={index}>{item}</li>
+          <li key={index}>
+            {item === "Contact Us" ? (
+              <Link to="/contact">{item}</Link>
+            ) : item === "Find Our Showroom" ? (
+              <a
+                href={`https://www.google.com/maps?q=${getInTouch.locations[0].mapQuery}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {item}
+              </a>
+            ) : (
+              item
+            )}
+          </li>
         ))}
       </ul>
     </div>

@@ -8,13 +8,13 @@
   ],
   "categories": [
     { "id": 1, "title": "Wallpapers", "src": "/Images/Home/1.png" },
-    { "id": 2, "title": "Curtains", "src": "/Images/Home/2.png" },
-    { "id": 3, "title": "Blinds", "src": "/Images/Home/3.png" },
+    { "id": 2, "title": "Blinds", "src": "/Images/Home/2.png" },
+    { "id": 3, "title": "Curtains", "src": "/Images/Home/3.png" },
     { "id": 4, "title": "Wooden\nFlooring", "src": "/Images/Home/4.png" },
     { "id": 5, "title": "Carpet\nFlooring", "src": "/Images/Home/5.png" },
     { "id": 6, "title": "Vinyl\nFlooring", "src": "/Images/Home/6.png" },
     { "id": 7, "title": "Frames", "src": "/Images/Home/7.png" },
-    { "id": 8, "title": "Upholstery", "src": "/Images/Home/8.png" }
+    { "id": 8, "title": "Sofa", "src": "/Images/Home/8.png" }
   ],
   "clients": [
     { "id": 1, "name": "Client A", "logo": "/Images/Home/client1.webp" },

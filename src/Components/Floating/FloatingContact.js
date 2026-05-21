@@ -10,31 +10,26 @@ export default function FloatingContact() {
   );
 
   return (
-    <div className="floating-contact">
-
+    <div className='floating-contact'>
       {/* Consultation */}
-      <div
-        className="consultation-tab"
-        onClick={() => navigate("/contact")}
-      >
+      <div className='consultation-tab' onClick={() => navigate('/contact')}>
         Get Free Consultation
       </div>
 
       {/* Call */}
-      <a href="tel:+916309821900" className="call-btn">
+      <a href='tel:+919494767687' className='call-btn'>
         <FaPhoneAlt />
       </a>
 
       {/* WhatsApp */}
       <a
-        href={`https://api.whatsapp.com/send/?phone=%2B916309821900&text=${whatsappMessage}&type=phone_number&app_absent=0`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="whatsapp-btn"
+        href={`https://api.whatsapp.com/send/?phone=%2B919494767687&text=${whatsappMessage}&type=phone_number&app_absent=0`}
+        target='_blank'
+        rel='noopener noreferrer'
+        className='whatsapp-btn'
       >
         <FaWhatsapp />
       </a>
-
     </div>
   );
 }

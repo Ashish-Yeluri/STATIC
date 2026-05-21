@@ -203,3 +203,47 @@ body {
     font-size: 13px;
   }
 }
+
+
+
+
+/* HEADER MOBILE NUMBER */
+.contact-number {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.03em;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.contact-number .icon-wrap {
+  width: 28px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-number i {
+  font-size: 13px;
+  color: #f7c1c1;
+  font-family: initial;
+}
+
+.contact-divider {
+  height: 30px;
+  width: 0.5px;
+  background: rgba(255, 255, 255, 0.25);
+  margin: 0 4px;
+  display: inline-block;
+}
