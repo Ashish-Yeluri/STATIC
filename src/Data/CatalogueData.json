@@ -1,8 +1,9 @@
 {
- "hero": {
-  "line1": "Style Every Wall and Window with Our",
-  "line2": "Signature Décor Collection"
-},
+  "hero": {
+    "line1": "Style Every Wall and Window with Our",
+    "line2": "Signature Décor Collection"
+  },
+
   "items": [
     {
       "id": 1,
@@ -19,7 +20,7 @@
     {
       "id": 3,
       "title": "Kids Collection",
-      "image":"/Images/Catalogue/Catalogue3.jpeg",
+      "image": "/Images/Catalogue/Catalogue3.jpeg",
       "pdf": ""
     },
     {
@@ -52,5 +53,80 @@
       "image": "/Images/Catalogue/Catalogue8.jpg",
       "pdf": ""
     }
+  ],
+
+  "pdfCategories": [
+    {
+      "title": "Wallpapers",
+      "pdfs": [
+        {
+          "name": "vol-4",
+          "preview": "/Images/Pdfs/W1.jpg",
+          "pdf": "/Images/Pdfs/W1.pdf"
+        },
+        {
+          "name": "vol-5",
+          "preview": "/Images/Pdfs/W2.jpg",
+          "pdf": "/Images/Pdfs/W2.pdf"
+        },
+        {
+          "name": "ELEVATE(LATEST)",
+          "preview": "/Images/Pdfs/W3.jpg",
+          "pdf": "/Images/Pdfs/W3.pdf"
+        },
+        {
+          "name": "WALLSTAR VOL-3",
+          "preview": "/Images/Pdfs/W4.jpg",
+          "pdf": "/Images/Pdfs/W4.pdf"
+        },
+        {
+          "name": "WALLSTAR VOL-2",
+          "preview": "/Images/Pdfs/W5.jpg",
+          "pdf": "/Images/Pdfs/W5.pdf"
+        },
+        {
+          "name": "TEXTURE TOUCH ORG",
+          "preview": "/Images/Pdfs/W6.jpg",
+          "pdf": "/Images/Pdfs/W6.pdf"
+        },
+        {
+          "name": "TEXTURE_WORLD",
+          "preview": "/Images/Pdfs/W7.jpg",
+          "pdf": "/Images/Pdfs/W7.pdf"
+        },
+        {
+          "name": "ATHEHNIC INDIA",
+          "preview": "/Images/Pdfs/W8.jpg",
+          "pdf": "/Images/Pdfs/W8.pdf"
+        }
+      ]
+    },
+    {
+      "title": "Roller Blinds",
+      "pdfs": [
+        {
+          "name": "ROLLER OLIVER SERIES",
+          "preview": "/Images/Pdfs/R1.jpg",
+          "pdf": "/Images/Pdfs/R1.pdf"
+        },
+        {
+          "name": "Souvenir collection 2.0",
+          "preview": "/Images/Pdfs/R2.jpg",
+          "pdf": "/Images/Pdfs/R2.pdf"
+        }
+      ]
+    },
+     
+    {
+      "title": "Zibra Blinds",
+      "pdfs": [
+        {
+          "name": "14页catalog",
+          "preview": "/Images/Pdfs/Z1.jpg",
+          "pdf": "/Images/Pdfs/Z1.pdf"
+        }
+      ]
+    }
+
   ]
 }
