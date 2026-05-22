@@ -19,18 +19,21 @@ app.post("/api/send-enquiry", async (req, res) => {
     const querystring = require("querystring");
 
     const postData = querystring.stringify({
-      from: `AL Home Decor <noreply@${process.env.MAILGUN_DOMAIN}>`,
+      from: `${fullName} (${email}) via AL Home Decor <noreply@${process.env.MAILGUN_DOMAIN}>`,
+      // from: `${fullName} <${email}>`,
       to: process.env.RECIPIENT_EMAIL,
+      'h:Reply-To': `${fullName} <${email}>`,
       subject: `New Enquiry from ${fullName}`,
       html: `
         <div style="font-family: Arial, sans-serif; padding: 20px; border: 1px solid #ddd; border-radius: 8px; max-width: 600px;">
           <h2 style="color: #c0392b; border-bottom: 2px solid #c0392b; padding-bottom: 8px;">New Enquiry Received</h2>
+          <p style="color: #555; margin-top: 4px;">This enquiry was submitted by <strong>${fullName}</strong> (${email}). Hit <strong>Reply</strong> to respond directly to them.</p>
           <table style="width:100%; border-collapse: collapse; margin-top: 12px;">
             <tr style="background:#f9f9f9"><td style="padding:10px;font-weight:bold;width:140px;">Name</td><td style="padding:10px;">${fullName}</td></tr>
             <tr><td style="padding:10px;font-weight:bold;">Phone</td><td style="padding:10px;">${phone}</td></tr>
-            <tr style="background:#f9f9f9"><td style="padding:10px;font-weight:bold;">Email</td><td style="padding:10px;">${email}</td></tr>
+            <tr style="background:#f9f9f9"><td style="padding:10px;font-weight:bold;">Email</td><td style="padding:10px;"><a href="mailto:${email}">${email}</a></td></tr>
             <tr><td style="padding:10px;font-weight:bold;">Location</td><td style="padding:10px;">${location}</td></tr>
-            <tr style="background:#f9f9f9"><td style="padding:10px;font-weight:bold;">Requirements</td><td style="padding:10px;">${requirements || "Not specified"}</td></tr>
+            <tr style="background:#f9f9f9"><td style="padding:10px;font-weight:bold;">Requirements</td><td style="padding:10px;">${requirements || 'Not specified'}</td></tr>
           </table>
           <p style="margin-top:20px; font-size:12px; color:#999;">Sent via AL Home Decor Contact Form</p>
         </div>
